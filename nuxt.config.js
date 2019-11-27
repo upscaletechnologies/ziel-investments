@@ -13,6 +13,17 @@ export default {
         name: 'description',
         content: process.env.npm_package_description || '',
       },
+      // TODO: find how to do this better
+      {
+        hid: 'author',
+        name: 'keywords',
+        content: 'investment, investments, ziel, ziel fresh, jaza tanki',
+      },
+      {
+        hid: 'author',
+        name: 'author',
+        content: 'Upscale Technologies',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
@@ -23,11 +34,31 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    '~/assets/css/bootstrap.min.css',
+    '~/assets/css/materialdesignicons.min.css',
+    '~/assets/css/magnific-popup.css',
+    '~/assets/css/animate.css',
+    '~/assets/css/pe-icon-7.css',
+    '~/assets/css/owl.carousel.css',
+    '~/assets/css/owl.theme.css',
+    '~/assets/css/owl.transitions.css',
+    '~/assets/css/style.css',
+  ],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    // '~/assets/js/jquery.min.js',
+    // '~/assets/js/popper.min.js',
+    // '~/assets/js/bootstrap.min.js',
+    // '~/assets/js/jquery.easing.min.js',
+    // '~/assets/js/isotope.js',
+    // '~/assets/js/funfacts.js',
+    // '~/assets/js/owl.carousel.min.js',
+    // '~/assets/js/jquery.magnific-popup.min.js',
+    // '~/assets/js/custom.js',
+  ],
   /*
    ** Nuxt.js dev-modules
    */
