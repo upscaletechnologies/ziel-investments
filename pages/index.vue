@@ -1,36 +1,27 @@
-<template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        ziel-investments
-      </h1>
-      <h2 class="subtitle">
-        All about investments
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
-  </div>
+<template lang="pug">
+  .container
+    div
+      logo
+      h1.title
+        | ziel-investments
+      h2.subtitle
+        | All about investments
+      .links
+        a.button--green(href="https://nuxtjs.org/" target="_blank")
+          | Documentation
+        a.button--grey(href="https://github.com/nuxt/nuxt.js" target="_blank")
+          | GitHub
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
+<script lang="ts">
+import { Vue, Component, Prop } from 'vue-property-decorator';
+import Logo from '~/components/Logo.vue';
 
-export default {
-  components: {
-    Logo
-  }
+@Component({
+  components: { Logo },
+})
+export default class RootPage extends Vue {
+  test: string = 'this is a test';
 }
 </script>
 
