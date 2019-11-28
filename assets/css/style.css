@@ -391,7 +391,8 @@ button:focus {
 }
 
 .custom_nav .navbar-brand.logo img {
-    height: 30px;
+    height: 50px;
+    /* height: 30px; */
 }
 
 .custom_nav .main_menu {
