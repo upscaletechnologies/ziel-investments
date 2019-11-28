@@ -163,7 +163,7 @@ class Axzisz {
     });
   }
   init() {
-    this.initStickyAddMenu();
+    // this.initStickyAddMenu();
     this.initMenuSub();
     this.initMenuActive();
     this.initSmoothLink();

@@ -1,6 +1,6 @@
 <template lang="pug">
   // Navbar Start
-  nav.navbar.custom_nav.navbar-expand-lg.fixed-top.sticky
+  nav.navbar.custom_nav.navbar-expand-lg.fixed-top.sticky.stickyadd
     .container
       nuxt-link.logo.navbar-brand(to="/")
         img.img-fluid.logo-light(src="~/assets/images/logo.png" alt="")

@@ -36,7 +36,7 @@ export default {
    */
   css: [
     '~/assets/css/bootstrap.min.css',
-    '~/assets/css/materialdesignicons.min.css',
+    '@mdi/font/css/materialdesignicons.min.css',
     '~/assets/css/magnific-popup.css',
     '~/assets/css/animate.css',
     '~/assets/css/pe-icon-7.css',
