@@ -13,8 +13,6 @@
             nuxt-link.nav-link(to="/") Home
           li.nav-item
             nuxt-link.nav-link(to="/about") About Us
-          //- li.nav-item
-            nuxt-link.nav-link(to="/services") Services
           li.nav-item
             a.nav-link.first_sub_menu(href="javascript:void(0);") Products and Services
             ul.sec_sub_menu

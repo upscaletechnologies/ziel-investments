@@ -48,17 +48,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    // '~/assets/js/jquery.min.js',
-    // '~/assets/js/popper.min.js',
-    // '~/assets/js/bootstrap.min.js',
-    // '~/assets/js/jquery.easing.min.js',
-    // '~/assets/js/isotope.js',
-    // '~/assets/js/funfacts.js',
-    // '~/assets/js/owl.carousel.min.js',
-    // '~/assets/js/jquery.magnific-popup.min.js',
-    // '~/assets/js/custom.js',
-  ],
+  plugins: [{ mode: 'client', src: '~/assets/js/owl.carousel.min.js' }],
   /*
    ** Nuxt.js dev-modules
    */
@@ -87,5 +77,7 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {},
+    vendor: [],
+    plugins: [],
   },
 };

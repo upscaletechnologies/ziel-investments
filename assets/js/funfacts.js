@@ -1,3 +1,4 @@
+/* eslint-disable */
 /*
 -------------------------------------------------------------------------
 * Template Name    : Axzisz - Startup Agency and SasS Business Template * 
@@ -8,50 +9,51 @@
 *------------------------------------------------------------------------
 */
 
-! function($) {
-    "use strict";
+'use strict';
 
-    var Axzisz = function() {};
+import * as $ from 'jquery';
 
-        Axzisz.prototype.initFunFacts = function() {
-            var a = 0;
-            $(window).on('scroll', function() {
-                var oTop = $('#counter').offset().top - window.innerHeight;
-                if (a == 0 && $(window).scrollTop() > oTop) {
-                    $('.features_count').each(function() {
-                        var $this = $(this),
-                            countTo = $this.attr('data-count');
-                        $({
-                            countNum: $this.text()
-                        }).animate({
-                            countNum: countTo
-                        }, {
-                            duration: 2000,
-                            easing: 'swing',
-                            step: function() {
-                                $this.text(Math.floor(this.countNum));
-                            },
-                            complete: function() {
-                                $this.text(this.countNum);
-                                //alert('finished');
-                            }
+class Axzisz {
+  // constructor() {}
 
-                        });
-                    });
-                    a = 1;
-                }
-            });
-        },
+  initFunFacts() {
+    let a = 0;
+    $(window).on('scroll', function() {
+      const oTop = $('#counter').offset().top - window.innerHeight;
+      if (a === 0 && $(window).scrollTop() > oTop) {
+        $('.features_count').each(function() {
+          const $this = $(this);
+          const countTo = $this.attr('data-count');
+          $({
+            countNum: $this.text(),
+          }).animate(
+            {
+              countNum: countTo,
+            },
+            {
+              duration: 2000,
+              easing: 'swing',
+              step() {
+                $this.text(Math.floor(this.countNum));
+              },
+              complete() {
+                $this.text(this.countNum);
+                // alert('finished');
+              },
+            }
+          );
+        });
+        a = 1;
+      }
+    });
+  }
+  init() {
+    this.initFunFacts();
+  }
+}
 
-        Axzisz.prototype.init = function() {
-            this.initFunFacts();
-        },
-        //init
-        $.Axzisz = new Axzisz, $.Axzisz.Constructor = Axzisz
-}(window.jQuery),
+// init
+$.Axzisz = new Axzisz();
+$.Axzisz.Constructor = Axzisz;
 
-//initializing
-function($) {
-    "use strict";
-    $.Axzisz.init();
-}(window.jQuery);
+export default $.Axzisz;
