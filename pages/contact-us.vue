@@ -1,19 +1,6 @@
 <template lang="pug">
   div
-    // Start Header
-    section.section_page_header.bg-light.section
-      .container
-        .row.row-xs-center.align-top
-          .col-lg-8
-            .page_title_main
-              h3.mb-0 Contact Us
-          .col-lg-4
-            .page_title_list.mt-1.text-right
-              ul.list-unstyled.mb-0
-                li.list-inline-item
-                  a.text-custom(href="#") Home
-                li.list-inline-item Contact Us
-    // End Header
+    SubHeader(title="Contact Us" :noProducts="true")
     // Start Page
     section.section
       .container
@@ -24,7 +11,7 @@
               p
               h2.text-capitalize.mx-auto.section_header Have Any Questions?
               p.sec_subtitle.pt-3.text-muted.mx-auto
-                | Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+                | We’re always happy to hear from prospective or existing clients, partners, friends, competitors – pretty much anybody.
         .row.mt-5
           .col-lg-4
             .contact_icon_box.mt-3.p-4.text-center.rounded.bg-light
@@ -40,8 +27,13 @@
                 i.pe-7s-mail
               .contact-detail.mt-4
                 h6 Email Us At
-                p.text-muted.mb-0.mt-3 Website.infotech@gmail.com
-                p.text-muted.mb-0 support@Website.com
+                a.text-muted.mb-0.mt-3(href='mailto:info@zielinvestments.com' target="_blank")
+                  i.fa.fa-envelope-o
+                  | info@zielinvestments.com
+                br
+                a.text-muted.mb-0.mt-3(href='mailto:contact@zielinvestments.com' target="_blank")
+                  i.fa.fa-envelope-o
+                  | contact@zielinvestments.com
           .col-lg-4
             .contact_icon_box.mt-3.p-4.text-center.rounded.bg-light
               .contact-icon.text-custom
@@ -81,7 +73,10 @@
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator';
+import SubHeader from '~/components/SubHeader.vue';
 
-@Component
+@Component({
+  components: { SubHeader },
+})
 export default class ContactUs extends Vue {}
 </script>

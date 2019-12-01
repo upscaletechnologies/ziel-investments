@@ -74,7 +74,7 @@
               | © {{new Date().getFullYear()}} Ziel Investments - Crafted with 
               i.mdi.mdi-heart.text-custom
               |  by 
-              nuxt-link.footer_link(to="df") Upscale Technologies
+              a.footer_link(href="https://upscaletechnologies.com/" target="_blank") Upscale Technologies
               | .
   // End Footer
 </template>
