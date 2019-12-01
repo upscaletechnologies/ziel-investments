@@ -9,25 +9,25 @@
       #navbarCollapse.collapse.navbar-collapse
         // menu
         ul#menu-home-menu.mx-auto.nav.navbar-nav.main_menu
-          li.nav-item
+          li.nav-item(:class="activeLink('/')")
             nuxt-link.nav-link(to="/") Home
-          li.nav-item
-            nuxt-link.nav-link(to="/about") About Us
-          li.nav-item
+          li.nav-item(:class="activeLink('/about-us')")
+            nuxt-link.nav-link(to="/about-us") About Us
+          li.nav-item(:class="activeLink(nil, '/products/')")
             a.nav-link.first_sub_menu(href="javascript:void(0);") Products and Services
             ul.sec_sub_menu
-              li.nav-item
+              li.nav-item(:class="activeLink('/products/ziel-fresh')")
                 nuxt-link.nav-link(to="/products/ziel-fresh") Ziel Fresh
-              li.nav-item
+              li.nav-item(:class="activeLink('/products/mobile-banking')")
                 nuxt-link.nav-link(to="/products/mobile-banking") Mobile Banking
-              li.nav-item
+              li.nav-item(:class="activeLink('/products/field-power')")
                 nuxt-link.nav-link(to="/products/field-power") Field Power
-              li.nav-item
-                nuxt-link.nav-link(to="/products/rpa-products") RPA Products & Digital Offerings
-              li.nav-item
+              li.nav-item(:class="activeLink('/products/robotic-process-automation')")
+                nuxt-link.nav-link(to="/products/robotic-process-automation") Robotic Process Automation (RPA)
+              li.nav-item(:class="activeLink('/products/fleet-management')")
                 nuxt-link.nav-link(to="/products/fleet-management") Fleet management
-          li.nav-item
-            nuxt-link.nav-link(to="/contact") Contact
+          li.nav-item(:class="activeLink('/contact-us')")
+            nuxt-link.nav-link(to="/contact-us") Contact
         div
           ul.text-right.list-unstyled.list-inline.mb-0.social_menu
             li.list-inline-item
@@ -45,3 +45,21 @@
         // /Menu
   // Navbar End
 </template>
+
+// $nuxt.$route.path
+
+<script lang="ts">
+import { Vue, Component, Prop } from 'vue-property-decorator';
+
+@Component
+export default class RPA extends Vue {
+  activeLink(path: string, include: string) {
+    const currentPath = this.$nuxt.$route.path;
+    if (include) {
+      return currentPath.includes(include) ? 'active' : '';
+    }
+
+    return currentPath === path ? 'active' : '';
+  }
+}
+</script>

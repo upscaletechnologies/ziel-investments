@@ -245,5 +245,5 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 
 @Component
-export default class RootPage extends Vue {}
+export default class AboutUs extends Vue {}
 </script>

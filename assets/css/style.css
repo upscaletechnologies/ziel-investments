@@ -132,6 +132,11 @@ button:focus {
     font-size: 15px;
     line-height: 1.8;
 }
+.section_title .sec_content {
+    max-width: 80%;
+    /* font-size: 15px; */
+    line-height: 1.8;
+}
 
 .small_title {
     font-size: 13px;
@@ -1920,7 +1925,8 @@ button:focus {
 }
 
 .footer_detail .footer_logo {
-    height: 34px;
+    height: 55px;
+    /* height: 34px; */
 }
 
 .footer_detail .footer_title_border {
@@ -1931,6 +1937,13 @@ button:focus {
 
 .footer_detail h6 {
     font-size: 18px;
+}
+
+.footer_link {
+    color: rgba(255, 255, 255, 0.42) !important;
+}
+.footer_link:hover {
+    color: #fff !important;
 }
 
 .footer_detail .footer_menu_list li a {

@@ -1,21 +1,6 @@
 <template lang="pug">
   div
-    // Start Header
-    section.section_page_header.bg-light.section
-      .container
-        .row.row-xs-center.align-top
-          .col-lg-8
-            .page_title_main
-              h3.mb-0 Signle Project
-          .col-lg-4
-            .page_title_list.mt-1.text-right
-              ul.list-unstyled.mb-0
-                li.list-inline-item
-                  a.text-custom(href="#") Home
-                li.list-inline-item
-                  a.text-custom(href="#") Work
-                li.list-inline-item Signle Project
-    // End Header
+    SubHeader(title="Ziel Fresh")
     // Start Page
     section.section
       .container
@@ -78,7 +63,10 @@
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator';
+import SubHeader from '~/components/SubHeader.vue';
 
-@Component
-export default class RootPage extends Vue {}
+@Component({
+  components: { SubHeader },
+})
+export default class ZielFresh extends Vue {}
 </script>

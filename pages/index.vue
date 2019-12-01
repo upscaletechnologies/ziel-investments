@@ -8,19 +8,19 @@
             .row.vertical-content
               .col-lg-6
                 .home_content.mt-3
-                  p.home_small_title
-                    | Welcome To The 
-                    span.text-custom Axzisz
+                  //- p.home_small_title
+                    | Welcome To 
+                    span.text-custom Ziel Investments
                   h1
-                    span.text-custom Axzisz
-                    |  Design & Development Minimal Business Agency.
+                    span.text-custom Ziel Investments
+                    |  Envision More.
                   p.home_small_content.mt-4.text-muted Designed for Web Agencies and studios, also suitable for freelancers.
                   .pt-3
-                    a.btn.btn-gradient.text-uppercase.mr-2(href="#") Get Started
-                    span.mr-3 or
-                    a.mr-3.text-white.learn_more.video_home(href="https://www.youtube.com/watch?v=0Xr8uAZvqlc")
+                    nuxt-link.btn.btn-gradient.text-uppercase.mr-2(to="/contact") Contact Us
+                    //- span.mr-3 or
+                    //- a.mr-3.text-white.learn_more.video_home(href="https://www.youtube.com/watch?v=0Xr8uAZvqlc")
                       i.mdi.mdi-play
-                  .moeny-more.mt-4.pt-3
+                  //- .moeny-more.mt-4.pt-3
                     p.text-custom 15 days money-back guarantee
               .col-lg-6
                 .mt-3

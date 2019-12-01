@@ -83,5 +83,5 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 
 @Component
-export default class RootPage extends Vue {}
+export default class ContactUs extends Vue {}
 </script>

@@ -9,13 +9,13 @@
           .mt-4
             p.mb-2
               i.mdi.mdi-map-marker
-              |  565 Mount Olive Road, Atlanta,GA 30308
+              |  565 Kilimani, Nairobi, Kenya 30308
             p.mb-2
               i.mdi.mdi-cellphone
               |  +123 7854 1263
             p.mb-2
               i.mdi.mdi-email-outline
-              |  info@example.com
+              |  info@zielinvestments.com
             ul.list-inline.fot_social.mt-4
               li.list-inline-item
                 a.social-icon(href="")
@@ -71,8 +71,10 @@
         .col-lg-12
           .text-center
             p.copy-rights.mb-0
-              | © 2019 Axzisz - Crafted with 
+              | © {{new Date().getFullYear()}} Ziel Investments - Crafted with 
               i.mdi.mdi-heart.text-custom
-              |  by ThemesBoss.
+              |  by 
+              nuxt-link.footer_link(to="df") Upscale Technologies
+              | .
   // End Footer
 </template>
