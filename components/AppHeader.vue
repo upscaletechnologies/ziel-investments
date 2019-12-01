@@ -13,7 +13,7 @@
             nuxt-link.nav-link(to="/") Home
           li.nav-item(:class="activeLink('/about-us')")
             nuxt-link.nav-link(to="/about-us") About Us
-          li.nav-item(:class="activeLink(nil, '/products/')")
+          li.nav-item(:class="activeLink('', '/products/')")
             a.nav-link.first_sub_menu(href="javascript:void(0);") Products and Services
             ul.sec_sub_menu
               li.nav-item(:class="activeLink('/products/ziel-fresh')")

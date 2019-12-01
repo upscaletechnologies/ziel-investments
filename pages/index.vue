@@ -18,7 +18,7 @@
                     | Businesses today require transformational change at a scale and speed that defies traditional ways of working. Through innovation engineering applied to digital, we deliver measurably better results.
                     | We spark change to disrupt and unlock new value that surpasses clients’ wildest expectations
                   .pt-3
-                    nuxt-link.btn.btn-gradient.text-uppercase.mr-2(to="/contact") Contact Us
+                    nuxt-link.btn.btn-gradient.text-uppercase.mr-2(to="/contact-us") Contact Us
                     //- span.mr-3 or
                     //- a.mr-3.text-white.learn_more.video_home(href="https://www.youtube.com/watch?v=0Xr8uAZvqlc")
                       i.mdi.mdi-play
