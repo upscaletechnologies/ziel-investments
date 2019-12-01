@@ -23,7 +23,7 @@
               li.nav-item(:class="activeLink('/products/field-power')")
                 nuxt-link.nav-link(to="/products/field-power") Field Power
               li.nav-item(:class="activeLink('/products/robotic-process-automation')")
-                nuxt-link.nav-link(to="/products/robotic-process-automation") Robotic Process Automation (RPA)
+                nuxt-link.nav-link(to="/products/robotic-process-automation") Robotic Process Automation
               li.nav-item(:class="activeLink('/products/fleet-management')")
                 nuxt-link.nav-link(to="/products/fleet-management") Fleet management
           li.nav-item(:class="activeLink('/contact-us')")
