@@ -11,7 +11,7 @@
             ul.list-unstyled.mb-0
               li.list-inline-item
                 nuxt-link.text-custom(to="/") Home
-              li.list-inline-item
+              li.list-inline-item(v-if="!noProducts")
                 nuxt-link.text-custom(to="") Products
               li.list-inline-item {{titleMenu || title}}
   // End Header
@@ -24,6 +24,7 @@ import { Vue, Component } from 'vue-property-decorator';
   props: {
     title: {},
     titleMenu: {},
+    noProducts: { default: false },
   },
 })
 export default class RootPage extends Vue {}

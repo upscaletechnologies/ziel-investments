@@ -1,63 +1,41 @@
 <template lang="pug">
   div
-    // Start Header
-    section.section_page_header.bg-light.section
-      .container
-        .row.row-xs-center.align-top
-          .col-lg-8
-            .page_title_main
-              h3.mb-0 About Us
-          .col-lg-4
-            .page_title_list.mt-1.text-right
-              ul.list-unstyled.mb-0
-                li.list-inline-item
-                  a.text-custom(href="#") Home
-                li.list-inline-item About Us
-    // End Header
+    SubHeader(title="About Us" :noProducts="true")
     // Start About Us
     section.section
       .container
         .row
           .col-lg-12
             .section_title.text-center
-              p.small_title.mb-4.text-custom.text-uppercase  Best Features Axzisz
-              h2.text-capitalize.mx-auto.section_header Ultimate xperiences with story, emotion and purpose
+              p.small_title.mb-4.text-custom.text-uppercase  About Us
+              h2.text-capitalize.mx-auto.section_header Why We Are Awesome
               p.sec_subtitle.pt-3.text-muted.mx-auto
-                | Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+                | The personal approach towards clients is our main principle.
         .row.mt-5
           .col-lg-4
             .text-center.features_axi_box.mt-3.rounded
               .features_axi_icon
                 i.mdi.mdi-airplay
               .features_axi_content.mt-4
-                h5 Strategy Solutions
+                h5 We Keep You Updated
                 p.mt-3.text-muted.mb-0
-                  | Starting from headers through the footers, every bit of has been engineered for you.
-                .mt-4.features_btn
-                  a(href="#")
-                    i.mdi.mdi-arrow-right
+                  | We keep clients informed every step of the way. No surprises. Simply peace of mind.
           .col-lg-4
             .text-center.features_axi_box.active.mt-3.rounded
               .features_axi_icon
-                i.mdi.mdi-share-variant
+                i.mdi.mdi-timelapse
               .features_axi_content.mt-4
-                h5 Dedicated Support
+                h5 We Deliver On Time
                 p.mt-3.text-muted.mb-0
-                  | Forget about limits! Core plugin is the perfect match for. Build and customize your site visually.
-                .mt-4.features_btn
-                  a(href="#")
-                    i.mdi.mdi-arrow-right.text-custom
+                  | We work hard to make sure all services are rendered on time but without compromising quality.
           .col-lg-4
             .text-center.features_axi_box.mt-3.rounded
               .features_axi_icon
-                i.mdi.mdi-monitor-cellphone
+                i.mdi.mdi-check-all
               .features_axi_content.mt-4
-                h5 Digital Design
+                h5 We Deliver Results
                 p.mt-3.text-muted.mb-0
-                  | Manage theme settings and take full control over your site. Attraction guaranteed.
-                .mt-4.features_btn
-                  a(href="#")
-                    i.mdi.mdi-arrow-right
+                  | Our ultimate goal is to satisfy the client, which is why we are committed to deliver tangible results.
     // End About Us
     // Start How It Work
     section.section.bg-light
@@ -65,128 +43,63 @@
         .row
           .col-lg-12
             .section_title.text-center
-              p.small_title.mb-4.text-custom.text-uppercase How It Work?
-              h2.text-capitalize.mx-auto.section_header Work Process In Axzisz
-              p.sec_subtitle.pt-3.text-muted.mx-auto
+              p.small_title.mb-4.text-custom.text-uppercase Industries
+              h2.text-capitalize.mx-auto.section_header Industries We Serve
+              //- p.sec_subtitle.pt-3.text-muted.mx-auto
                 | Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
         .row.mt-3
-          .col-lg-4
+          .col-lg-3
             .text-center.position-relative.hit_box.rounded.mt-3
-              .hit_number
-                h1 1.
               .hit_icon.text-custom
                 i.pe-7s-display2
               .hit_content.mt-2
-                h5.font-weight-bold Design & Devloping
-                p.mt-3.text-muted.mb-0 The leap into electronic typesetting, essentially unchanged.
-          .col-lg-4
+                h5.font-weight-bold Food & Beverage
+          .col-lg-3
             .text-center.position-relative.hit_box.rounded.mt-3
-              .hit_number
-                h1 2.
               .hit_icon.text-custom
                 i.pe-7s-joy
               .hit_content.mt-2
-                h5.font-weight-bold Testing Project
-                p.mt-3.text-muted.mb-0 The leap into electronic typesetting, essentially unchanged.
-          .col-lg-4
+                h5.font-weight-bold Financial Service
+          .col-lg-3
             .text-center.position-relative.hit_box.rounded.mt-3
-              .hit_number
-                h1 3.
               .hit_icon.text-custom
                 i.pe-7s-cloud-upload
               .hit_content.mt-2
-                h5.font-weight-bold Publisher Project
-                p.mt-3.text-muted.mb-0 The leap into electronic typesetting, essentially unchanged.
+                h5.font-weight-bold Public Sector
+          .col-lg-3
+            .text-center.position-relative.hit_box.rounded.mt-3
+              .hit_icon.text-custom
+                i.pe-7s-cloud-upload
+              .hit_content.mt-2
+                h5.font-weight-bold Governance
+        .row.mt-3
+          .col-lg-3
+            .text-center.position-relative.hit_box.rounded.mt-3
+              .hit_icon.text-custom
+                i.pe-7s-display2
+              .hit_content.mt-2
+                h5.font-weight-bold Utilities
+          .col-lg-3
+            .text-center.position-relative.hit_box.rounded.mt-3
+              .hit_icon.text-custom
+                i.pe-7s-joy
+              .hit_content.mt-2
+                h5.font-weight-bold Health Care
+          .col-lg-3
+            .text-center.position-relative.hit_box.rounded.mt-3
+              .hit_icon.text-custom
+                i.pe-7s-cloud-upload
+              .hit_content.mt-2
+                h5.font-weight-bold Real Estate
+          .col-lg-3
+            .text-center.position-relative.hit_box.rounded.mt-3
+              .hit_icon.text-custom
+                i.pe-7s-cloud-upload
+              .hit_content.mt-2
+                h5.font-weight-bold Retails
     // End How It Work
-    // Start Cta
-    section.section
-      .container
-        .row
-          .col-lg-12
-            .cta_sec.text-center.text-white.bg-gradient
-              h2.text-capitalize Creative & perfect agency to help you.
-              p.mx-auto.cta-desc.mb-0.mt-4.pt-2
-                | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-              .mt-4.pt-3.position-relative.z-index
-                .text-center
-                  a.video_presentation_play(href="https://vimeo.com/109054393")
-                    i.mdi.mdi-play.presentation_icon
-    // End Cta
-    // Start Funfact
-    section.section.bg-light
-      .container
-        .row
-          .col-lg-12
-            .section_title.text-center
-              p.small_title.mb-4.text-custom.text-uppercase The Benefits Of Using Axzisz
-              h2.text-capitalize.mx-auto.section_header Be Productive. Be Efficient.
-              p.sec_subtitle.pt-3.text-muted.mx-auto
-                | Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-    section.section.pt-0
-      .container
-        #counter.row
-          .col-lg-12
-            .bg-white.bg_funfact.rounded.p-4
-              .row
-                .col-lg-3
-                  .funfact_box.text-white.text-center.p-4
-                    h1.features_count.mb-1.font-weight-bold.mt-4(data-count="654") 4
-                    p.lan_fun_name.text-white.mb-4 Working Hours
-                .col-lg-3
-                  .funfact_box_white.text-center.p-4
-                    h1.features_count.mb-1.font-weight-bold.mt-4(data-count="1849") 201
-                    p.lan_fun_name.mb-4 No. of Clients
-                .col-lg-3
-                  .funfact_box.text-white.text-center.p-4
-                    h1.features_count.mb-1.font-weight-bold.mt-4(data-count="1451") 10
-                    p.lan_fun_name.text-white.mb-4 Completed Projects
-                .col-lg-3
-                  .funfact_box_white.text-center.p-4
-                    h1.mb-1.font-weight-bold.mt-4
-                      span.features_count(data-count="124") 12
-                      span +
-                    p.lan_fun_name.mb-4 Team Member
-    // End Funfact
-    // Start Testimonial
-    section.section.bg-light
-      .container
-        .row
-          .col-lg-12
-            .section_title.text-center
-              p.small_title.mb-4.text-custom.text-uppercase Our Client In Axzisz
-              h2.text-capitalize.mx-auto.section_header Testimonial & Review From Our Customers
-              p.sec_subtitle.pt-3.text-muted.mx-auto
-                | Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-        .row.mt-5
-          .col-lg-12
-            #owl-demo.owl-carousel
-              .text-center.testi_boxes.mt-3.bg-white
-                .testi_icon.text-custom
-                  i.mdi.mdi-format-quote-open
-                .mt-4
-                  p.client_review.text-muted.font-italic.text-center " we are axzisz, a design and branding partners worldwide been working in his."
-                  .testi_img
-                    img.img-fluid.mx-auto.rounded-circle.img-thumbnail.d-block(src="~/assets/images/testi/img-1.png" alt="")
-                  p.client_name.text-center.mb-0.mt-3.font-weight-bold - Derrick Marshall, Axzisz
-              .text-center.testi_boxes.mt-3.bg-white
-                .testi_icon.text-custom
-                  i.mdi.mdi-format-quote-open
-                .mt-4
-                  p.client_review.text-muted.font-italic.text-center " we are axzisz, a design and branding partners worldwide been working in his."
-                  .testi_img
-                    img.img-fluid.mx-auto.rounded-circle.img-thumbnail.d-block(src="~/assets/images/testi/img-2.png" alt="")
-                  p.client_name.text-center.mb-0.mt-3.font-weight-bold - Richard Kirtley, Axzisz
-              .text-center.testi_boxes.mt-3.bg-white
-                .testi_icon.text-custom
-                  i.mdi.mdi-format-quote-open
-                .mt-4
-                  p.client_review.text-muted.font-italic.text-center " we are axzisz, a design and branding partners worldwide been working in his."
-                  .testi_img
-                    img.img-fluid.mx-auto.rounded-circle.img-thumbnail.d-block(src="~/assets/images/testi/img-3.png" alt="")
-                  p.client_name.text-center.mb-0.mt-3.font-weight-bold - Mathew Herbert, Axzisz
-    // End Testimonial
     // Start Faq
-    section.section
+    //- section.section
       .container
         .row
           .col-lg-12
@@ -239,11 +152,25 @@
                       p.mb-0.text-muted
                         | Vivamus dolor hendrerit tempor elementum Interdum et fames ac ante ipsum primis malesuada in faucibus. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
     // End Faq
+    // Start Cta
+    section.section
+      .container.cta_sec.text-center.text-white.bg-gradient
+        .row
+          .col-lg-12
+            h2.font-weight-bold Ready to Discuss your requirements?
+            p.mx-auto.cta-desc.mb-0.mt-4.pt-2
+              | Software products that we build help the world's leading brands transform their businesses, increase their revenues and save up to 40% of the time and operating costs.We design, develop and build software products that our customers love.
+            .mt-4.pt-3.position-relative.z-index
+              nuxt-link.btn.btn-white.btn-rounded(to="/contact-us") Contact Us
+    // End Cta
 </template>
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator';
+import SubHeader from '~/components/SubHeader.vue';
 
-@Component
+@Component({
+  components: { SubHeader },
+})
 export default class AboutUs extends Vue {}
 </script>
