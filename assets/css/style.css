@@ -1339,6 +1339,10 @@ button:focus {
     font-size: 32px;
     font-family: 'Open Sans', sans-serif;
 }
+.work-detail-title h4 {
+    /* font-size: 32px; */
+    font-family: 'Open Sans', sans-serif;
+}
 
 .work_detail_desc p {
     font-size: 15px;

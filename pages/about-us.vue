@@ -51,50 +51,50 @@
           .col-lg-3
             .text-center.position-relative.hit_box.rounded.mt-3
               .hit_icon.text-custom
-                i.pe-7s-display2
+                i.pe-7s-coffee
               .hit_content.mt-2
                 h5.font-weight-bold Food & Beverage
           .col-lg-3
             .text-center.position-relative.hit_box.rounded.mt-3
               .hit_icon.text-custom
-                i.pe-7s-joy
+                i.pe-7s-cash
               .hit_content.mt-2
                 h5.font-weight-bold Financial Service
           .col-lg-3
             .text-center.position-relative.hit_box.rounded.mt-3
               .hit_icon.text-custom
-                i.pe-7s-cloud-upload
+                i.pe-7s-share
               .hit_content.mt-2
                 h5.font-weight-bold Public Sector
           .col-lg-3
             .text-center.position-relative.hit_box.rounded.mt-3
               .hit_icon.text-custom
-                i.pe-7s-cloud-upload
+                i.pe-7s-users
               .hit_content.mt-2
                 h5.font-weight-bold Governance
         .row.mt-3
           .col-lg-3
             .text-center.position-relative.hit_box.rounded.mt-3
               .hit_icon.text-custom
-                i.pe-7s-display2
+                i.pe-7s-light
               .hit_content.mt-2
                 h5.font-weight-bold Utilities
           .col-lg-3
             .text-center.position-relative.hit_box.rounded.mt-3
               .hit_icon.text-custom
-                i.pe-7s-joy
+                i.pe-7s-smile
               .hit_content.mt-2
                 h5.font-weight-bold Health Care
           .col-lg-3
             .text-center.position-relative.hit_box.rounded.mt-3
               .hit_icon.text-custom
-                i.pe-7s-cloud-upload
+                i.pe-7s-home
               .hit_content.mt-2
                 h5.font-weight-bold Real Estate
           .col-lg-3
             .text-center.position-relative.hit_box.rounded.mt-3
               .hit_icon.text-custom
-                i.pe-7s-cloud-upload
+                i.pe-7s-cart
               .hit_content.mt-2
                 h5.font-weight-bold Retails
     // End How It Work
@@ -152,25 +152,16 @@
                       p.mb-0.text-muted
                         | Vivamus dolor hendrerit tempor elementum Interdum et fames ac ante ipsum primis malesuada in faucibus. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
     // End Faq
-    // Start Cta
-    section.section
-      .container.cta_sec.text-center.text-white.bg-gradient
-        .row
-          .col-lg-12
-            h2.font-weight-bold Ready to Discuss your requirements?
-            p.mx-auto.cta-desc.mb-0.mt-4.pt-2
-              | Software products that we build help the world's leading brands transform their businesses, increase their revenues and save up to 40% of the time and operating costs.We design, develop and build software products that our customers love.
-            .mt-4.pt-3.position-relative.z-index
-              nuxt-link.btn.btn-white.btn-rounded(to="/contact-us") Contact Us
-    // End Cta
+    Cta
 </template>
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import SubHeader from '~/components/SubHeader.vue';
+import Cta from '~/components/Cta.vue';
 
 @Component({
-  components: { SubHeader },
+  components: { SubHeader, Cta },
 })
 export default class AboutUs extends Vue {}
 </script>
