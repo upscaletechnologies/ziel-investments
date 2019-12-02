@@ -41,9 +41,9 @@
               .contact-detail.mt-4
                 h6 Visit Office
                 p.text-muted.mt-3.mb-0
-                  | 4303 Ingram Street Dayton,
+                  | Hurlingham, Argwings Kodhek Close, Devsons Court
                   br
-                  |  OH 45402
+                  |  Nairobi, Kenya
         .row.mt-3.vertical-content
           .col-lg-6
             .mt-3

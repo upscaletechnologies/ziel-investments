@@ -9,8 +9,9 @@
           .mt-4
             p.mb-2
               i.mdi.mdi-map-marker
-              |  565 Kilimani, Nairobi, Kenya 30308
-            p.mb-2
+              | Hurlingham, Argwings Kodhek Close, Devsons Court
+              | Nairobi, Kenya
+            //- p.mb-2
               i.mdi.mdi-cellphone
               |  +123 7854 1263
             p.mb-2

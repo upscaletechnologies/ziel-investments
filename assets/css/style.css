@@ -717,6 +717,9 @@ button:focus {
     top: 50%;
     transform: translateY(-50%);
 }
+.features_side_mockup.right {
+    left: 50vw !important;
+}
 
 .features_desc .features-heading {
     line-height: 1.4;
