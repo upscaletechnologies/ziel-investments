@@ -26,14 +26,20 @@
                     p.text-custom 15 days money-back guarantee
               .col-lg-6
                 .mt-3
-                  img.img-fluid.mx-auto.d-block(src="~/assets/images/home_side.jpg" alt="")
+                  img.img-fluid.mx-auto.d-block(src="~/assets/images/custom/homepage-landing.png" alt="")
       div
         a.scroll.scroll_down(href="#work")
           span
       .curv-img
-        svg(xmlns="http://www.w3.org/2000/svg" width="1919.76" height="327.903")
-          //- path(fill="#3765d4" d="M1919.76 132.428c-90.511-64.67-174.365-144.792-314.866-123.125-94.441 14.563-142.181 105.921-220.98 148.217-117.85 63.256-155.979 35.449-264.385 14.607-84.57-16.26-117.255-29.063-199.787-.493-84.986 29.419-134.191 125.289-239.288 124.882-121.481-.472-157.447-90.325-248.953-163.594C317.535 41.67 228.822 15.373 79.5 1.958 51.97-.516 25.538-.52 0 1.242v326.661h1919.76V132.428z")
-          path(fill="#4d76d9" d="M1919.76 132.428c-90.511-64.67-174.365-144.792-314.866-123.125-94.441 14.563-142.181 105.921-220.98 148.217-117.85 63.256-155.979 35.449-264.385 14.607-84.57-16.26-117.255-29.063-199.787-.493-84.986 29.419-134.191 125.289-239.288 124.882-121.481-.472-157.447-90.325-248.953-163.594C317.535 41.67 228.822 15.373 79.5 1.958 51.97-.516 25.538-.52 0 1.242v326.661h1919.76V132.428z")
+        svg#Layer_1(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 1919.8 327.9" style="enable-background:new 0 0 1919.8 327.9;" xml:space="preserve")
+          style(type="text/css").
+            .st0{fill:url(#SVGID_1_);}
+          lineargradient#SVGID_1_(gradientunits="userSpaceOnUse" x1="0" y1="163.9515" x2="1919.76" y2="163.9515")
+            stop(offset="0" style="stop-color:#23AFC0")
+            stop(offset="1" style="stop-color:#316FB5")
+          path.st0(d="M1919.8,132.4c-90.5-64.7-174.4-144.8-314.9-123.1c-94.4,14.6-142.2,105.9-221,148.2\
+          c-117.8,63.3-156,35.4-264.4,14.6c-84.6-16.3-117.3-29.1-199.8-0.5c-85,29.4-134.2,125.3-239.3,124.9C559,296,523,206.2,431.5,132.9\
+          C317.5,41.7,228.8,15.4,79.5,2C52-0.5,25.5-0.5,0,1.2v326.7h1919.8V132.4z")
     // End Home
     // Start Client Logo
     //- section.section
@@ -129,8 +135,7 @@
                   p.features-sub-title.pt-2
                     | With deep knowledge and expertise across many industries and verticals, we deliver high-value, high-quality solutions to support your business growth and objectives.
       .features_side_mockup.d-lg-block.d-xl-block.d-none
-        img.img-fluid.mx-auto.d-block(src="~/assets/images/custom/1483471236.png" alt="")
-        //- img.img-fluid.mx-auto.d-block(src="~/assets/images/desk.png" alt="")
+        img.img-fluid.mx-auto.d-block(src="~/assets/images/custom/3-pillars.png" alt="")
     // End Description
     // Start Services
     section.section.bg-light

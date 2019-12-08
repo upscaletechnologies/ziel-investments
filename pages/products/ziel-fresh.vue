@@ -16,7 +16,7 @@
     // Start How It Work
     // Start Description
     section.section.bg-features.vertical-content
-      .bg-features-overlay
+      .bg-features-overlay.ziel-fresh
       .container
         .row
           .col-lg-12.col-md-12
