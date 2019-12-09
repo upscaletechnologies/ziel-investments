@@ -22,7 +22,7 @@
           .col-lg-12.col-md-12
             .mt-3.features_desc.text-white
               div
-                h3.features-heading.text-capitalize Some few major benefits of RPA:
+                h3.features-heading.text-capitalize Why Ziel Fresh?
                 .main-title-border
           .col-lg-7.col-md-12
             .mt-3.features_desc.text-white

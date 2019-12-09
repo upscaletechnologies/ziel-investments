@@ -8,14 +8,14 @@
             .row.vertical-content
               .col-lg-6
                 .home_content.mt-3
-                  //- p.home_small_title
+                  p.home_small_title
                     | Welcome To 
                     span.text-custom Ziel Investments
                   h1
-                    span.text-custom Ziel Investments
-                    |  Envision More.
+                    //- span.text-custom Ziel
+                    | Empowered by Innovation.
                   p.home_small_content.mt-4.text-muted
-                    | Businesses today require transformational change at a scale and speed that defies traditional ways of working. Through innovation engineering applied to digital, we deliver measurably better results.
+                    | Through innovation engineering applied to digital, we deliver measurably better results.
                     | We spark change to disrupt and unlock new value that surpasses clients’ wildest expectations
                   .pt-3
                     nuxt-link.btn.btn-gradient.text-uppercase.mr-2(to="/contact-us") Contact Us
@@ -64,7 +64,7 @@
         .row
           .col-lg-12
             .section_title.text-center
-              p.small_title.mb-4.text-custom.text-uppercase  What we do
+              p.small_title.mb-4.text-custom.text-uppercase  Overview
               h2.text-capitalize.mx-auto.section_header Let us empower your business
               p.sec_subtitle.pt-3.text-muted.mx-auto
                 | A complete range of technology services delivered with unified purpose
