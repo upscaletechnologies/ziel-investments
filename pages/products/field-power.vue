@@ -227,7 +227,7 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component, Prop } from 'vue-property-decorator';
+import { Vue, Component } from 'vue-property-decorator';
 import SubHeader from '~/components/SubHeader.vue';
 import Cta from '~/components/Cta.vue';
 

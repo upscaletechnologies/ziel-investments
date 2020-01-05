@@ -17,6 +17,7 @@ export default {
     '~/assets/css/owl.theme.css',
     '~/assets/css/owl.transitions.css',
     '~/assets/css/style.css',
+    '~/assets/css/custom.css',
   ],
   /*
    ** Plugins to load before mounting the App
@@ -57,7 +58,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: `${process.env.npm_package_name} - zielinvestments.com`,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -81,12 +82,10 @@ export default {
     script: [
       { src: 'https://code.jquery.com/jquery-3.4.1.slim.min.js' },
       {
-        src:
-          'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js',
+        src: 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js',
       },
       {
-        src:
-          'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js',
+        src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js',
       },
     ],
     link: [

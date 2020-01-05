@@ -46,8 +46,6 @@
   // Navbar End
 </template>
 
-// $nuxt.$route.path
-
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator';
 

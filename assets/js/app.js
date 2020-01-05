@@ -16,6 +16,26 @@ import * as $ from 'jquery';
 class Axzisz {
   // constructor() {}
 
+  basicFunctions() {
+    console.log('this is working');
+    // $(document).on(
+    //   'click',
+    //   '.navbar-nav>li>a, .navbar-brand, .dropdown-menu>a',
+    //   function(e) {
+    //     if (
+    //       $(e.target).is('a') &&
+    //       $(e.target).attr('class') !== 'nav-link dropdown-toggle'
+    //     ) {
+    //       $('.navbar-collapse').collapse('hide');
+    //     }
+    //   }
+    // );
+    // };
+    // $('.navbar-nav>li>a').on('click', function() {
+    //   $('.navbar-collapse').collapse('hide');
+    // });
+  }
+
   initStickyAddMenu() {
     $(window).on('scroll', function() {
       const scroll = $(window).scrollTop();
@@ -163,6 +183,7 @@ class Axzisz {
     });
   }
   init() {
+    this.basicFunctions();
     // this.initStickyAddMenu();
     this.initMenuSub();
     this.initMenuActive();

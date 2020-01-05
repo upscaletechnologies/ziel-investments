@@ -16,7 +16,7 @@ const themeJs = require('~/assets/js/theme.js').default;
   components: { AppHeader, Footer },
 })
 export default class LayoutDefault extends Vue {
-  mounted() {
+  updated() {
     themeJs();
   }
 }
