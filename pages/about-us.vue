@@ -51,6 +51,12 @@
           .col-lg-3
             .text-center.position-relative.hit_box.rounded.mt-3
               .hit_icon.text-custom
+                i.pe-7s-home
+              .hit_content.mt-2
+                h5.font-weight-bold Real Estate
+          .col-lg-3
+            .text-center.position-relative.hit_box.rounded.mt-3
+              .hit_icon.text-custom
                 i.pe-7s-coffee
               .hit_content.mt-2
                 h5.font-weight-bold Food & Beverage
@@ -66,13 +72,13 @@
                 i.pe-7s-share
               .hit_content.mt-2
                 h5.font-weight-bold Public Sector
+        .row.mt-3
           .col-lg-3
             .text-center.position-relative.hit_box.rounded.mt-3
               .hit_icon.text-custom
                 i.pe-7s-users
               .hit_content.mt-2
                 h5.font-weight-bold Governance
-        .row.mt-3
           .col-lg-3
             .text-center.position-relative.hit_box.rounded.mt-3
               .hit_icon.text-custom
@@ -85,12 +91,6 @@
                 i.pe-7s-smile
               .hit_content.mt-2
                 h5.font-weight-bold Health Care
-          .col-lg-3
-            .text-center.position-relative.hit_box.rounded.mt-3
-              .hit_icon.text-custom
-                i.pe-7s-home
-              .hit_content.mt-2
-                h5.font-weight-bold Real Estate
           .col-lg-3
             .text-center.position-relative.hit_box.rounded.mt-3
               .hit_icon.text-custom

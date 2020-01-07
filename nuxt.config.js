@@ -17,7 +17,6 @@ export default {
     '~/assets/css/owl.theme.css',
     '~/assets/css/owl.transitions.css',
     '~/assets/css/style.css',
-    '~/assets/css/custom.css',
   ],
   /*
    ** Plugins to load before mounting the App

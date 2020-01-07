@@ -7,8 +7,8 @@
         .row
           .col-lg-12
             .section_title.text-center
-              //- p.small_title.mb-4.text-custom.text-uppercase  Ziel Fresh
-              h2.text-capitalize.mx-auto.section_header Fresh Purified Water
+              p.small_title.mb-4.text-custom.text-uppercase Ziel Fresh
+              h2.text-capitalize.mx-auto.section_header Fresh Bottled Water
               p.sec_content.pt-3.text-muted.mx-auto
                 | Ziel Fresh purified water bottled at the source to maintain its natural taste which is balanced by nature. Its enhanced by use of advanced modern technology by use of multi-barrier filtration, reverse osmosis, ozanation and UV treatment to give it a refreshing natural taste.
                 br 
@@ -48,7 +48,7 @@
                   p.features-sub-title.pt-2
                     | Zeil Fresh  premium is manufactured in the state-of-the-art, ultra modern and computerised equipment with stringent quality control measures.
       .features_side_mockup.d-lg-block.d-xl-block.d-none.right
-        img.img-fluid.mx-auto.d-block(src="~/assets/images/products/ziel-fresh.png" alt="")
+        img.img-fluid.mx-auto.d-block(src="~/assets/images/products/ziel-fresh.jpeg" alt="")
     // End Description
     // Start Page
     section.section.bg-light

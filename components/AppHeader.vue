@@ -16,8 +16,16 @@
           li.nav-item(:class="activeLink('', '/products/')")
             a.nav-link.first_sub_menu(href="javascript:void(0);") Products and Services
             ul.sec_sub_menu
+              li.nav-item(:class="activeLink('/products/real-estate')")
+                nuxt-link.nav-link(to="/products/real-estate") Real Estate
               li.nav-item(:class="activeLink('/products/ziel-fresh')")
-                nuxt-link.nav-link(to="/products/ziel-fresh") Ziel Fresh
+                nuxt-link.nav-link(to="/products/ziel-fresh") Ziel Fresh - Bottled Water
+              li.nav-item(:class="activeLink('/products/water-dispensing-automation')")
+                nuxt-link.nav-link(to="/products/water-dispensing-automation") Water Dispensing Automation
+
+              //- Move all these to a submenu
+              //- li.nav-item(:class="activeLink('/products/mobile-banking')")
+                nuxt-link.nav-link(to="/products/mobile-banking") IT Products and Products
               li.nav-item(:class="activeLink('/products/mobile-banking')")
                 nuxt-link.nav-link(to="/products/mobile-banking") Mobile Banking
               li.nav-item(:class="activeLink('/products/field-power')")
