@@ -64,7 +64,7 @@
           .col-lg-4
             .text-center.features_axi_box.mt-3.rounded
               .features_axi_icon
-                i.mdi.mdi-airplay
+                i.mdi.mdi-account-switch
               .features_axi_content.mt-4
                 h5 Consulting
                 p.mt-3.text-muted.mb-0
@@ -75,7 +75,7 @@
           .col-lg-4
             .text-center.features_axi_box.active.mt-3.rounded
               .features_axi_icon
-                i.mdi.mdi-share-variant
+                i.mdi.mdi-domain
               .features_axi_content.mt-4
                 h5 Implementation
                 p.mt-3.text-muted.mb-0
@@ -86,7 +86,7 @@
           .col-lg-4
             .text-center.features_axi_box.mt-3.rounded
               .features_axi_icon
-                i.mdi.mdi-monitor-cellphone
+                i.mdi.mdi-message-text
               .features_axi_content.mt-4
                 h5 Support
                 p.mt-3.text-muted.mb-0
@@ -143,23 +143,48 @@
           .col-lg-6
             .mt-3.services_box_side.bg-white.position-relative.clearfix
               .services_icons
-                i.pe-7s-tools
+                i.pe-7s-home
               .services_content.float-left
-                h5.mb-0.font-weight-bold Ziel Fresh
+                h5.mb-0.font-weight-bold Real Estate
+                p.mb-0.mt-3.text-muted
+                  | Ziel Investments Limited offers a wide range of fully integrated real estate services for both commercial and residential properties to a diverse clientele.
+                .services_more.mt-3
+                  nuxt-link.text-muted(to="/products/real-estate")
+                    | Read More 
+                    i.mdi.mdi-arrow-right
+          .col-lg-6
+            .mt-3.services_box_side.bg-white.position-relative.clearfix
+              .services_icons
+                i.pe-7s-drop
+              .services_content.float-left
+                h5.mb-0.font-weight-bold Ziel Fresh - Bottled Water
                 p.mb-0.mt-3.text-muted
                   | Get the most out of every day with the pure, crisp taste of Ziel Fresh water. Fresh, clean, and premium tasting water that is pure and delicious.
                 .services_more.mt-3
                   nuxt-link.text-muted(to="/products/ziel-fresh")
                     | Read More 
                     i.mdi.mdi-arrow-right
+        .row.mt-5
           .col-lg-6
             .mt-3.services_box_side.bg-white.position-relative.clearfix
               .services_icons
-                i.pe-7s-display1
+                i.pe-7s-paint-bucket
+              .services_content.float-left
+                h5.mb-0.font-weight-bold Water Dispensing Automation
+                p.mb-0.mt-3.text-muted
+                  | Our solution automates the payment and dispensing of water to simplify Water Kiosk operations. We provide 24/7 convenience for the customer, and completely secure revenues.
+                .services_more.mt-3
+                  nuxt-link.text-muted(to="/products/water-dispensing-automation")
+                    | Read More 
+                    i.mdi.mdi-arrow-right
+          .col-lg-6
+            .mt-3.services_box_side.bg-white.position-relative.clearfix
+              .services_icons
+                i.pe-7s-phone
               .services_content.float-left
                 h5.mb-0.font-weight-bold Mobile Banking
                 p.mb-0.mt-3.text-muted
-                  | A value-added service less than a decade ago, the preferred banking channel of millennials across the globe today.
+                  | A value-added service less than a decade ago, the preferred banking channel of millennials across the globe today, and, possibly the only banking channel that customers will use a decade from now!
                 .services_more.mt-3
                   nuxt-link.text-muted(to="/products/mobile-banking")
                     | Read More 
@@ -168,7 +193,7 @@
           .col-lg-6
             .mt-3.services_box_side.bg-white.position-relative.clearfix
               .services_icons
-                i.pe-7s-helm
+                i.pe-7s-map-2
               .services_content.float-left
                 h5.mb-0.font-weight-bold Field Power
                 p.mb-0.mt-3.text-muted
@@ -180,7 +205,7 @@
           .col-lg-6
             .mt-3.services_box_side.bg-white.position-relative.clearfix
               .services_icons
-                i.pe-7s-science
+                i.pe-7s-helm
               .services_content.float-left
                 h5.mb-0.font-weight-bold Robotic Process Automation
                 p.mb-0.mt-3.text-muted
@@ -193,7 +218,7 @@
           .col-lg-6
             .mt-3.services_box_side.bg-white.position-relative.clearfix
               .services_icons
-                i.pe-7s-helm
+                i.pe-7s-car
               .services_content.float-left
                 h5.mb-0.font-weight-bold Fleet management
                 p.mb-0.mt-3.text-muted

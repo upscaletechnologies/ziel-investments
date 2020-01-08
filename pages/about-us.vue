@@ -57,7 +57,13 @@
           .col-lg-3
             .text-center.position-relative.hit_box.rounded.mt-3
               .hit_icon.text-custom
-                i.pe-7s-coffee
+                i.pe-7s-display1
+              .hit_content.mt-2
+                h5.font-weight-bold Technology
+          .col-lg-3
+            .text-center.position-relative.hit_box.rounded.mt-3
+              .hit_icon.text-custom
+                i.pe-7s-drop
               .hit_content.mt-2
                 h5.font-weight-bold Food & Beverage
           .col-lg-3
@@ -66,12 +72,6 @@
                 i.pe-7s-cash
               .hit_content.mt-2
                 h5.font-weight-bold Financial Service
-          .col-lg-3
-            .text-center.position-relative.hit_box.rounded.mt-3
-              .hit_icon.text-custom
-                i.pe-7s-share
-              .hit_content.mt-2
-                h5.font-weight-bold Public Sector
         .row.mt-3
           .col-lg-3
             .text-center.position-relative.hit_box.rounded.mt-3
@@ -88,9 +88,9 @@
           .col-lg-3
             .text-center.position-relative.hit_box.rounded.mt-3
               .hit_icon.text-custom
-                i.pe-7s-smile
+                i.pe-7s-share
               .hit_content.mt-2
-                h5.font-weight-bold Health Care
+                h5.font-weight-bold Public Sector
           .col-lg-3
             .text-center.position-relative.hit_box.rounded.mt-3
               .hit_icon.text-custom
