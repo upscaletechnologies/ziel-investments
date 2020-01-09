@@ -9,10 +9,15 @@
             .section_title.text-center
               p.small_title.mb-4.text-custom.text-uppercase Ziel Fresh
               h2.text-capitalize.mx-auto.section_header Fresh Bottled Water
-              p.sec_content.pt-3.text-muted.mx-auto
-                | Ziel Fresh purified water bottled at the source to maintain its natural taste which is balanced by nature. Its enhanced by use of advanced modern technology by use of multi-barrier filtration, reverse osmosis, ozanation and UV treatment to give it a refreshing natural taste.
-                br 
-                | Our water quality, grade and above all palate features are 100% natural
+              p.sec_content.pt-3.text-muted.mx-auto.
+                #[strong Ziel] translated to english means a goal, aim, objective, target, destination or finishing line.
+                #[strong Fresh] simply means something recently harvested.
+                #[strong Ziel Fresh] purified water is bottled fresh at the source to maintain its natural taste which is balanced by nature. Its enhanced by use of advanced modern technology by use of multi-barrier filtration, reverse osmosis, ozanation and UV treatment to give it a refreshing natural taste.
+                #[br]
+                Our water quality, grade and above all palate features are 100% natural
+              p.sec_content.pt-3.text-muted.mx-auto.
+                You can order the water in these packagings: #[strong 500ml and 1 litre] dozen package, #[strong 18.9 litres] Refillable or Disposable.
+                For enquiries, please call #[a.text-custom.nuxt-link-exact-active.nuxt-link-active(href='tel: +254 713-917-108') +254 713-917-108] or #[a.text-custom.nuxt-link-exact-active.nuxt-link-active(href='tel: +254 727-238-558') +254 727-238-558]
     // Start How It Work
     // Start Description
     section.section.bg-features.vertical-content
