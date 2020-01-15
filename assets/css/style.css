@@ -493,7 +493,8 @@ button:focus {
 }
 
 .custom_nav li ul.sec_sub_menu li a.nav-link {
-    padding: 6px 15px !important;
+    padding: 6px 25px !important;
+    /* padding: 6px 15px !important; */
     display: block;
     margin-left: 0;
     word-break: break-word;
@@ -2222,4 +2223,17 @@ button:focus {
 /* Custom css */
 i.mdi {
     color: #23afc0;
+}
+
+.custom_nav .dropdown-title {
+    padding: 6px 13px !important;
+    display: block;
+    margin-left: 0;
+    word-break: break-word;
+    color: #42506e;
+    font-size: 13px;
+    /* text-transform: uppercase; */
+    font-weight: 200;
+    /* -webkit-transition: all 0.4s;
+    transition: all 0.4s; */
 }

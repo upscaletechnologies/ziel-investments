@@ -48,7 +48,7 @@
           .col-lg-12
             .section_title.text-center
               //- p.small_title.mb-4.text-custom.text-uppercase The Bank Companion
-              h2.text-capitalize.mx-auto.section_header The Ducont Bank.Companion
+              h2.text-capitalize.mx-auto.section_header The Ducont Bank Companion
               p.sec_content.pt-3.text-muted.mx-auto
                 | The mobile banking solution that equips your bank today for tomorrow’s innovations.
               p.sec_content.pt-3.text-muted.mx-auto
