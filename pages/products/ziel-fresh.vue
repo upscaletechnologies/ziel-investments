@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    SubHeader(title="Ziel Fresh")
+    SubHeader(title="Ziel Fresh" :namespaces="['products']")
     // Start Page
     section.section
       .container

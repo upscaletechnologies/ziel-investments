@@ -2237,3 +2237,12 @@ i.mdi {
     /* -webkit-transition: all 0.4s;
     transition: all 0.4s; */
 }
+
+/* about us culture cards */
+.card.card-no-border {
+    border-width: 0;
+    box-shadow: none;
+}
+.card.icon-card img {
+    max-height: 80px;
+}

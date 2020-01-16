@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    SubHeader(title="Mobile Banking Solutions" titleMenu="Mobile Banking")
+    SubHeader(title="Mobile Banking Solutions" titleMenu="Mobile Banking" :namespaces="['products']")
     // Start Page
     section.section
       .container

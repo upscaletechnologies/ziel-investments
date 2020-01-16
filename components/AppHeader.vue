@@ -11,8 +11,17 @@
         ul#menu-home-menu.mx-auto.nav.navbar-nav.main_menu
           li.nav-item(:class="activeLink('/')")
             nuxt-link.nav-link(to="/") Home
-          li.nav-item(:class="activeLink('/about-us')")
-            nuxt-link.nav-link(to="/about-us") About Us
+          li.nav-item(:class="activeLink('', '/about-us')")
+            nuxt-link.nav-link.first_sub_menu(to="/about-us") About
+            ul.sec_sub_menu
+              li.nav-item(:class="activeLink('/about-us')")
+                nuxt-link.nav-link(to="/about-us") Our Story
+              li.nav-item(:class="activeLink('/about-us/leadership')")
+                nuxt-link.nav-link(to="/about-us/leadership") Leadership
+              li.nav-item(:class="activeLink('/about-us/positive-impact')")
+                nuxt-link.nav-link(to="/about-us/positive-impact") Positive Impact
+              li.nav-item(:class="activeLink('/about-us/purpose')")
+                nuxt-link.nav-link(to="/about-us/purpose") Purpose
           li.nav-item(:class="activeLink('', '/products/')")
             a.nav-link.first_sub_menu(href="javascript:void(0);") Products and Services
             ul.sec_sub_menu

@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    SubHeader(title="Mobile Field Service Management Software" titleMenu="Field Power")
+    SubHeader(title="Mobile Field Service Management Software" titleMenu="Field Power" :namespaces="['products']")
     // Start About Us
     section.section
       .container
