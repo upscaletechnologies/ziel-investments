@@ -1,6 +1,7 @@
 <template lang="pug">
   div
     // Start Home
+    //- section.position-relative.header_bg.bg-light
     section.position-relative.header_bg
       .home-table
         .home-table-center
@@ -8,22 +9,14 @@
             .row.vertical-content
               .col-lg-6
                 .home_content.mt-3
-                  p.home_small_title
-                    | Welcome To 
-                    span.text-custom Ziel Investments
-                  h1
-                    //- span.text-custom Ziel
-                    | Empowered by Innovation.
+                  p.home_small_title.
+                    Welcome To #[span.text-custom Ziel Investments]
+                  h1.
+                    We give our customers a #[span.text-custom WOW!] class experience.
                   p.home_small_content.mt-4.text-muted
                     | Through innovation engineering applied to digital, we deliver measurably better results.
-                    | We spark change to disrupt and unlock new value that surpasses clients’ wildest expectations
                   .pt-3
                     nuxt-link.btn.btn-gradient.text-uppercase.mr-2(to="/contact-us") Contact Us
-                    //- span.mr-3 or
-                    //- a.mr-3.text-white.learn_more.video_home(href="https://www.youtube.com/watch?v=0Xr8uAZvqlc")
-                      i.mdi.mdi-play
-                  //- .moeny-more.mt-4.pt-3
-                    p.text-custom 15 days money-back guarantee
               .col-lg-6
                 .mt-3
                   img.img-fluid.mx-auto.d-block(src="~/assets/images/custom/homepage-landing.png" alt="")

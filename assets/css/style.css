@@ -2231,8 +2231,8 @@ i.mdi {
     margin-left: 0;
     word-break: break-word;
     color: #42506e;
-    font-size: 13px;
-    /* text-transform: uppercase; */
+    font-size: 11px;
+    text-transform: uppercase;
     font-weight: 200;
     /* -webkit-transition: all 0.4s;
     transition: all 0.4s; */

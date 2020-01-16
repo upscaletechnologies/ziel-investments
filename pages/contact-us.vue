@@ -18,22 +18,10 @@
               .contact-icon.text-custom
                 i.pe-7s-phone
               .contact-detail.mt-4
-                h6 Call Us On
-                p.text-muted.mb-0.mt-3 +0123 8123 7856
-                p.text-muted.mb-0 +123 123 7856
-          .col-lg-4
-            .contact_icon_box.mt-3.p-4.text-center.rounded.bg-light
-              .contact-icon.text-custom
-                i.pe-7s-mail
-              .contact-detail.mt-4
-                h6 Email Us At
-                a.text-muted.mb-0.mt-3(href='mailto:info@zielinvestments.com' target="_blank")
-                  i.fa.fa-envelope-o
-                  | info@zielinvestments.com
+                h6 Call or Email At
+                a.text-muted.mb-0.mt-3(href='tel: +254 727-238-558') +254 727-238-558
                 br
-                a.text-muted.mb-0.mt-3(href='mailto:contact@zielinvestments.com' target="_blank")
-                  i.fa.fa-envelope-o
-                  | contact@zielinvestments.com
+                a.text-muted.mb-0(href='mailto:hello@zielinvestments.com' target="_blank") hello@zielinvestments.com
           .col-lg-4
             .contact_icon_box.mt-3.p-4.text-center.rounded.bg-light
               .contact-icon.text-custom
@@ -44,6 +32,16 @@
                   | Hurlingham, Argwings Kodhek Close, Devsons Court
                   br
                   |  Nairobi, Kenya
+          .col-lg-4
+            .contact_icon_box.mt-3.p-4.text-center.rounded.bg-light
+              .contact-icon.text-custom
+                i.pe-7s-id
+              .contact-detail.mt-4
+                h6 Our Address
+                p.text-muted.mt-3.mb-0
+                  | P.O. Box 2488-00502
+                  br
+                  |  Karen, Nairobi - Kenya
         .row.mt-3.vertical-content
           .col-lg-6
             .mt-3

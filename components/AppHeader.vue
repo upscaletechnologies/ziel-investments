@@ -19,13 +19,13 @@
               li.nav-item(:class="activeLink('/products/real-estate')")
                 nuxt-link.nav-link(to="/products/real-estate") Real Estate
               li.dropdown-divider
-              li.dropdown-title.pl-2 Water Solutions
+              li.dropdown-title.pl-2.text-muted Water Solutions
               li.nav-item(:class="activeLink('/products/ziel-fresh')")
                 nuxt-link.nav-link(to="/products/ziel-fresh") Ziel Fresh - Bottled Water
               li.nav-item(:class="activeLink('/products/water-dispensing-automation')")
                 nuxt-link.nav-link(to="/products/water-dispensing-automation") Water Dispensing Automation
               li.dropdown-divider
-              li.dropdown-title.pl-2 Software Solutions
+              li.dropdown-title.pl-2.text-muted Software Solutions
               li.nav-item(:class="activeLink('/products/mobile-banking')")
                 nuxt-link.nav-link(to="/products/mobile-banking") Mobile Banking
               li.nav-item(:class="activeLink('/products/field-power')")
