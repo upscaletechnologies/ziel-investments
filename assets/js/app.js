@@ -16,8 +16,9 @@ import * as $ from 'jquery';
 class Axzisz {
   // constructor() {}
 
+  // TODO: Make the menu buttons to hide on click
   basicFunctions() {
-    console.log('this is working');
+    // console.log('this is working');
     // $(document).on(
     //   'click',
     //   '.navbar-nav>li>a, .navbar-brand, .dropdown-menu>a',

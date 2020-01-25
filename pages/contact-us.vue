@@ -48,21 +48,21 @@
               img.img-fluid.mx-auto.d-block(src="~/assets/images/contact.png" alt="")
           .col-lg-6
             .contact_form.mt-3
-              form
+              form(@submit.prevent="sendContactEmail")
                 .row
                   .col-lg-6
                     .form-group.mt-3
-                      input#name.form-control(name="name" type="text" placeholder="Your name..." required="")
+                      input#name.form-control(v-model="model.name" type='text' placeholder='Your name...', required)
                   .col-lg-6
                     .form-group.mt-3
-                      input#email.form-control(name="email" type="email" placeholder="Your email..." required="")
+                      input#email.form-control(v-model="model.from" name="email" type='email' placeholder='Your email...' required)
                   .col-lg-12
                     .form-group.mt-3
-                      input#subject.form-control(type="text" placeholder="Your Subject.." required="")
+                      input#subject.form-control(v-model="model.subject" type='text' placeholder='Your Subject...')
                 .row
                   .col-lg-12
                     .form-group.mt-3
-                      textarea#comments.form-control(name="comments" rows="6" placeholder="Your message..." required="")
+                      textarea#comments.form-control(v-model="model.text" placeholder='Your message...' rows='6' required)
                 .row
                   .col-lg-12.text-right
                     input.btn.btn-gradient(type="submit" value="Send Message")
@@ -71,10 +71,32 @@
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator';
+import axios from 'axios';
 import SubHeader from '~/components/SubHeader.vue';
 
 @Component({
   components: { SubHeader },
 })
-export default class ContactUs extends Vue {}
+export default class ContactUs extends Vue {
+  model: any = {};
+
+  sendContactEmail() {
+    const { name, from, subject, text } = this.model;
+    if (name && from && text) {
+      const data = {
+        from: `${name} <${from}>`,
+        to: 'zielinvestments@gmail.com',
+        subject: subject || 'Enquiry from Ziel Investments website',
+        text,
+      };
+      // send email
+      axios.post('https://api.upscaleerp.com/send-mailer', data).then(() => {
+        this.model = {};
+        alert('Message sent!');
+      });
+    } else {
+      alert('One of the required fields is empty, kindly recheck!');
+    }
+  }
+}
 </script>
