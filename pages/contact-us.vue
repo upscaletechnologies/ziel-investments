@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    SubHeader(title="Contact Us" :noProducts="true")
+    SubHeader(title="Contact Us")
     // Start Page
     section.section
       .container

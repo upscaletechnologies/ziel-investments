@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    SubHeader(title="Real Estate")
+    SubHeader(title="Real Estate" :namespaces="['products']")
     // Start About Us
     section.section
       .container

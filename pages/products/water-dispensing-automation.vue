@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    SubHeader(title="Water Dispensing Automation" titleMenu="Jaza Tanki")
+    SubHeader(title="Water Dispensing Automation" titleMenu="Jaza Tanki" :namespaces="['products']")
     // Start Page
     section.section
       .container

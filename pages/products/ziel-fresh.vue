@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    SubHeader(title="Ziel Fresh")
+    SubHeader(title="Ziel Fresh" :namespaces="['products']")
     // Start Page
     section.section
       .container
@@ -37,7 +37,7 @@
                 .features-desc
                   h3.features-title Sealed To Perfection
                   p.features-sub-title.pt-2
-                    | When you open a bottle of Zeil Fresh Water, we want it to be an experience. Luxury and quality should be an option for everyone - and we have strived to produce a product worthy of our consumers and the Zeil  brand.
+                    | When you open a bottle of Ziel Fresh Water, we want it to be an experience. Luxury and quality should be an option for everyone - and we have strived to produce a product worthy of our consumers and the Ziel  brand.
               .features
                 .features-icon.features-left
                   i.mdi.mdi-check
@@ -51,7 +51,7 @@
                 .features-desc
                   h3.features-title Ultra Modern Manufacturing Facility
                   p.features-sub-title.pt-2
-                    | Zeil Fresh  premium is manufactured in the state-of-the-art, ultra modern and computerised equipment with stringent quality control measures.
+                    | Ziel Fresh  premium is manufactured in the state-of-the-art, ultra modern and computerised equipment with stringent quality control measures.
       .features_side_mockup.d-lg-block.d-xl-block.d-none.right
         img.img-fluid.mx-auto.d-block(src="~/assets/images/products/ziel-fresh.jpeg" alt="")
     // End Description
@@ -74,7 +74,7 @@
               .hit_content.mt-2
                 h5.font-weight-bold Our Initiatives
                 p.mt-3.text-muted.mb-0
-                  | Zeil Fresh embraces the role it has to play in helping to forge a sustainable future for human beings and the planet.
+                  | Ziel Fresh embraces the role it has to play in helping to forge a sustainable future for human beings and the planet.
     // Start How It Work
     Cta
 </template>

@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    SubHeader(title="Fleet Service Management Software" titleMenu="Fleet Management")
+    SubHeader(title="Fleet Service Management Software" titleMenu="Fleet Management" :namespaces="['products']")
     // Start Page
     section.section
       .container

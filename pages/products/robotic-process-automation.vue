@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    SubHeader(title="Robotic Process Automation (RPA)" titleMenu="RPA")
+    SubHeader(title="Robotic Process Automation (RPA)" titleMenu="RPA" :namespaces="['products']")
     // Start About Us
     section.section
       .container
