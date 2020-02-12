@@ -273,11 +273,13 @@ button:focus {
 }
 
 .btn-gradient {
+    background: #f7be16;
     /* background: #2AAFC0;
     background: -webkit-gradient(linear, left top, right bottom, from(#2154cf), to(#6ec5ff));
     background: linear-gradient(to bottom right, #2154cf, #6ec5ff); */
-    background: #316fb5;
-    background: linear-gradient(to bottom right,#316fb5,#23afc0);
+    /* background: #316fb5; */
+    background: linear-gradient(to bottom right,#ffbf00,#e3f197);
+    /* background: linear-gradient(to bottom right,#316fb5,#23afc0); */
     color: #fff;
     font-size: 14px;
     transition: all 0.5s;
@@ -401,6 +403,10 @@ button:focus {
     color: #000;
     transition: all 0.5s;
     font-size: 22px;
+}
+
+.social_menu li a i {
+    color: #f7be16;
 }
 
 .custom_nav .navbar-brand.logo img {
@@ -608,7 +614,8 @@ button:focus {
     border-radius: 50%;
     position: absolute;
     left: calc(50% - 3px);
-    background: #2aafc0;
+    background: #f7be16;
+    /* background: #2aafc0; */
     -webkit-animation: scroll .5s infinite alternate;
     animation: scroll .5s infinite alternate;
 }
@@ -662,8 +669,10 @@ button:focus {
 .features_axi_box .features_axi_icon i {
     color: #ffffff;
     font-size: 26px;
-    background: -webkit-gradient(linear,left top,right bottom,from(#316fb5),to(#23afc0));
-    background: linear-gradient(to bottom right,#23afc0,#316fb5);
+    background: -webkit-gradient(linear,left top,right bottom,from(#fcbd02),to(#e3f197));
+    /* background: -webkit-gradient(linear,left top,right bottom,from(#316fb5),to(#23afc0)); */
+    background: linear-gradient(to bottom right,#e3f197,#fabc02);
+    /* background: linear-gradient(to bottom right,#23afc0,#316fb5); */
     /* background: linear-gradient(to bottom right, #2154cf, #6ec5ff); */
     height: 60px;
     display: inline-block;
@@ -803,9 +812,12 @@ button:focus {
     font-size: 26px;
     box-shadow: 0 0 0px 8px rgba(70, 138, 230, 0.17);
     line-height: 54px;
-    background: #2AAFC0;
-    background: -webkit-gradient(linear, left top, right bottom, from(#2154cf), to(#6ec5ff));
-    background: linear-gradient(to bottom right,#23afc0,#316fb5);
+    /* background: #2AAFC0; */
+    background: #f7be16;
+    background: -webkit-gradient(linear, left top, right bottom, from(#fabc03), to(#e3f197));
+    /* background: -webkit-gradient(linear, left top, right bottom, from(#2154cf), to(#6ec5ff)); */
+    background: linear-gradient(to bottom right,#e3f197,#f5b803);
+    /* background: linear-gradient(to bottom right,#23afc0,#316fb5); */
     /* background: linear-gradient(to bottom right, #2154cf, #6ec5ff); */
     color: #fff;
     border-radius: 50%;
@@ -1102,6 +1114,9 @@ button:focus {
     margin-right: 0px !important;
 }
 
+.page_title_list ul li {
+    color: #316fb5;
+}
 
 /*-------HOW IT WORK------*/
 
@@ -1110,6 +1125,10 @@ button:focus {
     border: 1px solid #f0f0f0;
     padding: 50px 30px;
     overflow: hidden;
+}
+
+.hit_box i {
+    color: #23afc0;
 }
 
 .hit_box .hit_icon {
@@ -2237,7 +2256,9 @@ i.mdi {
     /* -webkit-transition: all 0.4s;
     transition: all 0.4s; */
 }
-
+.copy-rights i {
+    color: #f7be16 !important;
+}
 /* about us culture cards */
 .card.card-no-border {
     border-width: 0;

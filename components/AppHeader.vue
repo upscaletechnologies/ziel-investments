@@ -16,8 +16,6 @@
             ul.sec_sub_menu
               li.nav-item(:class="activeLink('/about-us')")
                 nuxt-link.nav-link(to="/about-us") Our Story
-              li.nav-item(:class="activeLink('/about-us/leadership')")
-                nuxt-link.nav-link(to="/about-us/leadership") Leadership
               li.nav-item(:class="activeLink('/about-us/positive-impact')")
                 nuxt-link.nav-link(to="/about-us/positive-impact") Positive Impact
               li.nav-item(:class="activeLink('/about-us/purpose')")
