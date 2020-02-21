@@ -45,7 +45,7 @@
         .row.mt-3.vertical-content
           .col-lg-6
             .mt-3
-              img.img-fluid.mx-auto.d-block(src="~/assets/images/contact.png" alt="")
+              img.img-fluid.mx-auto.d-block(src="~/assets/images/custom/call-center.png" alt="")
           .col-lg-6
             .contact_form.mt-3
               form(@submit.prevent="sendContactEmail")

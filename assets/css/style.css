@@ -1128,7 +1128,8 @@ button:focus {
 }
 
 .hit_box i {
-    color: #23afc0;
+    color: #ffc107;
+    /* color: #23afc0; */
 }
 
 .hit_box .hit_icon {
@@ -1145,9 +1146,9 @@ button:focus {
     width: 68px;
     border-radius: 50%;
     z-index: -1;
-    background: #316fb5;
-    background: -webkit-gradient(linear,left top,right bottom,from(#23afc0),to(#316fb5));
-    background: linear-gradient(to bottom right,#23afc0,#316fb5);
+    background: #ffc107;
+    background: -webkit-gradient(linear,left top,right bottom,from(#e3f197),to(#ffc107));
+    background: linear-gradient(to bottom right,#e3f197,#fabc02);
     /* background: #2AAFC0;
     background: -webkit-gradient(linear, left top, right bottom, from(#2154cf), to(#6ec5ff));
     background: linear-gradient(to bottom right, #2154cf, #6ec5ff); */
@@ -1921,9 +1922,9 @@ button:focus {
     font-size: 26px;
     box-shadow: 0 0 0px 8px rgba(70, 138, 230, 0.17);
     line-height: 58px;
-    background: #316fb5;
-    background: -webkit-gradient(linear,left top,right bottom,from(#23afc0),to(#316fb5));
-    background: linear-gradient(to bottom right,#23afc0,#316fb5);
+    background: #ffc107;
+    background: -webkit-gradient(linear,left top,right bottom,from(#e3f197),to(#ffc107));
+    background: linear-gradient(to bottom right,#e3f197,#ffc107);
     /* background: #2AAFC0;
     background: -webkit-gradient(linear, left top, right bottom, from(#2154cf), to(#6ec5ff));
     background: linear-gradient(to bottom right, #2154cf, #6ec5ff); */
@@ -2266,4 +2267,7 @@ i.mdi {
 }
 .card.icon-card img {
     max-height: 80px;
+}
+i.mdi.mdi-lightbulb-outline.h4 {
+    color: #ffc107;
 }
