@@ -76,6 +76,18 @@ import SubHeader from '~/components/SubHeader.vue';
 
 @Component({
   components: { SubHeader },
+  head() {
+    return {
+      title: 'Contact Us - zielinvestments.com',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: ' ',
+        },
+      ],
+    };
+  },
 })
 export default class ContactUs extends Vue {
   model: any = {};

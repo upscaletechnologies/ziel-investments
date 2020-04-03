@@ -233,6 +233,18 @@ import Cta from '~/components/Cta.vue';
 
 @Component({
   components: { SubHeader, Cta },
+  head() {
+    return {
+      title: 'Field Power - zielinvestments.com',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: ' ',
+        },
+      ],
+    };
+  },
 })
 export default class FieldPower extends Vue {}
 </script>

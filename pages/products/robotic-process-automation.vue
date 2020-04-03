@@ -156,6 +156,18 @@ import SubHeader from '~/components/SubHeader.vue';
 
 @Component({
   components: { SubHeader },
+  head() {
+    return {
+      title: 'Robotic Process Automation - zielinvestments.com',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: ' ',
+        },
+      ],
+    };
+  },
 })
 export default class RPA extends Vue {}
 </script>

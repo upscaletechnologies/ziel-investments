@@ -47,6 +47,18 @@ import Cta from '~/components/Cta.vue';
 
 @Component({
   components: { SubHeader, Cta },
+  head() {
+    return {
+      title: 'Water Dispensing Automation - zielinvestments.com',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: ' ',
+        },
+      ],
+    };
+  },
 })
 export default class WaterDispensingAutomation extends Vue {}
 </script>

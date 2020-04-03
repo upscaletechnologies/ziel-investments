@@ -72,6 +72,18 @@ import Cta from '~/components/Cta.vue';
 
 @Component({
   components: { SubHeader, Cta },
+  head() {
+    return {
+      title: 'Purpose - zielinvestments.com',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: ' ',
+        },
+      ],
+    };
+  },
 })
 export default class AboutUs extends Vue {}
 </script>

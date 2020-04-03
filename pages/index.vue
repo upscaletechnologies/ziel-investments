@@ -230,6 +230,18 @@ import Cta from '~/components/Cta.vue';
 
 @Component({
   components: { Cta },
+  head() {
+    return {
+      title: 'Home - zielinvestments.com',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: ' ',
+        },
+      ],
+    };
+  },
 })
 export default class RootPage extends Vue {
   test: string = 'this is a test';

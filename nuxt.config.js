@@ -36,7 +36,18 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '@nuxtjs/sitemap',
   ],
+  sitemap: {
+    hostname: 'https://zielinvestments.com',
+    path: '/sitemap.xml',
+    cacheTime: 1000 * 60 * 60 * 2,
+    gzip: true,
+    defaults: {
+      changefreq: 'weekly',
+      priority: 1,
+    },
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
@@ -57,14 +68,15 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: `${process.env.npm_package_name} - zielinvestments.com`,
+    title: `ziel investments - zielinvestments.com`,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
+        content:
+          'Ziel Investment, Real Estate,Water  Solutions, Ziel-Fresh Bottled water, Water Dispensing Automation, Software Solutions, Mobile Banking, Field Power, Robotic Process Automation, Fleet Management',
       },
       // TODO: find how to do this better
       {
