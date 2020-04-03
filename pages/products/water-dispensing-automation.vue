@@ -54,7 +54,8 @@ import Cta from '~/components/Cta.vue';
         {
           hid: 'description',
           name: 'description',
-          content: ' ',
+          content:
+            ' Jaza Tanki Water Dispensing Automation. Our solution automates the payment and dispensing of water to simplify Water Kiosk operations. We provide 24/7 convenience for the customer, and completely secure revenues for the Water Kiosk owner. ',
         },
       ],
     };

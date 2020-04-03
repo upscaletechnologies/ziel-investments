@@ -237,7 +237,8 @@ import Cta from '~/components/Cta.vue';
         {
           hid: 'description',
           name: 'description',
-          content: ' ',
+          content:
+            ' Empowering Businesses. A complete range of technology services delivered with unified purpose. We give our customers a wow class experience. Through innovation engineering applied to digital, we deliver measurably better results.',
         },
       ],
     };

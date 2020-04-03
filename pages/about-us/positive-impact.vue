@@ -37,7 +37,8 @@ import Cta from '~/components/Cta.vue';
         {
           hid: 'description',
           name: 'description',
-          content: ' ',
+          content:
+            ' Transformation Story and Positive Impact. We endeavour to positively impact the lives of those in the community through not only giving back but also creating products that help them live better. ',
         },
       ],
     };

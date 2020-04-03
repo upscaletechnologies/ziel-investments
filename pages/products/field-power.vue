@@ -240,7 +240,8 @@ import Cta from '~/components/Cta.vue';
         {
           hid: 'description',
           name: 'description',
-          content: ' ',
+          content:
+            ' Award Winning Mobile Field Service Management Software & solution. Customers demand your company to deliver on-time services that they pay for, and your company relies on its back-end office staff and technicians to meet these expectations. That means it’s important that field technicians maintain their assigned schedules, even while away from the office. Also, it’s mandatory for the management to know the mobile field service team’s real-time location, their performance, and their adherence with assigned jobs and hours. ',
         },
       ],
     };

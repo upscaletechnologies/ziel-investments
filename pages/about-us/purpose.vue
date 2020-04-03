@@ -79,7 +79,8 @@ import Cta from '~/components/Cta.vue';
         {
           hid: 'description',
           name: 'description',
-          content: ' ',
+          content:
+            ' Who We Are and Our Purpose. The personal approach towards clients is our main principle. Our Mission: Ziel Investments works to enhance the dignity and quality of life of individuals and families by strengthening communities, eliminating barriers to opportunity, and helping people in need reach their full potential through learning and the power of work.',
         },
       ],
     };

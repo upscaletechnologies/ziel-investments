@@ -227,7 +227,8 @@ import Cta from '~/components/Cta.vue';
         {
           hid: 'description',
           name: 'description',
-          content: ' ',
+          content:
+            ' About Us. Our Core Values: Transparent, Authentic, Generous, Fun, Empathetic and Exceptional. Industries We Serve: Real Estate, Technology, Food and Bevarage, Financial Services, Governance, Utilities, Public Sector and Retails ',
         },
       ],
     };

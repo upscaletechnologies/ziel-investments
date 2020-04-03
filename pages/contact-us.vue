@@ -83,7 +83,8 @@ import SubHeader from '~/components/SubHeader.vue';
         {
           hid: 'description',
           name: 'description',
-          content: ' ',
+          content:
+            ' For any Questions? We’re always happy to hear from prospective or existing clients, partners, friends, competitors – pretty much anybody. Call or Email At +254 727-238-558 ',
         },
       ],
     };

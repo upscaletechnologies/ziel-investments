@@ -70,7 +70,8 @@ import Cta from '~/components/Cta.vue';
         {
           hid: 'description',
           name: 'description',
-          content: ' ',
+          content:
+            ' Let us Guide you Home. Ziel Investments Limited offers a wide range of fully integrated real estate services for both commercial and residential properties to a diverse clientele. Effective marketing tools and strategies, established through extensive research of the real estate market and customized to current market conditions. ',
         },
       ],
     };
