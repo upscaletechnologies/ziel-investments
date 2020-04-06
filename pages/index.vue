@@ -230,6 +230,19 @@ import Cta from '~/components/Cta.vue';
 
 @Component({
   components: { Cta },
+  head() {
+    return {
+      title: 'Home - zielinvestments.com',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            ' Empowering Businesses. A complete range of technology services delivered with unified purpose. We give our customers a wow class experience. Through innovation engineering applied to digital, we deliver measurably better results.',
+        },
+      ],
+    };
+  },
 })
 export default class RootPage extends Vue {
   test: string = 'this is a test';

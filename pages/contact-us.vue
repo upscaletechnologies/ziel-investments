@@ -76,6 +76,19 @@ import SubHeader from '~/components/SubHeader.vue';
 
 @Component({
   components: { SubHeader },
+  head() {
+    return {
+      title: 'Contact Us - zielinvestments.com',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            ' For any Questions? We’re always happy to hear from prospective or existing clients, partners, friends, competitors – pretty much anybody. Call or Email At +254 727-238-558 ',
+        },
+      ],
+    };
+  },
 })
 export default class ContactUs extends Vue {
   model: any = {};

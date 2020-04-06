@@ -220,6 +220,19 @@ import Cta from '~/components/Cta.vue';
 
 @Component({
   components: { SubHeader, Cta },
+  head() {
+    return {
+      title: 'About - zielinvestments.com',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            ' About Us. Our Core Values: Transparent, Authentic, Generous, Fun, Empathetic and Exceptional. Industries We Serve: Real Estate, Technology, Food and Bevarage, Financial Services, Governance, Utilities, Public Sector and Retails ',
+        },
+      ],
+    };
+  },
 })
 export default class AboutUs extends Vue {}
 </script>
