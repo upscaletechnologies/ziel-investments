@@ -30,6 +30,19 @@ import Cta from '~/components/Cta.vue';
 
 @Component({
   components: { SubHeader, Cta },
+  head() {
+    return {
+      title: 'Positive Impact - zielinvestments.com',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            ' Transformation Story and Positive Impact. We endeavour to positively impact the lives of those in the community through not only giving back but also creating products that help them live better. ',
+        },
+      ],
+    };
+  },
 })
 export default class AboutUs extends Vue {}
 </script>

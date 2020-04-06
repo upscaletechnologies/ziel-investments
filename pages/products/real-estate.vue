@@ -63,6 +63,19 @@ import Cta from '~/components/Cta.vue';
 
 @Component({
   components: { SubHeader, Cta },
+  head() {
+    return {
+      title: 'Real Estate - zielinvestments.com',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            ' Let us Guide you Home. Ziel Investments Limited offers a wide range of fully integrated real estate services for both commercial and residential properties to a diverse clientele. Effective marketing tools and strategies, established through extensive research of the real estate market and customized to current market conditions. ',
+        },
+      ],
+    };
+  },
 })
 export default class RealEstate extends Vue {}
 </script>

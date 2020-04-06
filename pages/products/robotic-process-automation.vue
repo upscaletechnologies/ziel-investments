@@ -156,6 +156,19 @@ import SubHeader from '~/components/SubHeader.vue';
 
 @Component({
   components: { SubHeader },
+  head() {
+    return {
+      title: 'Robotic Process Automation - zielinvestments.com',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            ' Error-proof solutions for a dynamic world. What is Robotic Process Automation? Repetitive manual tasks are monotonous for humans and cumbersome for businesses. Robotic Process Automation helps businesses in automating processes to achieve cost efficiency, agility, and competitiveness. We are committed to driving enterprise-wide transformation by integrating RPA with technologies like artificial intelligence, machine learning, and knowledge-based systems. ',
+        },
+      ],
+    };
+  },
 })
 export default class RPA extends Vue {}
 </script>

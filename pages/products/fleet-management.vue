@@ -97,6 +97,19 @@ import Cta from '~/components/Cta.vue';
 
 @Component({
   components: { SubHeader, Cta },
+  head() {
+    return {
+      title: 'Fleet Management - zielinvestments.com',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            ' Track, analyze and improve your fleet operations. Your vehicles don’t stop when you’re out of the office and your fleet tracking shouldn’t, either. Ducont’s Fleet Management system sends comprehensive tracking information right to your fingertips — anytime, anywhere. Supports both android and iPhone device. Gain visibility into all of your fleet data with organized, detailed fleet reporting tools that are available whenever you need them. It’s simple to create and view dashboards and reports; customized to fit the way you do business. ',
+        },
+      ],
+    };
+  },
 })
 export default class FleetManagement extends Vue {}
 </script>

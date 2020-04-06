@@ -47,6 +47,19 @@ import Cta from '~/components/Cta.vue';
 
 @Component({
   components: { SubHeader, Cta },
+  head() {
+    return {
+      title: 'Water Dispensing Automation - zielinvestments.com',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            ' Jaza Tanki Water Dispensing Automation. Our solution automates the payment and dispensing of water to simplify Water Kiosk operations. We provide 24/7 convenience for the customer, and completely secure revenues for the Water Kiosk owner. ',
+        },
+      ],
+    };
+  },
 })
 export default class WaterDispensingAutomation extends Vue {}
 </script>

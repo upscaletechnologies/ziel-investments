@@ -99,6 +99,19 @@ import Cta from '~/components/Cta.vue';
 
 @Component({
   components: { SubHeader, Cta },
+  head() {
+    return {
+      title: 'Mobile Banking - zielinvestments.com',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            ' A value-added service, Mobile banking by itself is no longer enough! In such a scenario, banks cannot afford to relax! Barely offering a plain-vanilla mobile banking solution in a market wherein disruption has become the norm can be suicidal. Disruptions such as cloud-based deployments, distributed ledgers, location-based services, banking through wearables, and so on signify a customer-centric, rather than a product-centric approach to banking.',
+        },
+      ],
+    };
+  },
 })
 export default class MobileBanking extends Vue {}
 </script>
