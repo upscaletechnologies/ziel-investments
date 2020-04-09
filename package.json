@@ -22,10 +22,9 @@
   "dependencies": {
     "@mdi/font": "^4.6.95",
     "@nuxtjs/axios": "^5.8.0",
-    "@nuxtjs/sitemap": "^2.1.0",
+    "@nuxtjs/sitemap": "^2.2.0",
     "jquery": "^3.4.1",
     "nuxt": "^2.12.0"
-
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.5.1",

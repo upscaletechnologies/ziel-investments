@@ -35,39 +35,33 @@
           .footer_title_border
           ul.list-unstyled.footer_menu_list.mb-0.mt-4
             li
-              a(href="#") Home
+              a(href="/") Home
             li
-              a(href="#") About
+              a(href="../about-us") About
             li
-              a(href="#") Services
+              a(href="../products/ziel-fresh") Ziel Fresh
             li
-              a(href="#") Client
-            li
-              a(href="#") Contact
+              a(href="../contact-us") Contact
         .col-lg-2
           h6.mt-3.text-white.font-weight-normal Help Center
           .footer_title_border
           ul.list-unstyled.footer_menu_list.mb-0.mt-4
             li
-              a(href="#") Accounting
-            li
-              a(href="#") Billing
-            li
-              a(href="#") General Question
+              a(href="../contact-us") General Question
         .col-lg-2
           h6.mt-3.text-white.font-weight-normal Locations
           .footer_title_border
           ul.list-unstyled.footer_menu_list.mb-0.mt-4
             li
-              a(href="#") Melbourne
+              a(href="#") Hurlingham
             li
-              a(href="#") London
+              a(href="#") Argwings Kodhek Close
             li
-              a(href="#") New York
+              a(href="#") Devsons Court
             li
-              a(href="#") San Francisco
+              a(href="#") Nairobi
             li
-              a(href="#") Ontario
+              a(href="#") Kenya
       .row.mt-5
         .col-lg-12
           .text-center
