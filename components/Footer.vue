@@ -59,9 +59,7 @@
             li
               a(href="#") Devsons Court
             li
-              a(href="#") Nairobi
-            li
-              a(href="#") Kenya
+              a(href="#") Nairobi, Kenya
       .row.mt-5
         .col-lg-12
           .text-center
