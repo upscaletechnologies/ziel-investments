@@ -1,7 +1,6 @@
 <template lang="pug">
   div
     // Start Home
-    //- section.position-relative.header_bg.bg-light
     section.position-relative.header_bg
       .home-table
         .home-table-center
@@ -9,23 +8,32 @@
             .row.vertical-content
               .col-lg-6
                 .home_content.mt-3
-                  p.home_small_title.
-                    Welcome To #[span.text-custom Ziel Investments]
-                  h1.
-                    We give our customers a #[span.text-custom WOW!] class experience.
-                  p.home_small_content.mt-4.text-muted
-                    | Through innovation engineering applied to digital, we deliver measurably better results.
+                  p.home_small_title
+                    | Welcome To 
+                    span.text-custom ziel investments
+                  h1.ml16 Made with love
+                  //- h1
+                  //-   span.text-custom At Ziel investments
+                  //-   |  We provide affordable purified mineral water from ziel fresh.
+                  //- p.home_small_content.mt-4.text-muted Through innovation engineering applied to digital, we deliver measurably better results.
                   .pt-3
-                    nuxt-link.btn.btn-gradient.text-uppercase.mr-2(to="/contact-us") Contact Us
+                    a.btn.btn-gradient.text-uppercase.mr-2(href="/about-us") Learn More
+                    span.mr-3 or
+                    a.mr-3.text-white.learn_more.video_home(href="https://www.youtube.com/watch?v=0Xr8uAZvqlc")
+                      i.mdi.mdi-play
+                  .moeny-more.mt-4.pt-3
+                    p.text-custom Drinking water is a lifestyle we provide to you.
               .col-lg-6
                 .mt-3
-                  img.img-fluid.mx-auto.d-block(src="~/assets/images/custom/homepage-landing.png" alt="")
+                  img.img-fluid.mx-auto.d-block(src="~assets/images/home-bg-1.jpg" alt="")
       div
         a.scroll.scroll_down(href="#work")
           span
       .curv-img
-        img.img-fluid.mx-auto.d-block(src="~/assets/images/wave-static.svg" alt="")
+        svg(xmlns="http://www.w3.org/2000/svg" width="1919.76" height="327.903")
+          path(fill="#f8f9fa" d="M1919.76 132.428c-90.511-64.67-174.365-144.792-314.866-123.125-94.441 14.563-142.181 105.921-220.98 148.217-117.85 63.256-155.979 35.449-264.385 14.607-84.57-16.26-117.255-29.063-199.787-.493-84.986 29.419-134.191 125.289-239.288 124.882-121.481-.472-157.447-90.325-248.953-163.594C317.535 41.67 228.822 15.373 79.5 1.958 51.97-.516 25.538-.52 0 1.242v326.661h1919.76V132.428z")
     // End Home
+
     // Start Client Logo
     //- section.section
       .container
@@ -227,6 +235,7 @@
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import Cta from '~/components/Cta.vue';
+const textanimationJs = require('~/assets/js/textanimation.js').default;
 
 @Component({
   components: { Cta },
@@ -245,6 +254,9 @@ import Cta from '~/components/Cta.vue';
   },
 })
 export default class RootPage extends Vue {
+  mounted() {
+    textanimationJs();
+  }
   test: string = 'this is a test';
 }
 </script>

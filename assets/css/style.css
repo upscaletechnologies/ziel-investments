@@ -1429,7 +1429,7 @@ button:focus {
 .section_page_header_img {
     margin-top: 70px;
     position: relative;
-    background-image: url(../images/head.jpg);
+    background-image: url(http://themesboss.com/axzisz/images/head.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -2271,3 +2271,17 @@ i.mdi {
 i.mdi.mdi-lightbulb-outline.h4 {
     color: #ffc107;
 }
+.ml16 {
+    color: #402d2d;
+    padding: 40px 0;
+    font-weight: 800;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    overflow: hidden;
+  }
+  
+  .ml16 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }

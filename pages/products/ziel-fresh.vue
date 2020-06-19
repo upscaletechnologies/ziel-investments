@@ -15,9 +15,76 @@
                 #[strong Ziel Fresh] purified water is bottled fresh at the source to maintain its natural taste which is balanced by nature. Its enhanced by use of advanced modern technology by use of multi-barrier filtration, reverse osmosis, ozanation and UV treatment to give it a refreshing natural taste.
                 #[br]
                 Our water quality, grade and above all palate features are 100% natural
+              // Start Page
+              section.section
+                .container
+                  .row
+                    .col-lg-12
+                      ul#menu-filter.text-center.list-unstyled.list-inline.mb-0.text-capitlize.work_menu
+                        li.list-inline-item
+                          a.active(data-filter="*") All
+                        li.list-inline-item
+                          a(data-filter=".seo") 500 Ml
+                        li.list-inline-item
+                          a(data-filter=".webdesign") 10 Litres
+                        li.list-inline-item
+                          a(data-filter=".work") 20 Litres
+                        li.list-inline-item
+                          a(data-filter=".wordpress") Packaging
+                  .row.mt-5.work-filter
+                    .col-lg-4.webdesign.wordpress
+                      .work_img_box.rounded
+                        a.img-zoom(href="~/assets/images/work/work-1.jpg")
+                        .work_images
+                          img.img-fluid.mx-auto.d-block(src="~/assets/images/work/work-1.jpg" alt="image")
+                          .work_overlay
+                            h4.mb-0 UI Elements, Icons
+                            h6.mb-0 Studio &amp; Art
+                    .col-lg-4.seo.webdesign
+                      .work_img_box.rounded
+                        a.img-zoom(href="~/assets/images/work/work-2.jpg")
+                        .work_images
+                          img.img-fluid.mx-auto.d-block(src="~/assets/images/work/work-2.jpg" alt="image")
+                          .work_overlay
+                            h4 Illustrations
+                            h6 Creative &amp; Art
+                    .col-lg-4.work
+                      .work_img_box.rounded
+                        a.img-zoom(href="~/assets/images/work/work-3.jpg")
+                        .work_images
+                          img.img-fluid.mx-auto.d-block(src="~/assets/images/work/work-3.jpg" alt="image")
+                          .work_overlay
+                            h4 Media, Icons
+                            h6 Open Imagination
+                    .col-lg-4.seo.webdesign
+                      .work_img_box.rounded
+                        a.img-zoom(href="~/assets/images/work/work-4.jpg")
+                        .work_images
+                          img.img-fluid.mx-auto.d-block(src="~/assets/images/work/work-4.jpg" alt="image")
+                          .work_overlay
+                            h4 Graphics, UI Elements
+                            h6 Locked Steel Gate
+                    .col-lg-4.seo.work
+                      .work_img_box.rounded
+                        a.img-zoom(href="~/assets/images/work/work-5.jpg")
+                        .work_images
+                          img.img-fluid.mx-auto.d-block(src="~/assets/images/work/work-5.jpg" alt="image")
+                          .work_overlay
+                            h4 Illustrations, Graphics
+                            h6 Mac Sunglasses
+                    .col-lg-4.wordpress
+                      .work_img_box.rounded
+                        a.img-zoom(href="~/assets/images/work/work-6.jpg")
+                        .work_images
+                          img.img-fluid.mx-auto.d-block(src="~/assets/images/work/work-6.jpg" alt="image")
+                          .work_overlay
+                            h4 UI Elements, Media
+                            h6 Backpack Contents
+              // End Page
               p.sec_content.pt-3.text-muted.mx-auto.
                 You can order the water in these packagings: #[strong 500ml and 1 litre] dozen package, #[strong 18.9 litres] Refillable or Disposable.
                 For enquiries, please call #[a.text-custom.nuxt-link-exact-active.nuxt-link-active(href='tel: +254 713-917-108') +254 713-917-108] or #[a.text-custom.nuxt-link-exact-active.nuxt-link-active(href='tel: +254 727-238-558') +254 727-238-558]
+
     // Start How It Work
     // Start Description
     section.section.bg-features.vertical-content
