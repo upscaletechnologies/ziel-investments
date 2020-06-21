@@ -11,7 +11,9 @@
                   p.home_small_title
                     | Welcome To 
                     span.text-custom ziel investments
-                  h1.ml16 Made with love
+                  h1.ml9
+                    span.text-wrapper
+                      span.letters We provide affordable purified mineral water from ziel fresh.
                   //- h1
                   //-   span.text-custom At Ziel investments
                   //-   |  We provide affordable purified mineral water from ziel fresh.
@@ -255,6 +257,9 @@ const textanimationJs = require('~/assets/js/textanimation.js').default;
 })
 export default class RootPage extends Vue {
   mounted() {
+    textanimationJs();
+  }
+  updated() {
     textanimationJs();
   }
   test: string = 'this is a test';
