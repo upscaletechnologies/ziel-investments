@@ -1,24 +1,26 @@
 import Vue from 'vue';
-import anime from 'animejs/lib/anime.min.js';
+import anime from 'animejs';
 
 Vue.prototype.$anime = anime;
 
 export default function() {
   // Wrap every letter in a span
-  const textWrapper = document.querySelector('.ml9 .letters');
+  const textWrapper = document.querySelector('.ml2');
   textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
   anime
     .timeline({ loop: true })
     .add({
-      targets: '.ml9 .letter',
-      scale: [0, 1],
-      duration: 1500,
-      elasticity: 600,
-      delay: (el, i) => 45 * (i + 1),
+      targets: '.ml2 .letter',
+      scale: [4, 1],
+      opacity: [0, 1],
+      translateZ: 0,
+      easing: 'easeOutExpo',
+      duration: 950,
+      delay: (el, i) => 70 * i,
     })
     .add({
-      targets: '.ml9',
+      targets: '.ml2',
       opacity: 0,
       duration: 1000,
       easing: 'easeOutExpo',

@@ -1,6 +1,7 @@
 <template lang="pug">
   div
     // Start Home
+    //- section.position-relative.header_bg.bg-light
     section.position-relative.header_bg
       .home-table
         .home-table-center
@@ -8,19 +9,16 @@
             .row.vertical-content
               .col-lg-6
                 .home_content.mt-3
-                  p.home_small_title
-                    | Welcome To 
-                    span.text-custom ziel investments
-                  h1.ml9
-                    span.text-wrapper
-                      span.letters We provide affordable purified mineral water from ziel fresh.
-                  //- h1
-                  //-   span.text-custom At Ziel investments
-                  //-   |  We provide affordable purified mineral water from ziel fresh.
-                  //- p.home_small_content.mt-4.text-muted Through innovation engineering applied to digital, we deliver measurably better results.
+                  p.home_small_title.
+                    Welcome To #[span.text-custom Ziel Investments]
+                  h1
+                    span.text-custom Shop with the best!
+                  h1.ml2 We offer our clients the best - experience.
+                  p.home_small_content.mt-4.text-muted
+                    | Through the application of innovation engineering, we deliver measurably better results.
                   .pt-3
-                    a.btn.btn-gradient.text-uppercase.mr-2(href="/about-us") Learn More
-                    span.mr-3 or
+                    nuxt-link.btn.btn-gradient.text-uppercase.mr-2(to="/about-us") Learn More 
+                    span.mr-3 or watch us here:
                     a.mr-3.text-white.learn_more.video_home(href="https://www.youtube.com/watch?v=0Xr8uAZvqlc")
                       i.mdi.mdi-play
                   .moeny-more.mt-4.pt-3
