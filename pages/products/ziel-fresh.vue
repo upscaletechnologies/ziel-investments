@@ -36,47 +36,47 @@
                       .work_img_box.rounded
                         a.img-zoom(href="~/assets/images/work/work-1.jpg")
                         .work_images
-                          img.img-fluid.mx-auto.d-block(src="~/assets/images/work/work-1.jpg" alt="image")
+                          img.img-fluid.mx-auto.d-block(src="~/assets/images/products/product-1.jpeg" alt="image")
                           .work_overlay
                             h4.mb-0 UI Elements, Icons
                             h6.mb-0 Studio &amp; Art
                     .col-lg-4.seo.webdesign
                       .work_img_box.rounded
-                        a.img-zoom(href="~/assets/images/work/work-2.jpg")
+                        a.img-zoom(href="~/assets/images/products/product-13.jpeg")
                         .work_images
-                          img.img-fluid.mx-auto.d-block(src="~/assets/images/work/work-2.jpg" alt="image")
+                          img.img-fluid.mx-auto.d-block(src="~/assets/images/products/product-13.jpeg" alt="image")
                           .work_overlay
                             h4 Illustrations
                             h6 Creative &amp; Art
                     .col-lg-4.work
                       .work_img_box.rounded
-                        a.img-zoom(href="~/assets/images/work/work-3.jpg")
+                        a.img-zoom(href="~/assets/images/products/product-3.jpeg")
                         .work_images
-                          img.img-fluid.mx-auto.d-block(src="~/assets/images/work/work-3.jpg" alt="image")
+                          img.img-fluid.mx-auto.d-block(src="~/assets/images/products/product-3.jpeg" alt="image")
                           .work_overlay
                             h4 Media, Icons
                             h6 Open Imagination
                     .col-lg-4.seo.webdesign
                       .work_img_box.rounded
-                        a.img-zoom(href="~/assets/images/work/work-4.jpg")
+                        a.img-zoom(href="~/assets/images/products/product-4.jpeg")
                         .work_images
-                          img.img-fluid.mx-auto.d-block(src="~/assets/images/work/work-4.jpg" alt="image")
+                          img.img-fluid.mx-auto.d-block(src="~/assets/images/products/product-4.jpeg" alt="image")
                           .work_overlay
                             h4 Graphics, UI Elements
                             h6 Locked Steel Gate
                     .col-lg-4.seo.work
                       .work_img_box.rounded
-                        a.img-zoom(href="~/assets/images/work/work-5.jpg")
+                        a.img-zoom(href="~/assets/images/products/product-14.jpeg")
                         .work_images
-                          img.img-fluid.mx-auto.d-block(src="~/assets/images/work/work-5.jpg" alt="image")
+                          img.img-fluid.mx-auto.d-block(src="~/assets/images/products/product-14.jpeg" alt="image")
                           .work_overlay
                             h4 Illustrations, Graphics
                             h6 Mac Sunglasses
                     .col-lg-4.wordpress
                       .work_img_box.rounded
-                        a.img-zoom(href="~/assets/images/work/work-6.jpg")
+                        a.img-zoom(href="~/assets/images/products/product-6.jpeg")
                         .work_images
-                          img.img-fluid.mx-auto.d-block(src="~/assets/images/work/work-6.jpg" alt="image")
+                          img.img-fluid.mx-auto.d-block(src="~/assets/images/products/product-6.jpeg" alt="image")
                           .work_overlay
                             h4 UI Elements, Media
                             h6 Backpack Contents
