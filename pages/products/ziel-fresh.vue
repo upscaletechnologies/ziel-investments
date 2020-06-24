@@ -34,6 +34,23 @@
             figure
               a.d-block.mb-4(data-fancybox="images" href="image-7-1.jpeg" data-width="1519" data-height="2279")
                 img.img-fluid(src="~/assets/images/products/image-7-1.jpeg")
+        .card-deck.mb-sm-4.video-deck
+          .card
+            a(data-fancybox="bigbuckbunny" data-width="640" data-height="360" href="http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4")
+              img.card-img-top.img-fluid(src="~/assets/images/products/poster-1.jpeg")
+            .card-body
+              p.card-text
+                | About Ziel Fresh Company Tour
+          .card
+            a(data-fancybox="html5-video" href="#myVideo")
+              img.card-img-top.img-fluid(src="~/assets/images/products/poster-1.jpeg")
+            .card-body
+              p.card-text Ziel Fresh Work Environment
+            video#myVideo(width="640" height="320" controls="" style="display:none;")
+              source(src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4" type="video/mp4")
+              source(src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.webm" type="video/webm")
+              source(src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.ogv" type="video/ogg")
+              |             Your browser doesn't support HTML5 video tag.
         .row
           .col-lg-12
             .section_title.text-center
