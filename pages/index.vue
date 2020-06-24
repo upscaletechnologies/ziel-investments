@@ -9,29 +9,27 @@
             .row.vertical-content
               .col-lg-6
                 .home_content.mt-3
-                  p.home_small_title.
-                    Welcome To #[span.text-custom Ziel Investments]
+                  p.home_small_title
+                    | Welcome To #[span.text-custom Ziel Investments]
                   h1
-                    span.text-custom Shop with the best!
-                  h1.ml2 We offer our clients the best - experience.
-                  p.home_small_content.mt-4.text-muted
-                    | Through the application of innovation engineering, we deliver measurably better results.
+                    span.text-custom.mr-1 Ziel Investments 
+                    span.text-typed
+                  p.home_small_content.mt-4.text-muted Through innovation engineering applied to digital, we deliver measurably better results.
                   .pt-3
-                    nuxt-link.btn.btn-gradient.text-uppercase.mr-2(to="/about-us") Learn More 
-                    span.mr-3 or watch us here:
+                    a.btn.btn-gradient.text-uppercase.mr-2(href="#") Get Started
+                    span.mr-3 or
                     a.mr-3.text-white.learn_more.video_home(href="https://www.youtube.com/watch?v=0Xr8uAZvqlc")
                       i.mdi.mdi-play
                   .moeny-more.mt-4.pt-3
-                    p.text-custom Drinking water is a lifestyle we provide to you.
+                    //- p.text-custom Work with the best
               .col-lg-6
                 .mt-3
-                  img.img-fluid.mx-auto.d-block(src="~assets/images/home-bg-1.jpg" alt="")
+                  img.img-fluid.mx-auto.d-block(src="~/assets/images/custom/homepage-landing.png" alt="")
       div
         a.scroll.scroll_down(href="#work")
           span
       .curv-img
-        svg(xmlns="http://www.w3.org/2000/svg" width="1919.76" height="327.903")
-          path(fill="#f8f9fa" d="M1919.76 132.428c-90.511-64.67-174.365-144.792-314.866-123.125-94.441 14.563-142.181 105.921-220.98 148.217-117.85 63.256-155.979 35.449-264.385 14.607-84.57-16.26-117.255-29.063-199.787-.493-84.986 29.419-134.191 125.289-239.288 124.882-121.481-.472-157.447-90.325-248.953-163.594C317.535 41.67 228.822 15.373 79.5 1.958 51.97-.516 25.538-.52 0 1.242v326.661h1919.76V132.428z")
+        img.img-fluid.mx-auto.d-block(src="~/assets/images/wave-static.svg" alt="")
     // End Home
 
     // Start Client Logo
@@ -234,7 +232,8 @@
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator';
-import anime from 'animejs';
+// import anime from 'animejs';
+import Typed from 'typed.js';
 import Cta from '~/components/Cta.vue';
 
 @Component({
@@ -264,28 +263,46 @@ export default class RootPage extends Vue {
   }
 
   animateText() {
-    // Wrap every letter in a span
-    const textWrapper: any = document.querySelector('.ml2');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    const typed = new Typed('.text-typed', {
+      strings: [
+        'Design & Development Minimal Business Agency.',
+        'is the best way to present your products.',
+        "Professional Sass & Business Landing Template..', '&amp; a second sentence.",
+      ],
+      typeSpeed: 100, // typing speed
+      backDelay: 3000, // pause before backspacing
+    });
+    // $('.text-typed').each(function() {
+    //   var $this = $(this);
+    //   $this.typed({
+    //     strings: $this.attr('data-elements').split(','),
+    //     typeSpeed: 100, // typing speed
+    //     backDelay: 3000, // pause before backspacing
+    //   });
+    // });
 
-    anime
-      .timeline({ loop: true })
-      .add({
-        targets: '.ml2 .letter',
-        scale: [4, 1],
-        opacity: [0, 1],
-        translateZ: 0,
-        easing: 'easeOutExpo',
-        duration: 950,
-        delay: (el: any, i: any) => 70 * i,
-      })
-      .add({
-        targets: '.ml2',
-        opacity: 0,
-        duration: 1000,
-        easing: 'easeOutExpo',
-        delay: 1000,
-      });
+    // // Wrap every letter in a span
+    // const textWrapper: any = document.querySelector('.ml2');
+    // textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    // anime
+    //   .timeline({ loop: true })
+    //   .add({
+    //     targets: '.ml2 .letter',
+    //     scale: [4, 1],
+    //     opacity: [0, 1],
+    //     translateZ: 0,
+    //     easing: 'easeOutExpo',
+    //     duration: 950,
+    //     delay: (el: any, i: any) => 70 * i,
+    //   })
+    //   .add({
+    //     targets: '.ml2',
+    //     opacity: 0,
+    //     duration: 1000,
+    //     easing: 'easeOutExpo',
+    //     delay: 1000,
+    //   });
   }
 }
 </script>

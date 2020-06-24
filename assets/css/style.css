@@ -43,7 +43,7 @@
     11.RESPONSIVE
 *************************************/
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:400,500,600');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:400,500,600");
 
 /*======================
         1.BASIC
@@ -51,7 +51,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 h1,
@@ -60,7 +60,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .font-weight-bold {
@@ -91,7 +91,7 @@ button:focus {
     bottom: 15px;
     height: 35px;
     width: 35px;
-    background-color: #2AAFC0;
+    background-color: #2aafc0;
     display: none;
     z-index: 10000;
     border-radius: 3px;
@@ -105,7 +105,6 @@ button:focus {
     font-size: 32px;
     display: block;
 }
-
 
 /*==========================
         2.HELPER
@@ -147,7 +146,7 @@ button:focus {
 }
 
 .bg-custom {
-    background-color: #2AAFC0;
+    background-color: #2aafc0;
 }
 
 .text-muted {
@@ -159,7 +158,7 @@ button:focus {
 }
 
 .text-custom {
-    color: #2AAFC0 !important;
+    color: #2aafc0 !important;
 }
 
 .text-custom-blue {
@@ -175,13 +174,13 @@ button:focus {
 }
 
 .bg-gradient {
-    background: #2AAFC0;
+    background: #2aafc0;
     background: -webkit-gradient(linear, left top, right bottom, from(#2154cf), to(#6ec5ff));
     background: linear-gradient(to bottom right, #2154cf, #6ec5ff);
 }
 
 .bg-overlay-gradient {
-    background: #2AAFC0;
+    background: #2aafc0;
     background: -webkit-gradient(linear, left top, right bottom, from(#2154cf), to(#6ec5ff));
     background: linear-gradient(to bottom right, #2154cf, #6ec5ff);
     opacity: 0.9;
@@ -194,9 +193,10 @@ button:focus {
     height: 100%;
 }
 
-.bg-gradient, .bg-overlay-gradient {
-    background: -webkit-gradient(linear,left top,right bottom,from(#23afc0),to(#316fb5));
-    background: linear-gradient(to bottom right,#23afc0,#316fb5);
+.bg-gradient,
+.bg-overlay-gradient {
+    background: -webkit-gradient(linear, left top, right bottom, from(#23afc0), to(#316fb5));
+    background: linear-gradient(to bottom right, #23afc0, #316fb5);
 }
 
 .over_margin {
@@ -225,8 +225,8 @@ button:focus {
 }
 
 .btn-outline-custom {
-    border: 2px solid #2AAFC0;
-    color: #2AAFC0;
+    border: 2px solid #2aafc0;
+    color: #2aafc0;
     letter-spacing: 1px;
     transition: all 0.5s;
     border-radius: 5px;
@@ -241,15 +241,15 @@ button:focus {
 .btn-outline-custom:active,
 .btn-outline-custom:focus,
 .btn-outline-custom:hover,
-.open>.dropdown-toggle.btn-outline-custom {
-    background: #2AAFC0;
-    border-color: #2AAFC0 !important;
+.open > .dropdown-toggle.btn-outline-custom {
+    background: #2aafc0;
+    border-color: #2aafc0 !important;
     color: #fff !important;
 }
 
 .btn-custom {
-    background-color: #2AAFC0;
-    border: 2px solid #2AAFC0;
+    background-color: #2aafc0;
+    border: 2px solid #2aafc0;
     color: #fff;
     font-size: 14px;
     transition: all 0.5s;
@@ -266,7 +266,7 @@ button:focus {
 .btn-custom:active,
 .btn-custom:focus,
 .btn-custom:hover,
-.open>.dropdown-toggle.btn-custom {
+.open > .dropdown-toggle.btn-custom {
     background-color: #2d9caa;
     border-color: #2d9caa;
     color: #fff;
@@ -278,7 +278,7 @@ button:focus {
     background: -webkit-gradient(linear, left top, right bottom, from(#2154cf), to(#6ec5ff));
     background: linear-gradient(to bottom right, #2154cf, #6ec5ff); */
     /* background: #316fb5; */
-    background: linear-gradient(to bottom right,#ffbf00,#e3f197);
+    background: linear-gradient(to bottom right, #ffbf00, #e3f197);
     /* background: linear-gradient(to bottom right,#316fb5,#23afc0); */
     color: #fff;
     font-size: 14px;
@@ -287,7 +287,7 @@ button:focus {
     border: none;
     letter-spacing: 1px;
     text-transform: capitalize;
-    -webkit-transition: all .5s;
+    -webkit-transition: all 0.5s;
 }
 
 .btn-gradient:hover,
@@ -298,8 +298,8 @@ button:focus {
 .btn-gradient:active,
 .btn-gradient:focus,
 .btn-gradient:hover,
-.open>.dropdown-toggle.btn-gradient {
-    background: #2AAFC0;
+.open > .dropdown-toggle.btn-gradient {
+    background: #2aafc0;
     background: -webkit-gradient(linear, left top, right bottom, from(#6ec5ff), to(#2154cf));
     background: linear-gradient(to bottom right, #6ec5ff, #2154cf);
     transition: all 0.5s;
@@ -309,7 +309,7 @@ button:focus {
 .btn-white {
     background-color: #fff;
     border: 2px solid #fff;
-    color: #2AAFC0;
+    color: #2aafc0;
     font-size: 13px;
     transition: all 0.5s;
     border-radius: 5px;
@@ -325,10 +325,10 @@ button:focus {
 .btn-white:active,
 .btn-white:focus,
 .btn-white:hover,
-.open>.dropdown-toggle.btn-white {
+.open > .dropdown-toggle.btn-white {
     background-color: #efefef;
     border-color: #efefef;
-    color: #2AAFC0;
+    color: #2aafc0;
 }
 
 .btn-outline-black {
@@ -350,7 +350,7 @@ button:focus {
 .btn-outline-black:active,
 .btn-outline-black:focus,
 .btn-outline-black:hover,
-.open>.dropdown-toggle.btn-outline-black {
+.open > .dropdown-toggle.btn-outline-black {
     background: #000;
     border-color: #000 !important;
     color: #fff !important;
@@ -369,7 +369,6 @@ button:focus {
     -webkit-flex-direction: row;
 }
 
-
 /*===========================
         3.NAVBAR
 =============================*/
@@ -384,22 +383,22 @@ button:focus {
     background-color: transparent;
     border-bottom: 1px solid #f1f1f1;
     min-height: 70px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .custom_nav.stickyadd {
     background-color: #fff;
 }
 
-.custom_nav .social_menu>li:hover a {
-    color: #2AAFC0;
+.custom_nav .social_menu > li:hover a {
+    color: #2aafc0;
 }
 
 .custom_nav .social_menu .list-inline-item:not(:last-child) {
     margin-right: 12px;
 }
 
-.custom_nav .social_menu>li a {
+.custom_nav .social_menu > li a {
     color: #000;
     transition: all 0.5s;
     font-size: 22px;
@@ -436,20 +435,20 @@ button:focus {
 
 .custom_nav .main_menu .sec_sub_menu li a.nav-link:hover,
 .custom_nav .main_menu .sec_sub_menu li.active a.nav-link {
-    color: #2AAFC0;
+    color: #2aafc0;
 }
 
 .custom_nav .main_menu .sec_sub_menu li a.nav-link:hover {
     margin-left: 7px;
 }
 
-.custom_nav.stickyadd .main_menu>li.active a,
-.custom_nav.stickyadd .main_menu>li:hover a,
-.custom_nav.stickyadd .main_menu>li:active a,
-.custom_nav .main_menu>li.active a,
-.custom_nav .main_menu>li:hover a,
-.custom_nav .main_menu>li:active a {
-    color: #2AAFC0;
+.custom_nav.stickyadd .main_menu > li.active a,
+.custom_nav.stickyadd .main_menu > li:hover a,
+.custom_nav.stickyadd .main_menu > li:active a,
+.custom_nav .main_menu > li.active a,
+.custom_nav .main_menu > li:hover a,
+.custom_nav .main_menu > li:active a {
+    color: #2aafc0;
 }
 
 .anim-middleout:hover:before {
@@ -457,7 +456,7 @@ button:focus {
 }
 
 .custom_nav .main_menu li.active .first_sub_menu li.active > a {
-    color: #2AAFC0;
+    color: #2aafc0;
 }
 
 .custom_nav a.first_sub_menu.nav-link {
@@ -520,7 +519,6 @@ button:focus {
     padding: 0px;
 }
 
-
 /*==========================
         4.HOME PAGE
 ============================*/
@@ -562,8 +560,6 @@ button:focus {
 .home_content h1 {
     font-size: 36px;
     line-height: 1.4;
-    color: #505050;
-    font-weight: 400;
 }
 
 .moeny-more p {
@@ -616,8 +612,8 @@ button:focus {
     left: calc(50% - 3px);
     background: #f7be16;
     /* background: #2aafc0; */
-    -webkit-animation: scroll .5s infinite alternate;
-    animation: scroll .5s infinite alternate;
+    -webkit-animation: scroll 0.5s infinite alternate;
+    animation: scroll 0.5s infinite alternate;
 }
 
 @keyframes scroll {
@@ -646,7 +642,6 @@ button:focus {
 
 /*HOME 4*/
 
-
 /*----------LOGO CLIENT---------*/
 
 .logo_img img {
@@ -659,7 +654,6 @@ button:focus {
     transform: scale(1.1);
 }
 
-
 /*---------ABOUT US------------*/
 
 .features_axi_box {
@@ -669,9 +663,9 @@ button:focus {
 .features_axi_box .features_axi_icon i {
     color: #ffffff;
     font-size: 26px;
-    background: -webkit-gradient(linear,left top,right bottom,from(#fcbd02),to(#e3f197));
+    background: -webkit-gradient(linear, left top, right bottom, from(#fcbd02), to(#e3f197));
     /* background: -webkit-gradient(linear,left top,right bottom,from(#316fb5),to(#23afc0)); */
-    background: linear-gradient(to bottom right,#e3f197,#fabc02);
+    background: linear-gradient(to bottom right, #e3f197, #fabc02);
     /* background: linear-gradient(to bottom right,#23afc0,#316fb5); */
     /* background: linear-gradient(to bottom right, #2154cf, #6ec5ff); */
     height: 60px;
@@ -692,7 +686,7 @@ button:focus {
 }
 
 .features_axi_content h5 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 600;
 }
 
@@ -707,13 +701,12 @@ button:focus {
     color: #000000 !important;
 }
 
-
 /*----------DESCRIPTION---------*/
 
 .bg-features {
     background: #2aafc0;
-    background: -webkit-gradient(linear,left top,right bottom,from(#23afc0),to(#316fb5));
-    background: linear-gradient(to bottom right,#23afc0,#316fb5);
+    background: -webkit-gradient(linear, left top, right bottom, from(#23afc0), to(#316fb5));
+    background: linear-gradient(to bottom right, #23afc0, #316fb5);
     position: relative;
     overflow: hidden;
     /* background: #2AAFC0;
@@ -790,7 +783,6 @@ button:focus {
     line-height: 22px;
 }
 
-
 /*--------SERVICES---------*/
 
 .services_box_side {
@@ -816,7 +808,7 @@ button:focus {
     background: #f7be16;
     background: -webkit-gradient(linear, left top, right bottom, from(#fabc03), to(#e3f197));
     /* background: -webkit-gradient(linear, left top, right bottom, from(#2154cf), to(#6ec5ff)); */
-    background: linear-gradient(to bottom right,#e3f197,#f5b803);
+    background: linear-gradient(to bottom right, #e3f197, #f5b803);
     /* background: linear-gradient(to bottom right,#23afc0,#316fb5); */
     /* background: linear-gradient(to bottom right, #2154cf, #6ec5ff); */
     color: #fff;
@@ -842,9 +834,8 @@ button:focus {
 }
 
 .services_box_side .services_content h5 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
-
 
 /*---------PLAN & PRICE--------*/
 
@@ -856,7 +847,7 @@ button:focus {
 .plan_price_box .plan_name p {
     box-shadow: 0 0 0px 8px rgba(70, 138, 230, 0.17);
     padding: 12px 10px;
-    background: #2AAFC0;
+    background: #2aafc0;
     background: -webkit-gradient(linear, left top, right bottom, from(#2154cf), to(#6ec5ff));
     background: linear-gradient(to bottom right, #2154cf, #6ec5ff);
 }
@@ -901,7 +892,6 @@ button:focus {
     border-radius: 5px;
 }
 
-
 /*---------CTA SECTION--------*/
 
 .cta_sec {
@@ -924,7 +914,6 @@ button:focus {
     background: url(../images/cta-bg.png);
 }
 
-
 /*---------FUNFACTS--------*/
 
 .bg_funfact {
@@ -935,11 +924,10 @@ button:focus {
 
 .funfact_box {
     box-shadow: 0 0 0px 8px rgba(70, 138, 230, 0.17);
-    background: #2AAFC0;
+    background: #2aafc0;
     background: -webkit-gradient(linear, left top, right bottom, from(#2154cf), to(#6ec5ff));
     background: linear-gradient(to bottom right, #2154cf, #6ec5ff);
 }
-
 
 /*---------TESTIMONIAL----------*/
 
@@ -962,7 +950,7 @@ button:focus {
     line-height: 60px;
     display: inline-block;
     box-shadow: 0 0 0px 8px rgba(70, 138, 230, 0.17);
-    background: #2AAFC0;
+    background: #2aafc0;
     background: -webkit-gradient(linear, left top, right bottom, from(#2154cf), to(#6ec5ff));
     background: linear-gradient(to bottom right, #2154cf, #6ec5ff);
 }
@@ -999,7 +987,6 @@ button:focus {
     opacity: 1;
 }
 
-
 /*----------FAQ---------*/
 
 .faq_main .accordion .card {
@@ -1015,8 +1002,8 @@ button:focus {
     padding: 12px 20px;
     /* background: #2AAFC0; */
     background: #316fb5;
-    background: -webkit-gradient(linear,left top,right bottom,from(#23afc0),to(#316fb5));
-    background: linear-gradient(to bottom right,#23afc0,#316fb5);
+    background: -webkit-gradient(linear, left top, right bottom, from(#23afc0), to(#316fb5));
+    background: linear-gradient(to bottom right, #23afc0, #316fb5);
     /* background: -webkit-gradient(linear, left top, right bottom, from(#2154cf), to(#6ec5ff));
     background: linear-gradient(to bottom right, #2154cf, #6ec5ff); */
 }
@@ -1026,7 +1013,7 @@ button:focus {
 }
 
 .faq_main .accordion .card .card-header h5 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 15px;
     font-weight: 600;
 }
@@ -1042,12 +1029,11 @@ button:focus {
     line-height: 1.6;
 }
 
-
 /*------------SUBCRIBE-----------*/
 
 .sub_cta {
     background-size: cover;
-    background-image: url('../images/sub.jpg');
+    background-image: url("../images/sub.jpg");
     background-position: center center;
     position: relative;
     border-radius: 15px;
@@ -1084,7 +1070,6 @@ button:focus {
     max-width: 450px;
 }
 
-
 /*==========================
         5.ABOUT PAGE
 ============================*/
@@ -1102,7 +1087,7 @@ button:focus {
     display: inline-block;
     vertical-align: middle;
     font-size: 14px;
-    opacity: .6;
+    opacity: 0.6;
 }
 
 .section_page_header .page_title_list ul > li:last-child:after {
@@ -1147,15 +1132,14 @@ button:focus {
     border-radius: 50%;
     z-index: -1;
     background: #ffc107;
-    background: -webkit-gradient(linear,left top,right bottom,from(#e3f197),to(#ffc107));
-    background: linear-gradient(to bottom right,#e3f197,#fabc02);
+    background: -webkit-gradient(linear, left top, right bottom, from(#e3f197), to(#ffc107));
+    background: linear-gradient(to bottom right, #e3f197, #fabc02);
     /* background: #2AAFC0;
     background: -webkit-gradient(linear, left top, right bottom, from(#2154cf), to(#6ec5ff));
     background: linear-gradient(to bottom right, #2154cf, #6ec5ff); */
     box-shadow: 0 0 0px 8px rgba(70, 138, 230, 0.17);
     color: #ffffff;
 }
-
 
 /*------VIDEO SECTION-------*/
 
@@ -1180,14 +1164,12 @@ button:focus {
     transition: all 0.5s;
 }
 
-
 /*------LOGO LIGHT------*/
 
 .img_light_logo_sec {
     border-radius: 15px;
     padding: 60px 30px;
 }
-
 
 /*==========================
         6.WORK
@@ -1284,7 +1266,7 @@ button:focus {
 }
 
 .work_img_box .work_images .work_overlay:after {
-    content: '';
+    content: "";
     left: 50%;
     top: 50%;
     background: linear-gradient(to bottom right, rgba(33, 84, 207, 0.89), rgba(110, 197, 255, 0.89));
@@ -1325,7 +1307,7 @@ button:focus {
 }
 
 .work_img_box .work_images .work_overlay h4:before {
-    content: '';
+    content: "";
     background: #fff;
     width: 100%;
     position: absolute;
@@ -1336,7 +1318,7 @@ button:focus {
 }
 
 .work_img_box .work_images .work_overlay h6::before {
-    content: '';
+    content: "";
     background: #fff;
     bottom: 0;
     right: auto;
@@ -1379,21 +1361,20 @@ button:focus {
     left: -100%;
 }
 
-
 /*--- WORK DETAIL--- */
 
 .work-detail-title h6 {
     font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .work-detail-title h1 {
     font-size: 32px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 .work-detail-title h4 {
     /* font-size: 32px; */
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .work_detail_desc p {
@@ -1404,7 +1385,7 @@ button:focus {
     font-size: 17px;
 }
 
-.work_single_icon>li:hover a {
+.work_single_icon > li:hover a {
     color: #2aafc0;
 }
 
@@ -1412,17 +1393,15 @@ button:focus {
     margin-right: 22px;
 }
 
-.work_single_icon>li a {
+.work_single_icon > li a {
     color: #000;
     transition: all 0.5s;
     font-size: 22px;
 }
 
-
 /*==========================
         7.PAGES
 ============================*/
-
 
 /*-------HEADER STYLE--------*/
 
@@ -1442,7 +1421,7 @@ button:focus {
     vertical-align: middle;
     color: #fff;
     font-size: 14px;
-    opacity: .6;
+    opacity: 0.6;
 }
 
 .section_page_header_img .page_title_list ul > li:last-child:after {
@@ -1455,12 +1434,12 @@ button:focus {
 }
 
 .section_page_header_img .page_title_list ul > li.active {
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .section_page_header_gradient {
     margin-top: 70px;
-    background: #2AAFC0;
+    background: #2aafc0;
     background: -webkit-gradient(linear, left top, right bottom, from(#2154cf), to(#6ec5ff));
     background: linear-gradient(to bottom right, #2154cf, #6ec5ff);
 }
@@ -1473,7 +1452,7 @@ button:focus {
     vertical-align: middle;
     color: #fff;
     font-size: 14px;
-    opacity: .6;
+    opacity: 0.6;
 }
 
 .section_page_header_gradient .page_title_list ul > li:last-child:after {
@@ -1486,14 +1465,13 @@ button:focus {
 }
 
 .section_page_header_gradient .page_title_list ul > li.active {
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, 0.7);
 }
-
 
 /*---------TEAM--------*/
 
 .team_box_main.active {
-    background: #2AAFC0;
+    background: #2aafc0;
     background: -webkit-gradient(linear, left top, right bottom, from(#2154cf), to(#6ec5ff));
     background: linear-gradient(to bottom right, #2154cf, #6ec5ff);
     box-shadow: 0 0 0px 6px rgba(70, 138, 230, 0.17);
@@ -1519,7 +1497,7 @@ button:focus {
 }
 
 .team_box_main .follow_area {
-    background: #2AAFC0;
+    background: #2aafc0;
     background: -webkit-gradient(linear, left top, right bottom, from(#2154cf), to(#6ec5ff));
     background: linear-gradient(to bottom right, #2154cf, #6ec5ff);
     padding: 20px 0 20px;
@@ -1541,7 +1519,7 @@ button:focus {
     transition: all 0.5s;
     text-align: center;
     color: #2aafc0;
-    background: #2AAFC0;
+    background: #2aafc0;
     background: -webkit-gradient(linear, left top, right bottom, from(#2154cf), to(#6ec5ff));
     background: linear-gradient(to bottom right, #2154cf, #6ec5ff);
     box-shadow: 0 0 0px 4px rgba(70, 138, 230, 0.17) !important;
@@ -1566,7 +1544,6 @@ button:focus {
     box-shadow: 0 0 0px 4px rgba(255, 255, 255, 0.33) !important;
 }
 
-
 /*==========================
         8.BLOG
 ============================*/
@@ -1574,7 +1551,7 @@ button:focus {
 /*--------BLOG-------*/
 
 .blog_box {
-    box-shadow: 0 5px 30px -2px rgba(154, 161, 171, .1);
+    box-shadow: 0 5px 30px -2px rgba(154, 161, 171, 0.1);
     transition: all 0.5s;
     position: relative;
     transition: all 0.5s;
@@ -1599,7 +1576,7 @@ button:focus {
 }
 
 .blog_box h5 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 600;
 }
 
@@ -1671,7 +1648,7 @@ button:focus {
 }
 
 .blog_gra_user {
-    background: #2AAFC0;
+    background: #2aafc0;
     background: -webkit-gradient(linear, left top, right bottom, from(#2154cf), to(#6ec5ff));
     background: linear-gradient(to bottom right, #2154cf, #6ec5ff);
     box-shadow: 0 0 0px 6px rgba(70, 138, 230, 0.17);
@@ -1680,11 +1657,10 @@ button:focus {
     top: 25px;
 }
 
-
 /*---- BLOG SIDEBAR ----*/
 
 .blog_sidebar {
-    background: #2AAFC0;
+    background: #2aafc0;
     background: -webkit-gradient(linear, left top, right bottom, from(#2154cf), to(#6ec5ff));
     background: linear-gradient(to bottom right, #2154cf, #6ec5ff);
     box-shadow: 0 0 0px 6px rgba(70, 138, 230, 0.17);
@@ -1726,7 +1702,7 @@ button:focus {
     background-color: white;
     border: none;
     position: absolute;
-    transition: all .3s ease-out;
+    transition: all 0.3s ease-out;
     cursor: pointer;
     right: 0px;
     padding: 5px 15px;
@@ -1782,7 +1758,7 @@ button:focus {
 }
 
 .widget_recent_entries_custom ul li {
-    border-bottom: 1px solid rgba(238, 238, 238, .7);
+    border-bottom: 1px solid rgba(238, 238, 238, 0.7);
     margin-bottom: 15px;
     padding-bottom: 15px;
 }
@@ -1812,7 +1788,7 @@ button:focus {
 }
 
 .blog_tag a {
-    background: rgba(248, 249, 250, 0.30);
+    background: rgba(248, 249, 250, 0.3);
     border-radius: 2px;
     color: #ffffff;
     display: inline-block;
@@ -1828,7 +1804,6 @@ button:focus {
     background-color: #fff;
     color: #2aafc0;
 }
-
 
 /*--- SINGLE BLOG ---*/
 
@@ -1904,12 +1879,11 @@ button:focus {
 }
 
 .blog_forms {
-    box-shadow: 0 5px 30px -2px rgba(154, 161, 171, .1);
+    box-shadow: 0 5px 30px -2px rgba(154, 161, 171, 0.1);
     position: relative;
     transition: all 0.5s;
     border: 1px solid #f2f2f2;
 }
-
 
 /*==========================
         9.CONTACT US
@@ -1923,8 +1897,8 @@ button:focus {
     box-shadow: 0 0 0px 8px rgba(70, 138, 230, 0.17);
     line-height: 58px;
     background: #ffc107;
-    background: -webkit-gradient(linear,left top,right bottom,from(#e3f197),to(#ffc107));
-    background: linear-gradient(to bottom right,#e3f197,#ffc107);
+    background: -webkit-gradient(linear, left top, right bottom, from(#e3f197), to(#ffc107));
+    background: linear-gradient(to bottom right, #e3f197, #ffc107);
     /* background: #2AAFC0;
     background: -webkit-gradient(linear, left top, right bottom, from(#2154cf), to(#6ec5ff));
     background: linear-gradient(to bottom right, #2154cf, #6ec5ff); */
@@ -1956,7 +1930,6 @@ button:focus {
 .contact_form .form-control:focus {
     border-color: #2aafc0;
 }
-
 
 /*==========================
         10.FOOTER
@@ -2040,7 +2013,6 @@ button:focus {
     color: #fff !important;
 }
 
-
 /*==========================
         11.RESPONSIVE
 ============================*/
@@ -2119,7 +2091,7 @@ button:focus {
         padding: 6px 0px !important;
     }
     .custom_nav .main_menu > li.active > a {
-        color: #2AAFC0;
+        color: #2aafc0;
     }
     .custom_nav.stickyadd .main_menu > li > a:before,
     .custom_nav .main_menu > li > a:before {
@@ -2152,7 +2124,7 @@ button:focus {
         padding: 15px 0 0;
     }
     .custom_nav a.nav-link.first_sub_menu:after {
-        font-family: 'Material Design Icons';
+        font-family: "Material Design Icons";
         content: "\F140";
         right: 0;
         font-size: 18px;
@@ -2203,9 +2175,9 @@ button:focus {
     .section_page_header_gradient .page_title_list {
         text-align: center !important;
     }
-    .blog_box{
+    .blog_box {
         margin-top: 50px !important;
-    }    
+    }
     .logo_img,
     .img_light_logo {
         margin-top: 20px;
@@ -2278,9 +2250,9 @@ i.mdi.mdi-lightbulb-outline.h4 {
     line-height: 1.4;
     color: #505050;
     font-weight: 400;
-  }
-  
-  .ml2 .letter {
+}
+
+.ml2 .letter {
     display: inline-block;
     line-height: 1.4;
-  }
+}
