@@ -4,86 +4,46 @@
     // Start Page
     section.section
       .container
-        .row.mb-4
-          .col-6.col-lg-4
-            figure
-              a.d-block.mb-4(data-fancybox="images" href="https://source.unsplash.com/lSXpV8bDeMA/1536x2304" data-width="1536" data-height="2304")
-                img.img-fluid(src="https://source.unsplash.com/lSXpV8bDeMA/416x623")
-              figcaption
-                h6 Rocky mountain under blue and white sky
-                a(href="https://unsplash.com/photos/lSXpV8bDeMA") Photo by Guillaume Briard
-            figure
-              a.d-block.mb-4(data-fancybox="images" href="https://source.unsplash.com/ty4X72BSsXY/1279x853" data-width="1279" data-height="853")
-                img.img-fluid(src="https://source.unsplash.com/ty4X72BSsXY/416x278")
-              figcaption
-                h6 Vaihingen an der Enz, Germany
-                a(href="https://unsplash.com/photos/ty4X72BSsXY") Photo by Oliver Roos
-          .col-6.col-lg-4
-            figure
-              a.d-block.mb-4(data-fancybox="images" href="https://source.unsplash.com/QkPb5g9p338/1279x719" data-width="1279" data-height="719")
-                img.img-fluid(src="https://source.unsplash.com/QkPb5g9p338/416x234")
-              figcaption
-                h6 Closeup photo of world globe
-                a(href="https://unsplash.com/photos/QkPb5g9p338") Photo by chuttersnap
-            figure
-              a.d-block.mb-4(data-fancybox="images" href="https://source.unsplash.com/z55CR_d0ayg/1279x853" data-width="1279" data-height="853")
-                img.img-fluid(src="https://source.unsplash.com/z55CR_d0ayg/416x278")
-              figcaption
-                h6 Blessed are the curious, for they shall have adventures. 🚩
-                a(href="https://unsplash.com/photos/z55CR_d0ayg") Photo by Andrew Neel
-            figure
-              a.d-block.mb-4(data-fancybox="images" href="https://source.unsplash.com/IbLZjKcelpM/1020x858" data-width="1020" data-height="858")
-                img.img-fluid(src="https://source.unsplash.com/IbLZjKcelpM/416x350")
-              figcaption
-                h6 Man holding pair of ski poles in front of trees
-                a(href="https://unsplash.com/photos/IbLZjKcelpM") Photo by Oziel Gómez
-          .col-6.col-lg-4.d-none.d-lg-block
-            figure
-              a.d-block.mb-4(data-fancybox="images" href="https://source.unsplash.com/KgCbvOWYuU0/1279x870" data-width="1279" data-height="870")
-                img.img-fluid(src="https://source.unsplash.com/KgCbvOWYuU0/416x283")
-              figcaption
-                h6 Aerial photo of person using paddleboard
-                a(href="https://unsplash.com/photos/KgCbvOWYuU0") Photo by Ishan @seefromthesky
-            figure
-              a.d-block.mb-4(data-fancybox="images" href="https://source.unsplash.com/O7qK1vQY3p0/1519x2279" data-width="1519" data-height="2279")
-                img.img-fluid(src="https://source.unsplash.com/O7qK1vQY3p0/416x623")
-              figcaption
-                h6 Car on curve road surrounded by trees
-                a(href="https://unsplash.com/photos/O7qK1vQY3p0") Photo by Grant Porter
-
         .row
           .col-lg-12
             .section_title.text-center
               p.small_title.mb-4.text-custom.text-uppercase Ziel Fresh
               h2.text-capitalize.mx-auto.section_header Fresh Bottled Water
+        .row.mb-4
+          .col-6.col-lg-4
+            figure
+              a.d-block.mb-4(data-fancybox="images" href="https://source.unsplash.com/lSXpV8bDeMA/1536x2304" data-width="1536" data-height="2304")
+                img.img-fluid(src="https://source.unsplash.com/lSXpV8bDeMA/416x623")
+            figure
+              a.d-block.mb-4(data-fancybox="images" href="https://source.unsplash.com/ty4X72BSsXY/1279x853" data-width="1279" data-height="853")
+                img.img-fluid(src="https://source.unsplash.com/ty4X72BSsXY/416x278")
+          .col-6.col-lg-4
+            figure
+              a.d-block.mb-4(data-fancybox="images" href="https://source.unsplash.com/QkPb5g9p338/1279x719" data-width="1279" data-height="719")
+                img.img-fluid(src="https://source.unsplash.com/QkPb5g9p338/416x234")
+            figure
+              a.d-block.mb-4(data-fancybox="images" href="https://source.unsplash.com/z55CR_d0ayg/1279x853" data-width="1279" data-height="853")
+                img.img-fluid(src="https://source.unsplash.com/z55CR_d0ayg/416x278")
+            figure
+              a.d-block.mb-4(data-fancybox="images" href="https://source.unsplash.com/IbLZjKcelpM/1020x858" data-width="1020" data-height="858")
+                img.img-fluid(src="https://source.unsplash.com/IbLZjKcelpM/416x350")
+          .col-6.col-lg-4.d-none.d-lg-block
+            figure
+              a.d-block.mb-4(data-fancybox="images" href="https://source.unsplash.com/KgCbvOWYuU0/1279x870" data-width="1279" data-height="870")
+                img.img-fluid(src="https://source.unsplash.com/KgCbvOWYuU0/416x283")
+            figure
+              a.d-block.mb-4(data-fancybox="images" href="https://source.unsplash.com/O7qK1vQY3p0/1519x2279" data-width="1519" data-height="2279")
+                img.img-fluid(src="https://source.unsplash.com/O7qK1vQY3p0/416x623")
+        .row
+          .col-lg-12
+            .section_title.text-center
+              h2.text-capitalize.mx-auto.section_header About Us
               p.sec_content.pt-3.text-muted.mx-auto.
                 #[strong Ziel] translated to english means a goal, aim, objective, target, destination or finishing line.
                 #[strong Fresh] simply means something recently harvested.
                 #[strong Ziel Fresh] purified water is bottled fresh at the source to maintain its natural taste which is balanced by nature. Its enhanced by use of advanced modern technology by use of multi-barrier filtration, reverse osmosis, ozanation and UV treatment to give it a refreshing natural taste.
                 #[br]
                 Our water quality, grade and above all palate features are 100% natural
-              // Start Page
-              hr.my-5
-              .imglist
-                a(href="~/assets/images/products/ziel-fresh-7.jpeg" data-fancybox="images")
-                  img(src="~/assets/images/products/ziel-fresh-7-small.jpeg")
-        
-                a(href="https://source.unsplash.com/cZVthlrnlnQ/1600x900" data-fancybox="images")
-                  img(src="~/assets/images/products/ziel-fresh-8-small.jpeg")
-                  
-                a(href="https://source.unsplash.com/vddccTqwal8/1600x900" data-fancybox="images")
-                  img(src="~/assets/images/products/ziel-fresh-9-small.jpeg")
-
-                a(href="https://source.unsplash.com/Sj5efgWguDs/1600x900" data-fancybox="images")
-                  img(src="~/assets/images/products/ziel-fresh-3-small.jpeg")
-
-                a(href="https://source.unsplash.com/Y7y7fe8hrh0/1600x900" data-fancybox="images")
-                  img(src="~/assets/images/products/ziel-fresh-small.jpeg")
-
-                a(href="https://source.unsplash.com/sYegwYtIqJg/1600x900" data-fancybox="images")
-                  img(src="~/assets/images/products/ziel-fresh-5-small.jpeg")
-
-              // End Page
               p.sec_content.pt-3.text-muted.mx-auto.
                 You can order the water in these packagings: #[strong 500ml and 1 litre] dozen package, #[strong 18.9 litres] Refillable or Disposable.
                 For enquiries, please call #[a.text-custom.nuxt-link-exact-active.nuxt-link-active(href='tel: +254 713-917-108') +254 713-917-108] or #[a.text-custom.nuxt-link-exact-active.nuxt-link-active(href='tel: +254 727-238-558') +254 727-238-558]
