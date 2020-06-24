@@ -12,28 +12,28 @@
         .row.mb-4
           .col-6.col-lg-4
             figure
-              a.d-block.mb-4(data-fancybox="images" href="https://source.unsplash.com/lSXpV8bDeMA/1536x2304" data-width="1536" data-height="2304")
-                img.img-fluid(src="https://source.unsplash.com/lSXpV8bDeMA/416x623")
+              a.d-block.mb-4(data-fancybox="images" href="image-1.jpeg" data-width="1536" data-height="2304")
+                img.img-fluid(src="~/assets/images/products/image-1-1.jpeg")
             figure
-              a.d-block.mb-4(data-fancybox="images" href="https://source.unsplash.com/ty4X72BSsXY/1279x853" data-width="1279" data-height="853")
-                img.img-fluid(src="https://source.unsplash.com/ty4X72BSsXY/416x278")
+              a.d-block.mb-4(data-fancybox="images" href="/image-2.png" data-width="1279" data-height="853")
+                img.img-fluid(src="~/assets/images/products/image-2-1.png")
           .col-6.col-lg-4
             figure
-              a.d-block.mb-4(data-fancybox="images" href="https://source.unsplash.com/QkPb5g9p338/1279x719" data-width="1279" data-height="719")
-                img.img-fluid(src="https://source.unsplash.com/QkPb5g9p338/416x234")
+              a.d-block.mb-4(data-fancybox="images" href="image-3.jpeg" data-width="1279" data-height="719")
+                img.img-fluid(src="~/assets/images/products/image-3-1.jpeg")
             figure
-              a.d-block.mb-4(data-fancybox="images" href="https://source.unsplash.com/z55CR_d0ayg/1279x853" data-width="1279" data-height="853")
-                img.img-fluid(src="https://source.unsplash.com/z55CR_d0ayg/416x278")
+              a.d-block.mb-4(data-fancybox="images" href="image-4.jpeg" data-width="1279" data-height="853")
+                img.img-fluid(src="~/assets/images/products/image-4-1.jpeg")
             figure
-              a.d-block.mb-4(data-fancybox="images" href="https://source.unsplash.com/IbLZjKcelpM/1020x858" data-width="1020" data-height="858")
-                img.img-fluid(src="https://source.unsplash.com/IbLZjKcelpM/416x350")
+              a.d-block.mb-4(data-fancybox="images" href="image-5.jpeg" data-width="1020" data-height="858")
+                img.img-fluid(src="~/assets/images/products/image-5-1.jpeg")
           .col-6.col-lg-4.d-none.d-lg-block
             figure
-              a.d-block.mb-4(data-fancybox="images" href="https://source.unsplash.com/KgCbvOWYuU0/1279x870" data-width="1279" data-height="870")
-                img.img-fluid(src="https://source.unsplash.com/KgCbvOWYuU0/416x283")
+              a.d-block.mb-4(data-fancybox="images" href="image-6.jpeg" data-width="1279" data-height="870")
+                img.img-fluid(src="~/assets/images/products/image-6-1.jpeg")
             figure
-              a.d-block.mb-4(data-fancybox="images" href="https://source.unsplash.com/O7qK1vQY3p0/1519x2279" data-width="1519" data-height="2279")
-                img.img-fluid(src="https://source.unsplash.com/O7qK1vQY3p0/416x623")
+              a.d-block.mb-4(data-fancybox="images" href="image-7-1.jpeg" data-width="1519" data-height="2279")
+                img.img-fluid(src="~/assets/images/products/image-7-1.jpeg")
         .row
           .col-lg-12
             .section_title.text-center
