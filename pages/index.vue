@@ -12,7 +12,7 @@
                   p.home_small_title
                     | Welcome To #[span.text-custom Ziel Investments]
                   h1
-                    span.text-custom.mr-1 Ziel Investments 
+                    span.text-custom.mr-1 At Ziel Investments 
                     span.text-typed
                   p.home_small_content.mt-4.text-muted Through innovation engineering applied to digital, we deliver measurably better results.
                   .pt-3
@@ -265,9 +265,9 @@ export default class RootPage extends Vue {
   animateText() {
     const typed = new Typed('.text-typed', {
       strings: [
-        'Design & Development Minimal Business Agency.',
-        'is the best way to present your products.',
-        "Professional Sass & Business Landing Template..', '&amp; a second sentence.",
+        'We Provide a WOW! experience to our clients.',
+        'It is the best place to shop for fresh drinking water at all capacities.',
+        'We also ensure quality products and professional services.',
       ],
       typeSpeed: 100, // typing speed
       backDelay: 3000, // pause before backspacing
