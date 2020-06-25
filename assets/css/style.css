@@ -1100,7 +1100,7 @@ button:focus {
 }
 
 .page_title_list ul li {
-    color: #316fb5;
+    color: #f0f0f0;;
 }
 
 /*-------HOW IT WORK------*/
@@ -1408,7 +1408,7 @@ button:focus {
 .section_page_header_img {
     margin-top: 70px;
     position: relative;
-    background-image: url(http://themesboss.com/axzisz/images/head.jpg);
+    background-image: url(../images/head.jpg);
     background-size: cover;
     background-position: center center;
 }

@@ -16,10 +16,13 @@
                     span.text-typed
                   p.home_small_content.mt-4.text-muted Through innovation engineering applied to digital, we deliver measurably better results.
                   .pt-3
-                    a.btn.btn-gradient.text-uppercase.mr-2(href="#") Get Started
+                    a.btn.btn-gradient.text-uppercase.mr-2(href="/about-us") Get Started
                     span.mr-3 or
-                    a.mr-3.text-white.learn_more.video_home(href="https://www.youtube.com/watch?v=0Xr8uAZvqlc")
+                    a.mr-3.text-white.learn_more.video_home(href="#myVideo")
                       i.mdi.mdi-play
+                      //- TODO: ensure mp4 plays video. 
+                    video#myVideo(width="640" height="320" controls="" style="display:none;")
+                      source(src="~/assets/videos/video-1.mp4" type="video/mp4")
                   .moeny-more.mt-4.pt-3
                     //- p.text-custom Work with the best
               .col-lg-6

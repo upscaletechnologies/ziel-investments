@@ -14,27 +14,27 @@
         .row.mb-4
           .col-6.col-lg-4
             figure
-              a.d-block.mb-4(data-fancybox="images" href="image-1.jpeg" data-width="1536" data-height="2304")
+              a.d-block.mb-4(data-fancybox="images" href="../../image-1.jpeg" data-width="1536" data-height="2304")
                 img.img-fluid(src="~/assets/images/products/image-1-1.jpeg")
             figure
-              a.d-block.mb-4(data-fancybox="images" href="/image-2.jpeg" data-width="1279" data-height="853")
+              a.d-block.mb-4(data-fancybox="images" href="../../image-2.jpeg" data-width="1279" data-height="853")
                 img.img-fluid(src="~/assets/images/products/image-2-1.jpeg")
           .col-6.col-lg-4
             figure
-              a.d-block.mb-4(data-fancybox="images" href="image-3.jpeg" data-width="1279" data-height="719")
+              a.d-block.mb-4(data-fancybox="images" href="../../image-3.jpeg" data-width="1279" data-height="719")
                 img.img-fluid(src="~/assets/images/products/image-3-1.jpeg")
             figure
-              a.d-block.mb-4(data-fancybox="images" href="image-4.jpeg" data-width="1279" data-height="853")
+              a.d-block.mb-4(data-fancybox="images" href="../../image-4.jpeg" data-width="1279" data-height="853")
                 img.img-fluid(src="~/assets/images/products/image-4-1.jpeg")
             figure
-              a.d-block.mb-4(data-fancybox="images" href="image-5.jpeg" data-width="1020" data-height="858")
+              a.d-block.mb-4(data-fancybox="images" href="../../image-5.jpeg" data-width="1020" data-height="858")
                 img.img-fluid(src="~/assets/images/products/image-5-1.jpeg")
           .col-6.col-lg-4.d-none.d-lg-block
             figure
-              a.d-block.mb-4(data-fancybox="images" href="image-6.jpeg" data-width="1279" data-height="870")
+              a.d-block.mb-4(data-fancybox="images" href="../../image-6.jpeg" data-width="1279" data-height="870")
                 img.img-fluid(src="~/assets/images/products/image-6-1.jpeg")
             figure
-              a.d-block.mb-4(data-fancybox="images" href="image-7-1.jpeg" data-width="1519" data-height="2279")
+              a.d-block.mb-4(data-fancybox="images" href="../../image-7-1.jpeg" data-width="1519" data-height="2279")
                 img.img-fluid(src="~/assets/images/products/image-7-1.jpeg")
         .row
           .col-lg-12
