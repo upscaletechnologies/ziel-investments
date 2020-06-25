@@ -1,8 +1,7 @@
 <template lang="pug">
   div
     // Start Home
-    //- section.position-relative.header_bg.bg-light
-    section.position-relative.header_bg
+    section.position-relative.header_bg.landing-section
       .home-table
         .home-table-center
           .container.z-index.position-relative
@@ -12,7 +11,7 @@
                   p.home_small_title
                     | Welcome To #[span.text-custom Ziel Investments]
                   h1
-                    span.text-custom.mr-1 At Ziel Investments 
+                    span.text-custom.mr-1 Ziel Investments 
                     span.text-typed
                   p.home_small_content.mt-4.text-muted Through innovation engineering applied to digital, we deliver measurably better results.
                   .pt-3
@@ -22,16 +21,16 @@
                       i.mdi.mdi-play
                       //- TODO: ensure mp4 plays video. 
                     video#myVideo(width="640" height="320" controls="" style="display:none;")
-                      source(src="~/assets/videos/video-1.mp4" type="video/mp4")
+                      //- source(src="~/assets/videos/video-1.mp4" type="video/mp4")
                   .moeny-more.mt-4.pt-3
                     //- p.text-custom Work with the best
               .col-lg-6
-                .mt-3
+                //- .mt-3
                   img.img-fluid.mx-auto.d-block(src="~/assets/images/custom/homepage-landing.png" alt="")
       div
         a.scroll.scroll_down(href="#work")
           span
-      .curv-img
+      //- .curv-img
         img.img-fluid.mx-auto.d-block(src="~/assets/images/wave-static.svg" alt="")
     // End Home
 
@@ -53,7 +52,7 @@
               img.mx-auto.img-fluid.d-block(src="~/assets/images/clients/4.png" alt="logo-img")
     // End Client Logo
     // Start About Us
-    section.section
+    section#work.section
       .container
         .row
           .col-lg-12
@@ -235,7 +234,6 @@
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator';
-// import anime from 'animejs';
 import Typed from 'typed.js';
 import Cta from '~/components/Cta.vue';
 
@@ -267,45 +265,15 @@ export default class RootPage extends Vue {
 
   animateText() {
     const typed = new Typed('.text-typed', {
+      // NOTE: Keep these short
       strings: [
-        'We Provide a WOW! experience to our clients.',
-        'It is the best place to shop for fresh drinking water at all capacities.',
-        'We also ensure quality products and professional services.',
+        'expect a WOW! customer experience.',
+        'we process top quality drinking water.',
+        'we offer best quality products.',
       ],
       typeSpeed: 100, // typing speed
       backDelay: 3000, // pause before backspacing
     });
-    // $('.text-typed').each(function() {
-    //   var $this = $(this);
-    //   $this.typed({
-    //     strings: $this.attr('data-elements').split(','),
-    //     typeSpeed: 100, // typing speed
-    //     backDelay: 3000, // pause before backspacing
-    //   });
-    // });
-
-    // // Wrap every letter in a span
-    // const textWrapper: any = document.querySelector('.ml2');
-    // textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-    // anime
-    //   .timeline({ loop: true })
-    //   .add({
-    //     targets: '.ml2 .letter',
-    //     scale: [4, 1],
-    //     opacity: [0, 1],
-    //     translateZ: 0,
-    //     easing: 'easeOutExpo',
-    //     duration: 950,
-    //     delay: (el: any, i: any) => 70 * i,
-    //   })
-    //   .add({
-    //     targets: '.ml2',
-    //     opacity: 0,
-    //     duration: 1000,
-    //     easing: 'easeOutExpo',
-    //     delay: 1000,
-    //   });
   }
 }
 </script>
