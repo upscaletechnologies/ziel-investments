@@ -1,0 +1,33 @@
+/* ///////////////////////////////////// */
+/* Custom css */
+/* ///////////////////////////////////// */
+i.mdi {
+    color: #23afc0;
+}
+
+.custom_nav .dropdown-title {
+    padding: 6px 13px !important;
+    display: block;
+    margin-left: 0;
+    word-break: break-word;
+    color: #42506e;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 200;
+    /* -webkit-transition: all 0.4s;
+    transition: all 0.4s; */
+}
+.copy-rights i {
+    color: #f7be16 !important;
+}
+/* about us culture cards */
+.card.card-no-border {
+    border-width: 0;
+    box-shadow: none;
+}
+.card.icon-card img {
+    max-height: 80px;
+}
+i.mdi.mdi-lightbulb-outline.h4 {
+    color: #ffc107;
+}

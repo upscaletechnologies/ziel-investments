@@ -1,7 +1,7 @@
 <template lang="pug">
   div
     SubHeader(title="Ziel Fresh" :namespaces="['products']")
-    // Start Page
+    // Start Introduction and Gallery
     section.section
       .container
         .row
@@ -10,15 +10,30 @@
               p.small_title.mb-4.text-custom.text-uppercase Ziel Fresh
               h2.text-capitalize.mx-auto.section_header Fresh Bottled Water
               p.sec_content.pt-3.text-muted.mx-auto.
+                #[strong Ziel] translated to english means a goal, aim, objective, target, destination or finishing line.
+                #[strong Fresh] simply means something recently harvested.
+                #[strong Ziel Fresh] purified water is bottled fresh at the source to maintain its natural taste which is balanced by nature. Its enhanced by use of advanced modern technology by use of multi-barrier filtration, reverse osmosis, ozanation and UV treatment to give it a refreshing natural taste.
+                #[br]
+                Our water quality, grade and above all palate features are 100% natural
+              p.sec_content.pt-3.text-muted.mx-auto.
                 You can order the water in these packagings: #[strong 500ml and 1 litre] dozen package, #[strong 18.9 litres] Refillable or Disposable.
+                For enquiries, please call #[a.text-custom.nuxt-link-exact-active.nuxt-link-active(href='tel: +254 713-917-108') +254 713-917-108] or #[a.text-custom.nuxt-link-exact-active.nuxt-link-active(href='tel: +254 727-238-558') +254 727-238-558]
         .row.mb-4
           .col-6.col-lg-4
             figure
-              a.d-block.mb-4(data-fancybox="images" href="../../image-1.jpeg" data-width="1536" data-height="2304")
-                img.img-fluid(src="~/assets/images/products/image-1-1.jpeg")
-            figure
-              a.d-block.mb-4(data-fancybox="images" href="../../image-2.jpeg" data-width="1279" data-height="853")
-                img.img-fluid(src="~/assets/images/products/image-2-1.jpeg")
+              a.d-block.mb-4(data-fancybox="images" href="../../image-1.jpeg" data-width="1536" data-height="2304" data-caption="<h6>Image Description</h6>")
+                img.img-fluid(src="~/assets/images/products/image-1.jpeg")
+            //- TODO: Use this card to play mp4 video from google drive
+            .card.rounded-0
+              a(data-fancybox="html5-video" href="#myVideo")
+                img.card-img-top.img-fluid(src="~/assets/images/products/image-2-1.jpeg")
+              .card-body
+                p.card-text Factory Tour 1
+              video#myVideo.fancybox-video(width="640" height="320" controls="" style="display: none;")
+                source(src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4" type="video/mp4")
+                source(src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.webm" type="video/webm")
+                source(src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.ogv" type="video/ogg")
+                | Your browser doesn't support HTML5 video tag.
           .col-6.col-lg-4
             figure
               a.d-block.mb-4(data-fancybox="images" href="../../image-3.jpeg" data-width="1279" data-height="719")
@@ -36,11 +51,9 @@
             figure
               a.d-block.mb-4(data-fancybox="images" href="../../image-7-1.jpeg" data-width="1519" data-height="2279")
                 img.img-fluid(src="~/assets/images/products/image-7-1.jpeg")
-        .row
-          .col-lg-12
-            .section_title.text-center
-              h2.text-capitalize.mx-auto.section_header Our Story:
-        .card-deck.mb-sm-4.video-deck
+        
+        //- TODO: Move these into gallery above, hide the video behide some images
+        //- .card-deck.mb-sm-4.video-deck
           .card
             a(data-fancybox="html5-video" href="#myVideo")
               img.card-img-top.img-fluid(src="~/assets/images/products/poster-1.jpeg")
@@ -66,28 +79,7 @@
             video#myVideo(width="640" height="320" controls="" style="display:none;")
               source(src="~/assets/videos/video-5.mp4" type="video/mp4")
               | Your browser doesn't support HTML5 video tag.
-        .row
-          .col-lg-12
-            .section_title.text-center
-              h2.text-capitalize.mx-auto.section_header About Ziel Fresh
-            .section_title.text-left
-              p.
-                #[strong Ziel] translated to english means a goal, aim, objective, target, destination or finishing line. 
-              p.
-                #[strong Fresh] simply means something recently harvested.
-              p.
-                #[strong Ziel Fresh] purified water is bottled fresh at the source to maintain its natural taste which is balanced by nature. 
-              p.
-               Its enhanced by use of advanced modern technology by use of multi-barrier filtration, reverse osmosis, ozanation and UV treatment to give it a refreshing natural taste.
-              p.
-                Our water quality, grade and above all palate features are 100% natural
-        .row
-          .col-lg-12
-            .section_title.text-center
-              p.sec_content.pt-3.text-muted.mx-auto.
-                For enquiries, please call us on: #[a.text-custom.nuxt-link-exact-active.nuxt-link-active(href='tel: +254 713-917-108') +254 713-917-108] or #[a.text-custom.nuxt-link-exact-active.nuxt-link-active(href='tel: +254 727-238-558') +254 727-238-558]
-
-    // Start How It Work
+    // End Introduction and Gallery
     // Start Description
     section.section.bg-features.vertical-content
       .bg-features-overlay.ziel-fresh
