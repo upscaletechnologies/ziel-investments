@@ -21,7 +21,7 @@
                       i.mdi.mdi-play
                       //- TODO: ensure mp4 plays video. 
                     video#myVideo(width="640" height="320" controls="" style="display:none;")
-                      //- source(src="~/assets/videos/video-1.mp4" type="video/mp4")
+                      source(src="" type="video/mp4")
                   .moeny-more.mt-4.pt-3
                     //- p.text-custom Work with the best
               .col-lg-6

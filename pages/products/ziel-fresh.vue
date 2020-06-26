@@ -21,64 +21,49 @@
         .row.mb-4
           .col-6.col-lg-4
             figure
-              a.d-block.mb-4(data-fancybox="images" href="../../image-1.jpeg" data-width="1536" data-height="2304" data-caption="<h6>Image Description</h6>")
-                img.img-fluid(src="~/assets/images/products/image-1.jpeg")
-            //- TODO: Use this card to play mp4 video from google drive
-            .card.rounded-0
-              a(data-fancybox="html5-video" href="#myVideo")
-                img.card-img-top.img-fluid(src="~/assets/images/products/image-2-1.jpeg")
-              .card-body
-                p.card-text Factory Tour 1
-              video#myVideo.fancybox-video(width="640" height="320" controls="" style="display: none;")
-                source(src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4" type="video/mp4")
-                source(src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.webm" type="video/webm")
-                source(src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.ogv" type="video/ogg")
-                | Your browser doesn't support HTML5 video tag.
+              a.d-block.mb-4(data-fancybox="images" :href="require('~/assets/images/products/image-1.jpeg')" data-width="1536" data-height="2304" data-caption="<h6>Ziel Fresh Bottled Water</h6>")
+                img.img-fluid(src="~/assets/images/products/image-1-1.jpeg")
+            //- Use this card to play mp4 video from google drive
+            figure
+              .card
+                a(data-fancybox="html5-video" data-width="640" data-height="360" href="https://drive.google.com/file/d/1_FIcmo4Gay1l9bouVRa-A4-ycHy9W3_V/preview")
+                  img.card-img-top.img-fluid(src="~/assets/images/products/image-2-1.jpeg")
+                .card-body
+                  p.card-text Factory tour: Inside series
+                //- video#myVideo(width="640" height="320" controls="" style="display:none;")
+                //-   source(src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4')}" type="video/mp4")
+                //-   | Your browser doesn't support HTML5 video tag.
           .col-6.col-lg-4
             figure
-              a.d-block.mb-4(data-fancybox="images" href="../../image-3.jpeg" data-width="1279" data-height="719")
+              a.d-block.mb-4(data-fancybox="images" :href="require('~/assets/images/products/image-3.jpeg')" data-width="1279" data-height="719" data-caption="<h6>Ziel Fresh: 500ml Package.</h6>")
                 img.img-fluid(src="~/assets/images/products/image-3-1.jpeg")
             figure
-              a.d-block.mb-4(data-fancybox="images" href="../../image-4.jpeg" data-width="1279" data-height="853")
+              a.d-block.mb-4(data-fancybox="images" :href="require('~/assets/images/products/image-4.jpeg')" data-width="1279" data-height="853" data-caption="<h6>Ziel Fresh: Water Treatment Tanks.</h6>")
                 img.img-fluid(src="~/assets/images/products/image-4-1.jpeg")
             figure
-              a.d-block.mb-4(data-fancybox="images" href="../../image-5.jpeg" data-width="1020" data-height="858")
-                img.img-fluid(src="~/assets/images/products/image-5-1.jpeg")
+              .card
+                a(data-fancybox="html5-video" data-width="640" data-height="360" href="https://drive.google.com/file/d/1_A0K9ScYBBESSsBTdOnlrKXkl_A2n7sn/preview")
+                  //- TODO: Add height px of the image to align at gallery bottom.
+                  img.card-img-top.img-fluid(src="~/assets/images/products/image-5-1.jpeg")
+                .card-body
+                  p.card-text Factory tour: Outside Series
+                //- video#myVideo(width="640" height="320" controls="" style="display:none;")
+                //-   source(src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4" type="video/mp4")
+                //-   | Your browser doesn't support HTML5 video tag.
           .col-6.col-lg-4.d-none.d-lg-block
             figure
-              a.d-block.mb-4(data-fancybox="images" href="../../image-6.jpeg" data-width="1279" data-height="870")
+              a.d-block.mb-4(data-fancybox="images" :href="require('~/assets/images/products/image-6.jpeg')" data-width="1279" data-height="870" data-caption="<h6>Ziel Fresh: All our packaging.</h6>")
                 img.img-fluid(src="~/assets/images/products/image-6-1.jpeg")
             figure
-              a.d-block.mb-4(data-fancybox="images" href="../../image-7-1.jpeg" data-width="1519" data-height="2279")
-                img.img-fluid(src="~/assets/images/products/image-7-1.jpeg")
+              .card
+                a(data-fancybox="html5-video" data-width="640" data-height="360" href="https://drive.google.com/file/d/1ZpxhigV9JPqhBwIaFhZCORpCPAXCrHT0/preview")
+                  img.card-img-top.img-fluid(src="~/assets/images/products/image-7-1.jpeg")
+                .card-body
+                  p.card-text Factory tour: Packaging Series
+                //- video#myVideo(width="640" height="320" controls="" style="display:none;")
+                //-   source(src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4" type="video/mp4")
+                //-   | Your browser doesn't support HTML5 video tag.
         
-        //- TODO: Move these into gallery above, hide the video behide some images
-        //- .card-deck.mb-sm-4.video-deck
-          .card
-            a(data-fancybox="html5-video" href="#myVideo")
-              img.card-img-top.img-fluid(src="~/assets/images/products/poster-1.jpeg")
-            .card-body
-              p.card-text Factory tour: 1
-            video#myVideo(width="640" height="320" controls="" style="display:none;")
-              source(src="~/assets/videos/video-1.mp4" type="video/mp4")
-              | Your browser doesn't support HTML5 video tag.
-
-          .card
-            a(data-fancybox="html5-video" href="#myVideo")
-              img.card-img-top.img-fluid(src="~/assets/images/products/poster-2.jpeg")
-            .card-body
-              p.card-text Factory tour: 2
-            video#myVideo(width="640" height="320" controls="" style="display:none;")
-              source(src="~/assets/videos/video-2.mp4" type="video/mp4")
-              | Your browser doesn't support HTML5 video tag.
-          .card
-            a(data-fancybox="html5-video" href="#myVideo")
-              img.card-img-top.img-fluid(src="~/assets/images/products/poster-3.jpeg")
-            .card-body
-              p.card-text Factory tour: 3
-            video#myVideo(width="640" height="320" controls="" style="display:none;")
-              source(src="~/assets/videos/video-5.mp4" type="video/mp4")
-              | Your browser doesn't support HTML5 video tag.
     // End Introduction and Gallery
     // Start Description
     section.section.bg-features.vertical-content
