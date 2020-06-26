@@ -5,13 +5,13 @@
       .home-table
         .home-table-center
           .container.z-index.position-relative
-            .row.vertical-content
+            .row.vertical-content.justify-content-start
               .col-lg-6
                 .home_content.mt-3
                   p.home_small_title
                     | Welcome To #[span.text-custom Ziel Investments]
                   h1
-                    span.text-custom.mr-1 Ziel Investments 
+                    span.text-custom.mr-1 In Ziel 
                     span.text-typed
                   p.home_small_content.mt-4.text-muted Through innovation engineering applied to digital, we deliver measurably better results.
                   .pt-3
@@ -22,16 +22,9 @@
                       //- TODO: ensure mp4 plays video. 
                     video#myVideo(width="640" height="320" controls="" style="display:none;")
                       source(src="" type="video/mp4")
-                  .moeny-more.mt-4.pt-3
-                    //- p.text-custom Work with the best
-              .col-lg-6
-                //- .mt-3
-                  img.img-fluid.mx-auto.d-block(src="~/assets/images/custom/homepage-landing.png" alt="")
       div
         a.scroll.scroll_down(href="#work")
           span
-      //- .curv-img
-        img.img-fluid.mx-auto.d-block(src="~/assets/images/wave-static.svg" alt="")
     // End Home
 
     // Start Client Logo
