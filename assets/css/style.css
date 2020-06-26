@@ -273,13 +273,9 @@ button:focus {
 }
 
 .btn-gradient {
-  background: #f7be16;
-  /* background: #2AAFC0;
-    background: -webkit-gradient(linear, left top, right bottom, from(#2154cf), to(#6ec5ff));
-    background: linear-gradient(to bottom right, #2154cf, #6ec5ff); */
-  /* background: #316fb5; */
-  background: linear-gradient(to bottom right, #ffbf00, #e3f197);
-  /* background: linear-gradient(to bottom right,#316fb5,#23afc0); */
+  background: #2aafc0;
+  background: -webkit-gradient(linear, left top, right bottom, from(#2154cf), to(#6ec5ff));
+  background: linear-gradient(to bottom right, #2154cf, #6ec5ff);
   color: #fff;
   font-size: 14px;
   transition: all 0.5s;

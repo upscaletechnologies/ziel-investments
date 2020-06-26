@@ -24,10 +24,14 @@
     min-height: 500px;
   }
 }
+/* .btn-gradient {
+  background: #f7be16;
+  background: linear-gradient(to bottom right, #ffbf00, #e3f197);
+} */
 .learn_more i {
-  background: linear-gradient(to bottom right, #e3f197, #f5b803);
   color: #fff !important;
-  box-shadow: 0px 0px 0px 9px #2aafc029;
+  /* background: linear-gradient(to bottom right, #e3f197, #f5b803);
+  box-shadow: 0px 0px 0px 9px #2aafc029; */
 }
 /* landing page hero design end */
 
