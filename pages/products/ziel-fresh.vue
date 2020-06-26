@@ -23,16 +23,16 @@
             figure
               a.d-block.mb-4(data-fancybox="images" :href="require('~/assets/images/products/image-1.jpeg')" data-width="1536" data-height="2304" data-caption="<h6>Ziel Fresh Bottled Water</h6>")
                 img.img-fluid(src="~/assets/images/products/image-1-1.jpeg")
-            //- TODO: Use this card to play mp4 video from google drive
+            //- Use this card to play mp4 video from google drive
             figure
               .card
-                a(data-fancybox="html5-video" href="#myVideo")
+                a(data-fancybox="html5-video" data-width="640" data-height="360" href="https://drive.google.com/file/d/1_FIcmo4Gay1l9bouVRa-A4-ycHy9W3_V/preview")
                   img.card-img-top.img-fluid(src="~/assets/images/products/image-2-1.jpeg")
                 .card-body
                   p.card-text Factory tour: Inside series
-                video#myVideo(width="640" height="320" controls="" style="display:none;")
-                  source(src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4" type="video/mp4")
-                  | Your browser doesn't support HTML5 video tag.
+                //- video#myVideo(width="640" height="320" controls="" style="display:none;")
+                //-   source(src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4')}" type="video/mp4")
+                //-   | Your browser doesn't support HTML5 video tag.
           .col-6.col-lg-4
             figure
               a.d-block.mb-4(data-fancybox="images" :href="require('~/assets/images/products/image-3.jpeg')" data-width="1279" data-height="719" data-caption="<h6>Ziel Fresh: 500ml Package.</h6>")
@@ -42,27 +42,27 @@
                 img.img-fluid(src="~/assets/images/products/image-4-1.jpeg")
             figure
               .card
-                a(data-fancybox="html5-video" href="#myVideo")
+                a(data-fancybox="html5-video" data-width="640" data-height="360" href="https://drive.google.com/file/d/1_A0K9ScYBBESSsBTdOnlrKXkl_A2n7sn/preview")
                   //- TODO: Add height px of the image to align at gallery bottom.
-                  img.card-img-top.img-fluid(src="~/assets/images/products/poster-1.jpeg")
+                  img.card-img-top.img-fluid(src="~/assets/images/products/image-5-1.jpeg")
                 .card-body
                   p.card-text Factory tour: Outside Series
-                video#myVideo(width="640" height="320" controls="" style="display:none;")
-                  source(src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4" type="video/mp4")
-                  | Your browser doesn't support HTML5 video tag.
+                //- video#myVideo(width="640" height="320" controls="" style="display:none;")
+                //-   source(src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4" type="video/mp4")
+                //-   | Your browser doesn't support HTML5 video tag.
           .col-6.col-lg-4.d-none.d-lg-block
             figure
               a.d-block.mb-4(data-fancybox="images" :href="require('~/assets/images/products/image-6.jpeg')" data-width="1279" data-height="870" data-caption="<h6>Ziel Fresh: All our packaging.</h6>")
                 img.img-fluid(src="~/assets/images/products/image-6-1.jpeg")
             figure
               .card
-                a(data-fancybox="html5-video" href="#myVideo")
+                a(data-fancybox="html5-video" data-width="640" data-height="360" href="https://drive.google.com/file/d/1ZpxhigV9JPqhBwIaFhZCORpCPAXCrHT0/preview")
                   img.card-img-top.img-fluid(src="~/assets/images/products/image-7-1.jpeg")
                 .card-body
-                  p.card-text Factory tour: Demo Series
-                video#myVideo(width="640" height="320" controls="" style="display:none;")
-                  source(src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4" type="video/mp4")
-                  | Your browser doesn't support HTML5 video tag.
+                  p.card-text Factory tour: Packaging Series
+                //- video#myVideo(width="640" height="320" controls="" style="display:none;")
+                //-   source(src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4" type="video/mp4")
+                //-   | Your browser doesn't support HTML5 video tag.
         
     // End Introduction and Gallery
     // Start Description
