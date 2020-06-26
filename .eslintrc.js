@@ -24,6 +24,9 @@ module.exports = {
   rules: {
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
     // e.g. "@typescript-eslint/explicit-function-return-type": "off",
+    "prettier/prettier": ["error", {
+      "endOfLine":"auto"
+    }],
     "no-param-reassign": 0,
     // disable no-underscore-dangle
     "no-underscore-dangle": 0,

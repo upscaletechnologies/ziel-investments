@@ -24,7 +24,8 @@
     "@nuxtjs/axios": "^5.8.0",
     "@nuxtjs/sitemap": "^2.2.0",
     "jquery": "^3.4.1",
-    "nuxt": "^2.12.0"
+    "nuxt": "^2.12.0",
+    "typed.js": "^2.0.11"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.5.1",

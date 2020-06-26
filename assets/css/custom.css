@@ -1,0 +1,64 @@
+/* ///////////////////////////////////// */
+/* Custom css */
+/* ///////////////////////////////////// */
+
+/* landing page hero design start */
+.header_bg {
+  top: 70px;
+}
+.landing-section {
+  background-image: url(../images/custom/homepage-landing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .landing-section {
+    background-position: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .landing-section {
+    background-position: right;
+    min-height: 500px;
+  }
+}
+.learn_more i {
+  background: linear-gradient(to bottom right, #e3f197, #f5b803);
+  color: #fff !important;
+  box-shadow: 0px 0px 0px 9px #2aafc029;
+}
+/* landing page hero design end */
+
+/* Other design start */
+i.mdi {
+  color: #23afc0;
+}
+
+.custom_nav .dropdown-title {
+  padding: 6px 13px !important;
+  display: block;
+  margin-left: 0;
+  word-break: break-word;
+  color: #42506e;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 200;
+  /* -webkit-transition: all 0.4s;
+    transition: all 0.4s; */
+}
+.copy-rights i {
+  color: #f7be16 !important;
+}
+/* about us culture cards */
+.card.card-no-border {
+  border-width: 0;
+  box-shadow: none;
+}
+.card.icon-card img {
+  max-height: 80px;
+}
+i.mdi.mdi-lightbulb-outline.h4 {
+  color: #ffc107;
+}

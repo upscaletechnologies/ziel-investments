@@ -1,31 +1,32 @@
 <template lang="pug">
   div
     // Start Home
-    //- section.position-relative.header_bg.bg-light
-    section.position-relative.header_bg
+    section.position-relative.header_bg.landing-section
       .home-table
         .home-table-center
           .container.z-index.position-relative
-            .row.vertical-content
+            .row.vertical-content.justify-content-start
               .col-lg-6
                 .home_content.mt-3
-                  p.home_small_title.
-                    Welcome To #[span.text-custom Ziel Investments]
-                  h1.
-                    We give our customers a #[span.text-custom WOW!] class experience.
-                  p.home_small_content.mt-4.text-muted
-                    | Through innovation engineering applied to digital, we deliver measurably better results.
+                  p.home_small_title
+                    | Welcome To #[span.text-custom Ziel Investments]
+                  h1
+                    span.text-custom.mr-1 In Ziel 
+                    span.text-typed
+                  p.home_small_content.mt-4.text-muted Through innovation engineering applied to digital, we deliver measurably better results.
                   .pt-3
-                    nuxt-link.btn.btn-gradient.text-uppercase.mr-2(to="/contact-us") Contact Us
-              .col-lg-6
-                .mt-3
-                  img.img-fluid.mx-auto.d-block(src="~/assets/images/custom/homepage-landing.png" alt="")
+                    a.btn.btn-gradient.text-uppercase.mr-2(href="/about-us") Get Started
+                    span.mr-3 or
+                    a.mr-3.text-white.learn_more.video_home(href="#myVideo")
+                      i.mdi.mdi-play
+                      //- TODO: ensure mp4 plays video. 
+                    video#myVideo(width="640" height="320" controls="" style="display:none;")
+                      source(src="" type="video/mp4")
       div
         a.scroll.scroll_down(href="#work")
           span
-      .curv-img
-        img.img-fluid.mx-auto.d-block(src="~/assets/images/wave-static.svg" alt="")
     // End Home
+
     // Start Client Logo
     //- section.section
       .container
@@ -44,7 +45,7 @@
               img.mx-auto.img-fluid.d-block(src="~/assets/images/clients/4.png" alt="logo-img")
     // End Client Logo
     // Start About Us
-    section.section
+    section#work.section
       .container
         .row
           .col-lg-12
@@ -226,6 +227,7 @@
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator';
+import Typed from 'typed.js';
 import Cta from '~/components/Cta.vue';
 
 @Component({
@@ -246,5 +248,25 @@ import Cta from '~/components/Cta.vue';
 })
 export default class RootPage extends Vue {
   test: string = 'this is a test';
+
+  mounted() {
+    this.animateText();
+  }
+  updated() {
+    this.animateText();
+  }
+
+  animateText() {
+    const typed = new Typed('.text-typed', {
+      // NOTE: Keep these short
+      strings: [
+        'expect a WOW! customer experience.',
+        'we process top quality drinking water.',
+        'we offer best quality products.',
+      ],
+      typeSpeed: 100, // typing speed
+      backDelay: 3000, // pause before backspacing
+    });
+  }
 }
 </script>

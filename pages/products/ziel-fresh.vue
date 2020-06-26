@@ -1,7 +1,7 @@
 <template lang="pug">
   div
     SubHeader(title="Ziel Fresh" :namespaces="['products']")
-    // Start Page
+    // Start Introduction and Gallery
     section.section
       .container
         .row
@@ -18,7 +18,40 @@
               p.sec_content.pt-3.text-muted.mx-auto.
                 You can order the water in these packagings: #[strong 500ml and 1 litre] dozen package, #[strong 18.9 litres] Refillable or Disposable.
                 For enquiries, please call #[a.text-custom.nuxt-link-exact-active.nuxt-link-active(href='tel: +254 713-917-108') +254 713-917-108] or #[a.text-custom.nuxt-link-exact-active.nuxt-link-active(href='tel: +254 727-238-558') +254 727-238-558]
-    // Start How It Work
+        //- TODO: Fix the video links
+        .row.mb-4
+          .col-6.col-lg-4
+            figure
+              a.d-block.mb-4(data-fancybox="images" :href="require('~/assets/images/products/image-1.jpeg')" data-width="1536" data-height="2304" data-caption="<h6>Ziel Fresh Bottled Water</h6>")
+                img.img-fluid(src="~/assets/images/products/image-1-1.jpeg")
+            figure.card.rounded-0
+              a(data-fancybox="html5-video" data-width="640" data-height="360" href="https://drive.google.com/file/d/1_FIcmo4Gay1l9bouVRa-A4-ycHy9W3_V/preview" data-caption="<h6>Factory tour: Inside series</h6>")
+                  img.card-img-top.img-fluid.rounded-0(src="~/assets/images/products/image-2-1.jpeg")
+              .card-body
+                p.card-text Factory tour: Inside series
+          .col-6.col-lg-4
+            figure
+              a.d-block.mb-4(data-fancybox="images" :href="require('~/assets/images/products/image-3.jpeg')" data-width="1279" data-height="719" data-caption="<h6>Ziel Fresh: 500ml Package.</h6>")
+                img.img-fluid(src="~/assets/images/products/image-3-1.jpeg")
+            figure
+              a.d-block.mb-4(data-fancybox="images" :href="require('~/assets/images/products/image-4.jpeg')" data-width="1279" data-height="853" data-caption="<h6>Ziel Fresh: Water Treatment Tanks.</h6>")
+                img.img-fluid(src="~/assets/images/products/image-4-1.jpeg")
+            figure.card.rounded-0
+              a(data-fancybox="html5-video" data-width="640" data-height="360" href="https://drive.google.com/file/d/1_A0K9ScYBBESSsBTdOnlrKXkl_A2n7sn/preview" data-caption="<h6>Factory tour: Outside Series</h6>")
+                img.card-img-top.img-fluid.rounded-0(src="~/assets/images/products/image-5-1.jpeg")
+              .card-body
+                p.card-text Factory tour: Outside Series
+          .col-6.col-lg-4.d-none.d-lg-block
+            figure
+              a.d-block.mb-4(data-fancybox="images" :href="require('~/assets/images/products/image-6.jpeg')" data-width="1279" data-height="870" data-caption="<h6>Ziel Fresh: All our packaging.</h6>")
+                img.img-fluid(src="~/assets/images/products/image-6-1.jpeg")
+            figure.card.rounded-0
+              a(data-fancybox="html5-video" data-width="640" data-height="360" href="https://drive.google.com/file/d/1ZpxhigV9JPqhBwIaFhZCORpCPAXCrHT0/preview" data-caption="<h6>Factory tour: Packaging Series</h6>")
+                img.card-img-top.img-fluid.rounded-0(src="~/assets/images/products/image-7-1.jpeg") 
+              .card-body
+                p.card-text Factory tour: Packaging Series       
+    // End Introduction and Gallery
+
     // Start Description
     section.section.bg-features.vertical-content
       .bg-features-overlay.ziel-fresh
@@ -53,7 +86,7 @@
                   p.features-sub-title.pt-2
                     | Ziel Fresh  premium is manufactured in the state-of-the-art, ultra modern and computerised equipment with stringent quality control measures.
       .features_side_mockup.d-lg-block.d-xl-block.d-none.right
-        img.img-fluid.mx-auto.d-block(src="~/assets/images/products/ziel-fresh.jpeg" alt="")
+        img.img-fluid.mx-auto.d-block(src="~/assets/images/products/ziel-fresh-10.jpeg" alt="")
     // End Description
     // Start Page
     section.section.bg-light

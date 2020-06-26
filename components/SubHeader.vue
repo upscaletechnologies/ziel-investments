@@ -1,21 +1,22 @@
 <template lang="pug">
   // Start Header
-  section.section_page_header.bg-light.section
+  section.section_page_header_img.section
+    .bg-overlay-gradient
     .container
       .row.row-xs-center.align-top
         .col-lg-8
           .page_title_main
-            h3.mb-0 {{title}}
+            h3.mb-0.text-white {{title}}
         .col-lg-4
           .page_title_list.mt-1.text-right
             ul.list-unstyled.mb-0
               li.list-inline-item
-                nuxt-link.text-custom(to="/") Home
+                nuxt-link.text-white(to="/") Home
               li.list-inline-item(v-if="namespaces.includes('about')")
-                nuxt-link.text-custom(to="/about-us") About Us
+                nuxt-link.text-white(to="/about-us") About Us
               li.list-inline-item(v-if="namespaces.includes('products')")
-                nuxt-link.text-custom(to="") Products
-              li.list-inline-item {{titleMenu || title}}
+                nuxt-link.text-white(to="") Products
+              li.list-inline-item.active {{titleMenu || title}}
   // End Header
 </template>
 
