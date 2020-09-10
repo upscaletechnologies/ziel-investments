@@ -231,6 +231,9 @@ import Typed from 'typed.js';
 import Cta from '~/components/Cta.vue';
 
 @Component({
+  // apollo: {
+
+  // }
   components: { Cta },
   head() {
     return {

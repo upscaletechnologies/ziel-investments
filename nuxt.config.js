@@ -1,5 +1,5 @@
 export default {
-  mode: 'universal',
+  // mode: 'universal',
   /*
    ** Customize the progress-bar color
    */
@@ -38,7 +38,14 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/sitemap',
+    '@nuxtjs/apollo',
   ],
+  apollo: {
+    clientConfigs: {
+      default: '~/apollo/config.js',
+    },
+  },
+
   sitemap: {
     hostname: 'https://zielinvestments.com',
     path: '/sitemap.xml',
