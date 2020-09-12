@@ -9,7 +9,8 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+    "generate-types": "graphql-codegen --config codegen.yml",
+    "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore ."
   },
   "lint-staged": {
     "*.{js,vue}": "eslint"
@@ -24,14 +25,21 @@
     "@nuxtjs/apollo": "^4.0.1-rc.3",
     "@nuxtjs/axios": "^5.8.0",
     "@nuxtjs/sitemap": "^2.2.0",
+    "apollo-cache-inmemory": "^1.6.6",
+    "graphql": "^15.3.0",
     "graphql-tag": "^2.11.0",
     "jquery": "^3.4.1",
     "nuxt": "^2.14.5",
     "typed.js": "^2.0.11"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^1.17.8",
+    "@graphql-codegen/typescript": "^1.17.9",
+    "@graphql-codegen/typescript-graphql-files-modules": "^1.17.8",
+    "@graphql-codegen/typescript-operations": "^1.17.8",
     "@nuxt/typescript-build": "^0.5.1",
     "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/eslint-config-typescript": "^3.0.0",
     "@nuxtjs/eslint-module": "^1.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^6.1.0",

@@ -65,6 +65,11 @@ export default {
    ** Build configuration
    */
   build: {
+    hotMiddleware: {
+      client: {
+        overlay: false,
+      },
+    },
     /*
      ** You can extend webpack config here
      */
