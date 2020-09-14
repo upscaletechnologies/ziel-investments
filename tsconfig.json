@@ -1,6 +1,9 @@
+/**
+* Notice that ES2018 target is needed to be able to use Optional Chaining and Nullish Coalescing, as ESNext target doesn't seem to support these features for now.
+*/
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "es2018",
     "module": "esnext",
     "strict": true,
     "importHelpers": true,
