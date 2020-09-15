@@ -1,5 +1,4 @@
 export default {
-  mode: 'universal',
   /*
    ** Customize the progress-bar color
    */
@@ -62,7 +61,6 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {},
-    vendor: [],
     plugins: [],
   },
   /*
