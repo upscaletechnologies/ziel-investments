@@ -37,7 +37,15 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/sitemap',
+    '@nuxtjs/apollo',
   ],
+  apollo: {
+    // Sets up the apollo client endpoints
+    clientConfigs: {
+      // recommended: use a file to declare the client configuration.
+      default: '~/apollo/config.js',
+    },
+  },
   sitemap: {
     hostname: 'https://zielinvestments.com',
     path: '/sitemap.xml',

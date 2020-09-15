@@ -18,7 +18,8 @@
     "noEmit": true,
     "types": [
       "@types/node",
-      "@nuxt/types"
+      "@nuxt/types",
+      "vue-apollo/types"
     ],
     "lib": [
       "esnext",
