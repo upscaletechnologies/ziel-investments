@@ -267,22 +267,20 @@ import Cta from '~/components/Cta.vue';
 export default class RootPage extends Vue {
   test: string = 'this is a test';
   home: any = [];
+  taglines: any;
 
   mounted() {
     this.animateText();
   }
   updated() {
-    // this.animateText();
+    this.animateText();
   }
 
   animateText() {
+    const taglines = this.home.taglines.map((t: any) => t.tagline);
     const typed = new Typed('.text-typed', {
       // NOTE: Keep these short
-      strings: [
-        'expect a WOW! customer experience.',
-        'we process top quality drinking water.',
-        'we offer best quality products.',
-      ],
+      strings: taglines,
       typeSpeed: 100, // typing speed
       backDelay: 3000, // pause before backspacing
     });
