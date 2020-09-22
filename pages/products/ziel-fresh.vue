@@ -9,7 +9,7 @@
             .section_title.text-center
               p.small_title.mb-4.text-custom.text-uppercase Ziel Fresh
               h2.text-capitalize.mx-auto.section_header {{product.title}}
-              p.sec_content.pt-3.text-muted.mx-auto {{product.titleDescription}}
+              p.sec_content.pt-3.text-muted.mx-auto(v-html="`${( product.titleDescription )}`")
         //- TODO: Fix the video links
         .row.mb-4
           .col-6.col-lg-4
@@ -17,7 +17,7 @@
               a.d-block.mb-4(data-fancybox="images" :href="require('~/assets/images/products/image-1.jpeg')" data-width="1536" data-height="2304" data-caption="<h6>Ziel Fresh Bottled Water</h6>")
                 img.img-fluid(src="~/assets/images/products/image-1-1.jpeg")
             figure.card.rounded-0
-              a(data-fancybox="html5-video" data-width="640" data-height="360" href="https://drive.google.com/file/d/1_FIcmo4Gay1l9bouVRa-A4-ycHy9W3_V/preview" data-caption="<h6>Factory tour: Inside series</h6>")
+              a(data-fancybox="html5-video" data-width="640" data-height="360" href="https://www.datocms-assets.com/32398/1600772746-ziel-fresh-10.jpeg" data-caption="<h6>Factory tour: Inside series</h6>")
                   img.card-img-top.img-fluid.rounded-0(src="~/assets/images/products/image-2-1.jpeg")
               .card-body
                 p.card-text Factory tour: Inside series
@@ -116,7 +116,7 @@ import Cta from '~/components/Cta.vue';
       {
         product {
           title
-          titleDescription(markdown: false)
+          titleDescription
           media {
             thumbnail {
               url
