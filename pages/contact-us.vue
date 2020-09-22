@@ -19,9 +19,9 @@
                 i.pe-7s-phone
               .contact-detail.mt-4
                 h6 Call or Email At
-                a.text-muted.mb-0.mt-3(href='tel: +254 727-238-558') +254 727-238-558
+                a.text-muted.mb-0.mt-3(href='tel: +254 727-238-558') {{contact.phoneNumber}}
                 br
-                a.text-muted.mb-0(href='mailto:hello@zielinvestments.com' target="_blank") hello@zielinvestments.com
+                a.text-muted.mb-0(href='mailto:hello@zielinvestments.com' target="_blank") {{contact.email}}
           .col-lg-4
             .contact_icon_box.mt-3.p-4.text-center.rounded.bg-light
               .contact-icon.text-custom
@@ -29,9 +29,7 @@
               .contact-detail.mt-4
                 h6 Visit Office
                 p.text-muted.mt-3.mb-0
-                  | Hurlingham, Argwings Kodhek Close, Devsons Court
-                  br
-                  |  Nairobi, Kenya
+                  | {{contact.officeLocation}}
           .col-lg-4
             .contact_icon_box.mt-3.p-4.text-center.rounded.bg-light
               .contact-icon.text-custom
@@ -39,9 +37,7 @@
               .contact-detail.mt-4
                 h6 Our Address
                 p.text-muted.mt-3.mb-0
-                  | P.O. Box 2488-00502
-                  br
-                  |  Karen, Nairobi - Kenya
+                  | {{contact.address}}
         .row.mt-3.vertical-content
           .col-lg-6
             .mt-3
@@ -80,16 +76,10 @@ import SubHeader from '~/components/SubHeader.vue';
     contact: gql`
       {
         contact {
-          taglines {
-            tagline
-          }
-          introDescription
-          sliderImages {
-            url
-          }
-          introVideo {
-            url
-          }
+          phoneNumber
+          email
+          officeLocation
+          address
         }
       }
     `,
