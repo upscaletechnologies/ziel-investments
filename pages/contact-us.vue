@@ -28,16 +28,14 @@
                 i.pe-7s-map-marker
               .contact-detail.mt-4
                 h6 Visit Office
-                p.text-muted.mt-3.mb-0
-                  | {{contact.officeLocation}}
+                p.text-muted.mt-3.mb-0(v-html="`${( contact.officeLocation )}`")
           .col-lg-4
             .contact_icon_box.mt-3.p-4.text-center.rounded.bg-light
               .contact-icon.text-custom
                 i.pe-7s-id
               .contact-detail.mt-4
                 h6 Our Address
-                p.text-muted.mt-3.mb-0
-                  | {{contact.address}}
+                p.text-muted.mt-3.mb-0(v-html="`${( contact.address )}`")
         .row.mt-3.vertical-content
           .col-lg-6
             .mt-3
