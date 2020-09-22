@@ -13,15 +13,15 @@
                   h1
                     span.text-custom.mr-1 In Ziel 
                     span.text-typed
-                  p.home_small_content.mt-4.text-muted {{home.titleDescription}}
+                  p.home_small_content.mt-4.text-muted {{home.introDescription}}
                   .pt-3
-                    a.btn.btn-gradient.text-uppercase.mr-2(href="/about-us") {{home.getstartedButton}}
+                    a.btn.btn-gradient.text-uppercase.mr-2(href="/about-us") Get Started
                     span.mr-3 or
                     a.mr-3.text-white.learn_more.video_home(href="#myVideo")
                       i.mdi.mdi-play
                       //- TODO: ensure mp4 plays video. 
                     video#myVideo(width="640" height="320" controls="" style="display:none;")
-                      source(src="" type="video/mp4")
+                      source(src="home.introVideo.url" type="video/mp4")
       div
         a.scroll.scroll_down(href="#work")
           span
@@ -46,14 +46,14 @@
     // End Client Logo
     // Start About Us
     section#work.section
-      .container(v-if="home")
+      .container
         .row
           .col-lg-12
             .section_title.text-center
               p.small_title.mb-4.text-custom.text-uppercase  Overview
-              h2.text-capitalize.mx-auto.section_header {{home.overviewTitle}}
+              h2.text-capitalize.mx-auto.section_header Let us empower your business
               p.sec_subtitle.pt-3.text-muted.mx-auto
-                | {{home.overviewDescription}}
+                | A complete range of technology services delivered with unified purpose
         .row.mt-5
           .col-lg-4
             .text-center.features_axi_box.mt-3.rounded
@@ -90,14 +90,14 @@
                     i.mdi.mdi-arrow-right
     // End About Us
     // Start Description
-    section.section.bg-features.vertical-content(v-if="home")
+    section.section.bg-features.vertical-content
       .bg-features-overlay
       .container
         .row
           .col-lg-6.offset-lg-6.col-md-12
             .mt-3.features_desc.text-white
               div
-                h3.features-heading.text-capitalize {{home.pillarTitle}}
+                h3.features-heading.text-capitalize Our 3 pillar Approach
                 .main-title-border
               .features
                 .features-icon.features-left
@@ -125,14 +125,14 @@
     // End Description
     // Start Services
     section.section.bg-light
-      .container(v-if="home")
+      .container
         .row
           .col-lg-12
             .section_title.text-center
               p.small_title.mb-4.text-custom.text-uppercase  Ultimate Value
-              h2.text-capitalize.mx-auto.section_header {{home.valueTitle}}
+              h2.text-capitalize.mx-auto.section_header Driving value across industries
               p.sec_subtitle.pt-3.text-muted.mx-auto
-                | {{home.valueDescription}}
+                | Discover how Ziel Investments empowers global industries with high-ROI intelligent solutions
         .row.mt-5
           .col-lg-6
             .mt-3.services_box_side.bg-white.position-relative.clearfix
@@ -224,7 +224,6 @@
     // End Services
     Cta
 </template>
-
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import Typed from 'typed.js';
@@ -236,67 +235,15 @@ import Cta from '~/components/Cta.vue';
     home: gql`
       {
         home {
-          sliderImages {
-            url
-            alt
-          }
           taglines {
             tagline
           }
-          descriptionTitle
-          getstartedButton
-          videolinkButton {
+          introDescription
+          sliderImages {
             url
-            alt
           }
-          overviewTitle
-          overviewDescription
-          overviews {
-            overviewTitle
-            overviewDescription
-          }
-          pillarTitle
-          pillars {
-            pillarName
-            pillarDescription
-          }
-          valueTitle
-          valueDescription
-          values {
-            valueName
-            valueDescription
-          }
-        }
-        product(filter: { productId: { eq: "ziel_fresh" } }) {
-          title
-          titleDescription
-          media {
-            thumbnailImages {
-              url
-            }
-            popupImages {
-              url
-            }
-            popupVideos {
-              url
-            }
-          }
-        }
-        contact {
-          contactTitle
-          titleDescription
-          calloremailSection {
-            title
-            call
-            email
-          }
-          ouraddressSection {
-            title
-            description
-          }
-          visitofficeSection {
-            title
-            description
+          introVideo {
+            url
           }
         }
       }
@@ -325,7 +272,7 @@ export default class RootPage extends Vue {
     this.animateText();
   }
   updated() {
-    this.animateText();
+    // this.animateText();
   }
 
   animateText() {

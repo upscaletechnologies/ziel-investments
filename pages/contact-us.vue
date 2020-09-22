@@ -71,10 +71,29 @@
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator';
+import gql from 'graphql-tag';
 import axios from 'axios';
 import SubHeader from '~/components/SubHeader.vue';
 
 @Component({
+  apollo: {
+    contact: gql`
+      {
+        contact {
+          taglines {
+            tagline
+          }
+          introDescription
+          sliderImages {
+            url
+          }
+          introVideo {
+            url
+          }
+        }
+      }
+    `,
+  },
   components: { SubHeader },
   head() {
     return {
@@ -92,6 +111,7 @@ import SubHeader from '~/components/SubHeader.vue';
 })
 export default class ContactUs extends Vue {
   model: any = {};
+  contact: any = [];
 
   sendContactEmail() {
     const { name, from, subject, text } = this.model;

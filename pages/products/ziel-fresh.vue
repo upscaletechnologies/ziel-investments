@@ -114,10 +114,30 @@
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator';
+import gql from 'graphql-tag';
 import SubHeader from '~/components/SubHeader.vue';
 import Cta from '~/components/Cta.vue';
 
 @Component({
+  // apollo: {
+  //   product: gql`
+  //     {
+  //       title
+  //       titleDescription
+  //       whySectionImage {
+  //         url
+  //       }
+  //       media {
+  //         thumbnail {
+  //           url
+  //         }
+  //         modalMedia {
+  //           url
+  //         }
+  //       }
+  //     }
+  //   `,
+  // },
   components: { SubHeader, Cta },
   head() {
     return {
@@ -133,5 +153,7 @@ import Cta from '~/components/Cta.vue';
     };
   },
 })
-export default class ZielFresh extends Vue {}
+export default class ZielFresh extends Vue {
+  product: any = [];
+}
 </script>
