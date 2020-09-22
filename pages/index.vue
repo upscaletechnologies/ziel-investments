@@ -235,13 +235,13 @@ import Cta from '~/components/Cta.vue';
     home: gql`
       {
         home {
-          taglines {
-            tagline
-          }
-          introDescription
           sliderImages {
             url
           }
+          taglines {
+            tagline
+          }
+          introDescription(markdown: false)
           introVideo {
             url
           }
