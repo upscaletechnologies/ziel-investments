@@ -30,7 +30,7 @@
     "graphql": "^15.3.0",
     "graphql-tag": "^2.11.0",
     "jquery": "^3.4.1",
-    "nuxt": "^2.12.0",
+    "nuxt": "^2.14.6",
     "typed.js": "^2.0.11"
   },
   "devDependencies": {
