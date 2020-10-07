@@ -222,22 +222,30 @@ import Cta from '~/components/Cta.vue';
 
 @Component({
   apollo: {
-    home: gql`
-      {
-        home {
-          sliderImages {
-            url
-          }
-          taglines {
-            tagline
-          }
-          introDescription(markdown: false)
-          introVideo {
-            url
+    home: {
+      query: gql`
+        {
+          home {
+            sliderImages {
+              url
+            }
+            taglines {
+              tagline
+            }
+            introDescription(markdown: false)
+            introVideo {
+              url
+            }
           }
         }
-      }
-    `,
+      `,
+      result({ data: { home } }) {
+        if (home && process.browser) {
+          const taglines = home.taglines.map((t: any) => t.tagline);
+          this.animateText(taglines);
+        }
+      },
+    },
   },
   components: { Cta },
   head() {
@@ -255,25 +263,17 @@ import Cta from '~/components/Cta.vue';
   },
 })
 export default class RootPage extends Vue {
-  test: string = 'this is a test';
   home: any = [];
-  taglines: any;
 
-  mounted() {
-    // this.animateText();
+  animateText(taglines: string[] = []) {
+    if (document.getElementsByClassName('text-typed').length) {
+      const typed = new Typed('.text-typed', {
+        // NOTE: Keep these short
+        strings: taglines,
+        typeSpeed: 100, // typing speed
+        backDelay: 3000, // pause before backspacing
+      });
+    }
   }
-  updated() {
-    // this.animateText();
-  }
-
-  // animateText() {
-  //   const taglines = this.home.taglines.map((t: any) => t.tagline);
-  //   const typed = new Typed('.text-typed', {
-  //     // NOTE: Keep these short
-  //     strings: taglines,
-  //     typeSpeed: 100, // typing speed
-  //     backDelay: 3000, // pause before backspacing
-  //   });
-  // }
 }
 </script>
