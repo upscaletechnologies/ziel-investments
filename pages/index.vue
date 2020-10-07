@@ -1,27 +1,15 @@
 <template lang="pug">
   div
-    //- // Start Home
-    //- section.position-relative.header_bg.landing-section
-    //-   agile(:initial-slide="3")
-    //-     img.slide(src='https://images.unsplash.com/photo-1506260408121-e353d10b87c7?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ')
-    //-     img.slide(src='https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ')
-    //-     img.slide(src='https://images.unsplash.com/photo-1524260855046-f743b3cdad07?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ')
-    //-     img.slide(src='https://images.unsplash.com/photo-1526080676457-4544bf0ebba9?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ')
-    //-     img.slide(src='https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ')
-    //-     img.slide(src='https://images.unsplash.com/photo-1426170042593-200f250dfdaf?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ')
-    //-     img.slide(src='https://images.unsplash.com/photo-1529815481058-55e5b656f6d6?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ')
-        
-    //-     template(slot="prevButton")
-    //-       i.fas.fa-chevron-left
-          
-    //-     template(slot="nextButton")
-    //-       i.fas.fa-chevron-right
-    //-   div
-    //-     a.scroll.scroll_down(href="#work")
-    //-       span
-    //- // End Home
     // Start Home
-    section.position-relative.header_bg.landing-section
+    section.position-relative.header_bg.landing-section.p-0
+      #home-slider.owl-carousel.owl-theme
+        .item
+          img.img-responsive(src="https://images.unsplash.com/photo-1506260408121-e353d10b87c7" alt="The Last of us")
+        .item
+          img.img-responsive(src="https://images.unsplash.com/photo-1426170042593-200f250dfdaf" alt="GTA V")
+        .item
+          img.img-responsive(src="https://images.unsplash.com/photo-1526080676457-4544bf0ebba9" alt="Mirror Edge")
+      //- show this on top of the slider
       .home-table
         .home-table-center
           .container.z-index.position-relative
@@ -46,26 +34,8 @@
         a.scroll.scroll_down(href="#work")
           span
     // End Home
-
-    // Start Client Logo
-    //- section.section
-      .container
-        .row
-          .col-lg-3
-            .logo_img
-              img.mx-auto.img-fluid.d-block(src="~/assets/images/clients/1.png" alt="logo-img")
-          .col-lg-3
-            .logo_img
-              img.mx-auto.img-fluid.d-block(src="~/assets/images/clients/2.png" alt="logo-img")
-          .col-lg-3
-            .logo_img
-              img.mx-auto.img-fluid.d-block(src="~/assets/images/clients/3.png" alt="logo-img")
-          .col-lg-3
-            .logo_img
-              img.mx-auto.img-fluid.d-block(src="~/assets/images/clients/4.png" alt="logo-img")
-    // End Client Logo
     // Start About Us
-    section#work.section
+    section#work.section.position-static.pt-2x
       .container
         .row
           .col-lg-12
