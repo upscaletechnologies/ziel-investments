@@ -94,9 +94,11 @@ export default {
       { src: 'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js' },
       { src: 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' },
       { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' },
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider.min.js', mode: 'client' },
     ],
     link: [
       { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css' },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css' },
       { rel: 'apple-touch-icon', type: 'image/x-icon', sizes: '57x57', href: '/favicon/apple-icon-57x57.png' },
       { rel: 'apple-touch-icon', type: 'image/x-icon', sizes: '60x60', href: '/favicon/apple-icon-60x60.png' },
       { rel: 'apple-touch-icon', type: 'image/x-icon', sizes: '72x72', href: '/favicon/apple-icon-72x72.png' },

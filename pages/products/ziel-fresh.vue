@@ -1,6 +1,17 @@
 <template lang="pug">
   div
     SubHeader(title="Ziel Fresh" :namespaces="['products']")
+    div.flexslider.carousel
+      ul.slides
+        li
+          img(src="http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg")
+        li
+          img(src="http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg")
+        li
+          img(src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg")
+        li
+          img(src="http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg")
+        // items mirrored twice, total of 12
     // Start Introduction and Gallery
     section.section
       .container
@@ -18,7 +29,7 @@
                 img.img-fluid(src="~/assets/images/products/image-1-1.jpeg")
             figure.card.rounded-0
               a(data-fancybox="html5-video" data-width="640" data-height="360" href="https://www.datocms-assets.com/32398/1600772746-ziel-fresh-10.jpeg" data-caption="<h6>Factory tour: Inside series</h6>")
-                  img.card-img-top.img-fluid.rounded-0(src="~/assets/images/products/image-2-1.jpeg")
+                  img.card-img-top.img-fluid.rounded-0(src="http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg")
               .card-body
                 p.card-text Factory tour: Inside series
           .col-6.col-lg-4
@@ -42,7 +53,7 @@
                 img.card-img-top.img-fluid.rounded-0(src="~/assets/images/products/image-7-1.jpeg") 
               .card-body
                 p.card-text Factory tour: Packaging Series       
-    // End Introduction and Gallery
+        // End Introduction and Gallery
 
     // Start Description
     section.section.bg-features.vertical-content

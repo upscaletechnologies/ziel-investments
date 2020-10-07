@@ -1,51 +1,51 @@
 <template lang="pug">
   div
-    // Start Home
-    section.position-relative.header_bg.landing-section
-      agile(:initial-slide="3")
-        img.slide(src='https://images.unsplash.com/photo-1506260408121-e353d10b87c7?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ')
-        img.slide(src='https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ')
-        img.slide(src='https://images.unsplash.com/photo-1524260855046-f743b3cdad07?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ')
-        img.slide(src='https://images.unsplash.com/photo-1526080676457-4544bf0ebba9?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ')
-        img.slide(src='https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ')
-        img.slide(src='https://images.unsplash.com/photo-1426170042593-200f250dfdaf?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ')
-        img.slide(src='https://images.unsplash.com/photo-1529815481058-55e5b656f6d6?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ')
-        
-        template(slot="prevButton")
-          i.fas.fa-chevron-left
-          
-        template(slot="nextButton")
-          i.fas.fa-chevron-right
-      div
-        a.scroll.scroll_down(href="#work")
-          span
-    // End Home
     //- // Start Home
     //- section.position-relative.header_bg.landing-section
-    //-   .home-table
-    //-     .home-table-center
-    //-       .container.z-index.position-relative
-    //-         .row.vertical-content.justify-content-start
-    //-           .col-lg-6
-    //-             .home_content.mt-3
-    //-               p.home_small_title
-    //-                 | Welcome To #[span.text-custom Ziel Investments]
-    //-               h1
-    //-                 span.text-custom.mr-1 In Ziel 
-    //-                 span.text-typed
-    //-               p.home_small_content.mt-4.text-muted {{home.introDescription}}
-    //-               .pt-3
-    //-                 a.btn.btn-gradient.text-uppercase.mr-2(href="/about-us") Get Started
-    //-                 span.mr-3 or
-    //-                 a.mr-3.text-white.learn_more.video_home(href="#myVideo")
-    //-                   i.mdi.mdi-play
-    //-                   //- TODO: ensure mp4 plays video. 
-    //-                 video#myVideo(width="640" height="320" controls="" style="display:none;")
-    //-                   source(src="home.introVideo.url" type="video/mp4")
+    //-   agile(:initial-slide="3")
+    //-     img.slide(src='https://images.unsplash.com/photo-1506260408121-e353d10b87c7?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ')
+    //-     img.slide(src='https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ')
+    //-     img.slide(src='https://images.unsplash.com/photo-1524260855046-f743b3cdad07?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ')
+    //-     img.slide(src='https://images.unsplash.com/photo-1526080676457-4544bf0ebba9?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ')
+    //-     img.slide(src='https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ')
+    //-     img.slide(src='https://images.unsplash.com/photo-1426170042593-200f250dfdaf?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ')
+    //-     img.slide(src='https://images.unsplash.com/photo-1529815481058-55e5b656f6d6?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ')
+        
+    //-     template(slot="prevButton")
+    //-       i.fas.fa-chevron-left
+          
+    //-     template(slot="nextButton")
+    //-       i.fas.fa-chevron-right
     //-   div
     //-     a.scroll.scroll_down(href="#work")
     //-       span
     //- // End Home
+    // Start Home
+    section.position-relative.header_bg.landing-section
+      .home-table
+        .home-table-center
+          .container.z-index.position-relative
+            .row.vertical-content.justify-content-start
+              .col-lg-6
+                .home_content.mt-3
+                  p.home_small_title
+                    | Welcome To #[span.text-custom Ziel Investments]
+                  h1
+                    span.text-custom.mr-1 In Ziel 
+                    span.text-typed
+                  p.home_small_content.mt-4.text-muted {{home.introDescription}}
+                  .pt-3
+                    a.btn.btn-gradient.text-uppercase.mr-2(href="/about-us") Get Started
+                    span.mr-3 or
+                    a.mr-3.text-white.learn_more.video_home(href="#myVideo")
+                      i.mdi.mdi-play
+                      //- TODO: ensure mp4 plays video. 
+                    video#myVideo(width="640" height="320" controls="" style="display:none;")
+                      source(src="home.introVideo.url" type="video/mp4")
+      div
+        a.scroll.scroll_down(href="#work")
+          span
+    // End Home
 
     // Start Client Logo
     //- section.section
@@ -246,7 +246,6 @@
 </template>
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator';
-import { VueAgile } from 'vue-agile';
 import Typed from 'typed.js';
 import gql from 'graphql-tag';
 import Cta from '~/components/Cta.vue';
@@ -270,7 +269,7 @@ import Cta from '~/components/Cta.vue';
       }
     `,
   },
-  components: { Cta, VueAgile },
+  components: { Cta },
   head() {
     return {
       title: 'Home - zielinvestments.com',
@@ -291,20 +290,20 @@ export default class RootPage extends Vue {
   taglines: any;
 
   mounted() {
-    this.animateText();
+    // this.animateText();
   }
   updated() {
-    this.animateText();
+    // this.animateText();
   }
 
-  animateText() {
-    const taglines = this.home.taglines.map((t: any) => t.tagline);
-    const typed = new Typed('.text-typed', {
-      // NOTE: Keep these short
-      strings: taglines,
-      typeSpeed: 100, // typing speed
-      backDelay: 3000, // pause before backspacing
-    });
-  }
+  // animateText() {
+  //   const taglines = this.home.taglines.map((t: any) => t.tagline);
+  //   const typed = new Typed('.text-typed', {
+  //     // NOTE: Keep these short
+  //     strings: taglines,
+  //     typeSpeed: 100, // typing speed
+  //     backDelay: 3000, // pause before backspacing
+  //   });
+  // }
 }
 </script>

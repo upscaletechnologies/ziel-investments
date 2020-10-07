@@ -155,6 +155,17 @@ class Axzisz {
       itemsDesktopSmall: [979, 2],
     });
   }
+  initFlexSlider() {
+    $(window).on('load', function() {
+      alert('This works');
+      $('.flexslider').flexslider({
+        animation: 'slide',
+        animationLoop: false,
+        itemWidth: 210,
+        itemMargin: 5,
+      });
+    });
+  }
   initBTT() {
     $(window).on('scroll', function() {
       if ($(this).scrollTop() > 100) {
@@ -193,6 +204,7 @@ class Axzisz {
     // this.initWorkFilter();
     this.initClientSlider();
     this.initBTT();
+    this.initFlexSlider();
     // this.initMFPVideoPlay();
   }
 }
