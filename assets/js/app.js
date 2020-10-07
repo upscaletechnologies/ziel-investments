@@ -147,23 +147,30 @@ class Axzisz {
       });
     });
   }
+  initHomeSlider() {
+    $('#home-slider').owlCarousel({
+      autoPlay: 10000,
+      singleItem: true,
+      // items: 1,
+      // itemsDesktop: [1199, 1],
+      // itemsDesktopSmall: [979, 1],
+    });
+  }
+  initZielFreshSlider() {
+    $('#ziel-fresh-slider').owlCarousel({
+      // loop: true,
+      autoPlay: 3000,
+      items: 4,
+      itemsDesktop: [1199, 3],
+      itemsDesktopSmall: [979, 3],
+    });
+  }
   initClientSlider() {
     $('#owl-demo').owlCarousel({
       autoPlay: 10000,
       items: 2,
       itemsDesktop: [1199, 2],
       itemsDesktopSmall: [979, 2],
-    });
-  }
-  initFlexSlider() {
-    $(window).on('load', function() {
-      alert('This works');
-      $('.flexslider').flexslider({
-        animation: 'slide',
-        animationLoop: false,
-        itemWidth: 210,
-        itemMargin: 5,
-      });
     });
   }
   initBTT() {
@@ -202,9 +209,10 @@ class Axzisz {
     this.initSmoothLink();
     // this.initMFPImage();
     // this.initWorkFilter();
+    this.initHomeSlider();
+    this.initZielFreshSlider();
     this.initClientSlider();
     this.initBTT();
-    this.initFlexSlider();
     // this.initMFPVideoPlay();
   }
 }

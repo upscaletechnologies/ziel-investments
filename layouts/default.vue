@@ -17,10 +17,14 @@ const themeJs = require('~/assets/js/theme.js').default;
 })
 export default class LayoutDefault extends Vue {
   mounted() {
-    themeJs();
+    if (process.browser) {
+      themeJs();
+    }
   }
   updated() {
-    themeJs();
+    if (process.browser) {
+      themeJs();
+    }
   }
 }
 </script>

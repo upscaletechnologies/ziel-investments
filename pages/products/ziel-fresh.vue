@@ -1,19 +1,8 @@
 <template lang="pug">
   div
     SubHeader(title="Ziel Fresh" :namespaces="['products']")
-    div.flexslider.carousel
-      ul.slides
-        li
-          img(src="http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg")
-        li
-          img(src="http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg")
-        li
-          img(src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg")
-        li
-          img(src="http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg")
-        // items mirrored twice, total of 12
     // Start Introduction and Gallery
-    section.section
+    section.section.bg-lightx
       .container
         .row
           .col-lg-12
@@ -22,6 +11,23 @@
               h2.text-capitalize.mx-auto.section_header {{product.title}}
               p.sec_content.pt-3.text-muted.mx-auto(v-html="`${( product.titleDescription )}`")
         //- TODO: Fix the video links
+        .row.mt-5
+          .col-lg-12
+            #ziel-fresh-slider.owl-carousel
+              .item
+                img.img-responsive(src="https://images.unsplash.com/photo-1506260408121-e353d10b87c7" alt="The Last of us")
+              .item
+                img.img-responsive(src="https://images.unsplash.com/photo-1426170042593-200f250dfdaf" alt="GTA V")
+              .item
+                img.img-responsive(src="https://images.unsplash.com/photo-1526080676457-4544bf0ebba9" alt="Mirror Edge")
+              .item
+                img.img-responsive(src="https://images.unsplash.com/photo-1426170042593-200f250dfdaf" alt="GTA V")
+              .item
+                img.img-responsive(src="https://images.unsplash.com/photo-1526080676457-4544bf0ebba9" alt="Mirror Edge")
+              .item
+                img.img-responsive(src="https://images.unsplash.com/photo-1426170042593-200f250dfdaf" alt="GTA V")
+              .item
+                img.img-responsive(src="https://images.unsplash.com/photo-1526080676457-4544bf0ebba9" alt="Mirror Edge")
         .row.mb-4
           .col-6.col-lg-4
             figure
@@ -122,6 +128,20 @@ import SubHeader from '~/components/SubHeader.vue';
 import Cta from '~/components/Cta.vue';
 
 @Component({
+  components: { SubHeader, Cta },
+  head() {
+    return {
+      title: 'Ziel Fresh - zielinvestments.com',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            ' Ziel Fresh purified water is bottled fresh at the source to maintain its natural taste which is balanced by nature. Its enhanced by use of advanced modern technology by use of multi-barrier filtration, reverse osmosis, ozanation and UV treatment to give it a refreshing natural taste. Our water quality, grade and above all palate features are 100% natural ',
+        },
+      ],
+    };
+  },
   apollo: {
     product: gql`
       {
@@ -143,20 +163,6 @@ import Cta from '~/components/Cta.vue';
         }
       }
     `,
-  },
-  components: { SubHeader, Cta },
-  head() {
-    return {
-      title: 'Ziel Fresh - zielinvestments.com',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content:
-            ' Ziel Fresh purified water is bottled fresh at the source to maintain its natural taste which is balanced by nature. Its enhanced by use of advanced modern technology by use of multi-barrier filtration, reverse osmosis, ozanation and UV treatment to give it a refreshing natural taste. Our water quality, grade and above all palate features are 100% natural ',
-        },
-      ],
-    };
   },
 })
 export default class ZielFresh extends Vue {
