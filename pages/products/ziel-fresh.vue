@@ -15,19 +15,7 @@
           .col-lg-12
             #ziel-fresh-slider.owl-carousel
               .item(v-for="image in product.gallery" :key="image.id")
-                img.img-responsive(:src="image.media.url" alt="gallery Media")
-              //- .item
-              //-   img.img-responsive(src="https://images.unsplash.com/photo-1426170042593-200f250dfdaf" alt="GTA V")
-              //- .item
-              //-   img.img-responsive(src="https://images.unsplash.com/photo-1526080676457-4544bf0ebba9" alt="Mirror Edge")
-              //- .item
-              //-   img.img-responsive(src="https://images.unsplash.com/photo-1426170042593-200f250dfdaf" alt="GTA V")
-              //- .item
-              //-   img.img-responsive(src="https://images.unsplash.com/photo-1526080676457-4544bf0ebba9" alt="Mirror Edge")
-              //- .item
-              //-   img.img-responsive(src="https://images.unsplash.com/photo-1426170042593-200f250dfdaf" alt="GTA V")
-              //- .item
-              //-   img.img-responsive(src="https://images.unsplash.com/photo-1526080676457-4544bf0ebba9" alt="Mirror Edge")    
+                img.img-responsive(:src="image.media.url" alt="gallery Media") 
         // End Introduction and Gallery
 
     // Start Description
@@ -96,6 +84,8 @@ import gql from 'graphql-tag';
 import SubHeader from '~/components/SubHeader.vue';
 import Cta from '~/components/Cta.vue';
 
+const owlCarouselInit = require('~/assets/js/owlCarouselInit.js').default;
+
 @Component({
   components: { SubHeader, Cta },
   head() {
@@ -112,26 +102,39 @@ import Cta from '~/components/Cta.vue';
     };
   },
   apollo: {
-    product: gql`
-      {
-        product {
-          title
-          titleDescription
-          gallery {
-            media {
-              id
+    product: {
+      query: gql`
+        {
+          product {
+            title
+            titleDescription
+            gallery {
+              media {
+                id
+                url
+              }
+            }
+            whySectionImage {
               url
             }
           }
-          whySectionImage {
-            url
-          }
         }
-      }
-    `,
+      `,
+      result({ data: { product } }) {
+        if (product && process.browser) {
+          this.initCarousel();
+        }
+      },
+    },
   },
 })
 export default class ZielFresh extends Vue {
   product: any = [];
+
+  initCarousel() {
+    this.$nextTick(() => {
+      owlCarouselInit.init();
+    });
+  }
 }
 </script>

@@ -18,7 +18,6 @@ class Axzisz {
 
   // TODO: Make the menu buttons to hide on click
   basicFunctions() {
-    // console.log('this is working');
     // $(document).on(
     //   'click',
     //   '.navbar-nav>li>a, .navbar-brand, .dropdown-menu>a',
@@ -147,32 +146,15 @@ class Axzisz {
       });
     });
   }
-  initHomeSlider() {
-    $('#home-slider').owlCarousel({
-      autoPlay: 10000,
-      singleItem: true,
-      // items: 1,
-      // itemsDesktop: [1199, 1],
-      // itemsDesktopSmall: [979, 1],
-    });
-  }
-  initZielFreshSlider() {
-    $('#ziel-fresh-slider').owlCarousel({
-      loop: true,
-      autoPlay: 3000,
-      items: 3,
-      itemsDesktop: [1199, 3],
-      itemsDesktopSmall: [979, 3],
-    });
-  }
-  initClientSlider() {
-    $('#owl-demo').owlCarousel({
-      autoPlay: 10000,
-      items: 2,
-      itemsDesktop: [1199, 2],
-      itemsDesktopSmall: [979, 2],
-    });
-  }
+  // moved to owlCarousel file`
+  // initClientSlider() {
+  //   $('#owl-demo').owlCarousel({
+  //     autoPlay: 10000,
+  //     items: 2,
+  //     itemsDesktop: [1199, 2],
+  //     itemsDesktopSmall: [979, 2],
+  //   });
+  // }
   initBTT() {
     $(window).on('scroll', function() {
       if ($(this).scrollTop() > 100) {
@@ -209,9 +191,7 @@ class Axzisz {
     this.initSmoothLink();
     // this.initMFPImage();
     // this.initWorkFilter();
-    this.initHomeSlider();
-    this.initZielFreshSlider();
-    this.initClientSlider();
+    // this.initClientSlider();
     this.initBTT();
     // this.initMFPVideoPlay();
   }
