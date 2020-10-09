@@ -3,12 +3,12 @@
     // Start Home
     section.position-relative.header_bg.landing-section.p-0
       #home-slider.owl-carousel.owl-theme
-        .item
-          img.img-responsive(src="https://images.unsplash.com/photo-1506260408121-e353d10b87c7" alt="The Last of us")
-        .item
-          img.img-responsive(src="https://images.unsplash.com/photo-1426170042593-200f250dfdaf" alt="GTA V")
-        .item
-          img.img-responsive(src="https://images.unsplash.com/photo-1526080676457-4544bf0ebba9" alt="Mirror Edge")
+        .item(v-for="image in home.sliderImages" :key="image.id")
+          img.img-responsive(:src="image.url" alt="Slider Image")
+        //- .item
+        //-   img.img-responsive(src="https://www.datocms-assets.com/32398/1600261932-homepage-landing.jpg" alt="")
+        //- .item
+        //-   img.img-responsive(src="https://www.datocms-assets.com/32398/1600261932-homepage-landing.jpg" alt="")
       //- show this on top of the slider
       .home-table
         .home-table-center
@@ -25,11 +25,8 @@
                   .pt-3
                     a.btn.btn-gradient.text-uppercase.mr-2(href="/about-us") Get Started
                     span.mr-3 or
-                    a.mr-3.text-white.learn_more.video_home(href="#myVideo")
+                    a.mr-3.text-white.learn_more.video_home(data-fancybox="html5-video" data-width="640" data-height="360" href="https://www.datocms-assets.com/32398/1598301797-video-1-1.mp4" data-caption="<h6>Factory tour: Outside Series</h6>")
                       i.mdi.mdi-play
-                      //- TODO: ensure mp4 plays video. 
-                    video#myVideo(width="640" height="320" controls="" style="display:none;")
-                      source(src="home.introVideo.url" type="video/mp4")
       div
         a.scroll.scroll_down(href="#work")
           span
@@ -219,6 +216,7 @@ import { Vue, Component, Prop } from 'vue-property-decorator';
 import Typed from 'typed.js';
 import gql from 'graphql-tag';
 import Cta from '~/components/Cta.vue';
+const themeJs = require('~/assets/js/theme.js').default;
 
 @Component({
   apollo: {
@@ -227,6 +225,7 @@ import Cta from '~/components/Cta.vue';
         {
           home {
             sliderImages {
+              id
               url
             }
             taglines {
@@ -241,6 +240,7 @@ import Cta from '~/components/Cta.vue';
       `,
       result({ data: { home } }) {
         if (home && process.browser) {
+          themeJs();
           const taglines = home.taglines.map((t: any) => t.tagline);
           this.animateText(taglines);
         }

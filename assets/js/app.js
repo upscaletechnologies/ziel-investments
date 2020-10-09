@@ -158,9 +158,9 @@ class Axzisz {
   }
   initZielFreshSlider() {
     $('#ziel-fresh-slider').owlCarousel({
-      // loop: true,
+      loop: true,
       autoPlay: 3000,
-      items: 4,
+      items: 3,
       itemsDesktop: [1199, 3],
       itemsDesktopSmall: [979, 3],
     });

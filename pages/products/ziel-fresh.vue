@@ -14,51 +14,20 @@
         .row.mt-5
           .col-lg-12
             #ziel-fresh-slider.owl-carousel
-              .item
-                img.img-responsive(src="https://images.unsplash.com/photo-1506260408121-e353d10b87c7" alt="The Last of us")
-              .item
-                img.img-responsive(src="https://images.unsplash.com/photo-1426170042593-200f250dfdaf" alt="GTA V")
-              .item
-                img.img-responsive(src="https://images.unsplash.com/photo-1526080676457-4544bf0ebba9" alt="Mirror Edge")
-              .item
-                img.img-responsive(src="https://images.unsplash.com/photo-1426170042593-200f250dfdaf" alt="GTA V")
-              .item
-                img.img-responsive(src="https://images.unsplash.com/photo-1526080676457-4544bf0ebba9" alt="Mirror Edge")
-              .item
-                img.img-responsive(src="https://images.unsplash.com/photo-1426170042593-200f250dfdaf" alt="GTA V")
-              .item
-                img.img-responsive(src="https://images.unsplash.com/photo-1526080676457-4544bf0ebba9" alt="Mirror Edge")
-        .row.mb-4
-          .col-6.col-lg-4
-            figure
-              a.d-block.mb-4(data-fancybox="images" :href="require('~/assets/images/products/image-1.jpeg')" data-width="1536" data-height="2304" data-caption="<h6>Ziel Fresh Bottled Water</h6>")
-                img.img-fluid(src="~/assets/images/products/image-1-1.jpeg")
-            figure.card.rounded-0
-              a(data-fancybox="html5-video" data-width="640" data-height="360" href="https://www.datocms-assets.com/32398/1600772746-ziel-fresh-10.jpeg" data-caption="<h6>Factory tour: Inside series</h6>")
-                  img.card-img-top.img-fluid.rounded-0(src="http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg")
-              .card-body
-                p.card-text Factory tour: Inside series
-          .col-6.col-lg-4
-            figure
-              a.d-block.mb-4(data-fancybox="images" :href="require('~/assets/images/products/image-3.jpeg')" data-width="1279" data-height="719" data-caption="<h6>Ziel Fresh: 500ml Package.</h6>")
-                img.img-fluid(src="~/assets/images/products/image-3-1.jpeg")
-            figure
-              a.d-block.mb-4(data-fancybox="images" :href="require('~/assets/images/products/image-4.jpeg')" data-width="1279" data-height="853" data-caption="<h6>Ziel Fresh: Water Treatment Tanks.</h6>")
-                img.img-fluid(src="~/assets/images/products/image-4-1.jpeg")
-            figure.card.rounded-0
-              a(data-fancybox="html5-video" data-width="640" data-height="360" href="https://drive.google.com/file/d/1_A0K9ScYBBESSsBTdOnlrKXkl_A2n7sn/preview" data-caption="<h6>Factory tour: Outside Series</h6>")
-                img.card-img-top.img-fluid.rounded-0(src="~/assets/images/products/image-5-1.jpeg")
-              .card-body
-                p.card-text Factory tour: Outside Series
-          .col-6.col-lg-4.d-none.d-lg-block
-            figure
-              a.d-block.mb-4(data-fancybox="images" :href="require('~/assets/images/products/image-6.jpeg')" data-width="1279" data-height="870" data-caption="<h6>Ziel Fresh: All our packaging.</h6>")
-                img.img-fluid(src="~/assets/images/products/image-6-1.jpeg")
-            figure.card.rounded-0
-              a(data-fancybox="html5-video" data-width="640" data-height="360" href="https://drive.google.com/file/d/1ZpxhigV9JPqhBwIaFhZCORpCPAXCrHT0/preview" data-caption="<h6>Factory tour: Packaging Series</h6>")
-                img.card-img-top.img-fluid.rounded-0(src="~/assets/images/products/image-7-1.jpeg") 
-              .card-body
-                p.card-text Factory tour: Packaging Series       
+              .item(v-for="image in product.gallery" :key="image.id")
+                img.img-responsive(:src="image.media.url" alt="gallery Media")
+              //- .item
+              //-   img.img-responsive(src="https://images.unsplash.com/photo-1426170042593-200f250dfdaf" alt="GTA V")
+              //- .item
+              //-   img.img-responsive(src="https://images.unsplash.com/photo-1526080676457-4544bf0ebba9" alt="Mirror Edge")
+              //- .item
+              //-   img.img-responsive(src="https://images.unsplash.com/photo-1426170042593-200f250dfdaf" alt="GTA V")
+              //- .item
+              //-   img.img-responsive(src="https://images.unsplash.com/photo-1526080676457-4544bf0ebba9" alt="Mirror Edge")
+              //- .item
+              //-   img.img-responsive(src="https://images.unsplash.com/photo-1426170042593-200f250dfdaf" alt="GTA V")
+              //- .item
+              //-   img.img-responsive(src="https://images.unsplash.com/photo-1526080676457-4544bf0ebba9" alt="Mirror Edge")    
         // End Introduction and Gallery
 
     // Start Description
@@ -148,14 +117,11 @@ import Cta from '~/components/Cta.vue';
         product {
           title
           titleDescription
-          media {
-            thumbnail {
+          gallery {
+            media {
+              id
               url
             }
-            modalMedia {
-              url
-            }
-            mediaType
           }
           whySectionImage {
             url
