@@ -4,12 +4,7 @@
     section.position-relative.header_bg.landing-section.p-0
       #home-slider.owl-carousel.owl-theme
         .item(v-for="image in home.sliderImages" :key="image.id")
-          img.img-responsive(:src="image.url" alt="Slider Image")
-        //- .item
-        //-   img.img-responsive(src="https://www.datocms-assets.com/32398/1600261932-homepage-landing.jpg" alt="")
-        //- .item
-        //-   img.img-responsive(src="https://www.datocms-assets.com/32398/1600261932-homepage-landing.jpg" alt="")
-      //- show this on top of the slider
+          img.img-responsive(:src="image.url" alt="Ziel Investments")
       .home-table
         .home-table-center
           .container.z-index.position-relative
@@ -216,7 +211,8 @@ import { Vue, Component, Prop } from 'vue-property-decorator';
 import Typed from 'typed.js';
 import gql from 'graphql-tag';
 import Cta from '~/components/Cta.vue';
-const themeJs = require('~/assets/js/theme.js').default;
+
+const owlCarouselInit = require('~/assets/js/owlCarouselInit.js').default;
 
 @Component({
   apollo: {
@@ -240,7 +236,7 @@ const themeJs = require('~/assets/js/theme.js').default;
       `,
       result({ data: { home } }) {
         if (home && process.browser) {
-          themeJs();
+          this.initCarousel();
           const taglines = home.taglines.map((t: any) => t.tagline);
           this.animateText(taglines);
         }
@@ -265,7 +261,16 @@ const themeJs = require('~/assets/js/theme.js').default;
 export default class RootPage extends Vue {
   home: any = [];
 
+  initCarousel() {
+    this.$nextTick(() => {
+      owlCarouselInit.init();
+    });
+  }
+
   animateText(taglines: string[] = []) {
+    // prevent multiple typing cursors
+    const elements = document.getElementsByClassName('typed-cursor');
+    while (elements.length > 0) elements[0].remove();
     if (document.getElementsByClassName('text-typed').length) {
       const typed = new Typed('.text-typed', {
         // NOTE: Keep these short
