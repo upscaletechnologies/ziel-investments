@@ -12,10 +12,7 @@
 #home-slider .item img {
   min-height: 500px;
   max-height: 600px !important;
-}
-#home-slider .item img {
   width: 100% !important;
-  height: auto !important;
   object-fit: cover !important;
 }
 
@@ -38,7 +35,7 @@
 #ziel-fresh-slider .item img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 500px !important;
   object-fit: cover !important;
 }
 /* Ziel fresh carousel - end */
