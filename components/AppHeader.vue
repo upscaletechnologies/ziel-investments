@@ -41,6 +41,8 @@
                 nuxt-link.nav-link(to="/products/robotic-process-automation") Robotic Process Automation
               li.nav-item(:class="activeLink('/products/fleet-management')")
                 nuxt-link.nav-link(to="/products/fleet-management") Fleet management
+          li.nav-item(:class="activeLink('/careers')")
+            nuxt-link.nav-link(to="/careers") Careers
           li.nav-item(:class="activeLink('/contact-us')")
             nuxt-link.nav-link(to="/contact-us") Contact
         div

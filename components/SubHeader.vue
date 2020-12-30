@@ -16,6 +16,8 @@
                 nuxt-link.text-white(to="/about-us") About Us
               li.list-inline-item(v-if="namespaces.includes('products')")
                 nuxt-link.text-white(to="") Products
+              li.list-inline-item(v-if="namespaces.includes('careers')")
+                nuxt-link.text-white(to="/careers") Careers
               li.list-inline-item.active {{titleMenu || title}}
   // End Header
 </template>
