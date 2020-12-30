@@ -109,7 +109,8 @@ import Cta from '~/components/Cta.vue';
         {
           hid: 'description',
           name: 'description',
-          content: ` Ziel Investments - ${this.career.title} - ${this.career.summary} `,
+          // content: ` Ziel Investments - ${this.career.title} - ${this.career.summary} `,
+          content: ' Ziel Investments career opportunities or Job postings ',
         },
       ],
     };
